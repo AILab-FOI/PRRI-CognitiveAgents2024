@@ -16,8 +16,8 @@ def train(bot):
     chatbot = bot
 
     chatbot.train([
-        'Kako se zovu riječi koje zamjenjuju druge riječi?',
-        '01'
+        'What are your skills?',
+	    '01'
     ])
     chatbot.train([
         'Koje riječi zamjenjuju druge riječi?',
