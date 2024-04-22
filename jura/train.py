@@ -16,8 +16,8 @@ def train(bot):
     chatbot = bot
 
     chatbot.train([
-        'Kako se zovu riječi koje zamjenjuju druge riječi?',
-        '01'
+        'Koliko je sati?',
+	    '01'
     ])
     chatbot.train([
         'Koje riječi zamjenjuju druge riječi?',
@@ -521,7 +521,6 @@ def train(bot):
         'Bravo',
         'hvala'
     ])
-
     chatbot.train([
         'Odlično',
         'hvala'
