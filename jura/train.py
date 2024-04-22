@@ -16,7 +16,7 @@ def train(bot):
     chatbot = bot
 
     chatbot.train([
-        'What are your skills?',
+        'Koliko je sati?',
 	    '01'
     ])
     chatbot.train([
@@ -521,7 +521,6 @@ def train(bot):
         'Bravo',
         'hvala'
     ])
-
     chatbot.train([
         'Odlično',
         'hvala'
