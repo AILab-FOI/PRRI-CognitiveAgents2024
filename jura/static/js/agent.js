@@ -105,7 +105,7 @@ $(window).on( 'load', function(){
 
 
 function connect() {
-    ws = new WebSocket( 'wss://dragon.foi.hr/wsjura/' );
+    ws = new WebSocket( 'ws://0.0.0.0:8009' );
     window.ws = ws;
     ws.onopen = function() {
 	ws.send( 'connect' );
