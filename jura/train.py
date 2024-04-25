@@ -10,7 +10,7 @@ LOGIC_ADAPTER = [
             'default_response': 'ponovi'
         }
     ]
-
+// momentar
 def train(bot):
     bot.set_trainer(ListTrainer)
     chatbot = bot
