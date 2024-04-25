@@ -6,7 +6,7 @@ from chatterbot import ChatBot
 from flask import (Flask, render_template)
 
 from websocketserver import *
-
+// IBRISI ME
 app = Flask( __name__, static_folder='static' )
 
 @app.route( '/' )
