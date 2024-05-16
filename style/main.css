@@ -160,7 +160,7 @@ text-box[mode=nvl]>[data-content=text] {
 }
 
 text-box[data-speaking=narrator]>[data-content=name] {
-	/*background: transparent;*/
+	background: transparent;
 }
 
 [data-component="text-box"] {
@@ -197,10 +197,8 @@ text-box [data-content=dialog] {
 
 text-box [data-content=name] {
 	position: absolute;
-	/* Position absolutely within its parent */
 	top: -100px;
-	/* Adjust this value as needed to position it above */
-	left: 25%;
+	/*left: 25%;*/
 	height: 100px;
 	width: 370px;
 	background-image: url("../assets/ui/namebox.png");
