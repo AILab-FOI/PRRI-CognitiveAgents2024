@@ -1,0 +1,57 @@
+/**
+ * ===========================
+ * Save and Load Menus Styling
+ * ===========================
+**/
+
+/* Slots Style */
+[data-component="save-slot"] figure {}
+
+/* Slot's Image Style */
+[data-component="save-slot"] img {}
+
+/* Slots Title Style */
+[data-component="save-slot"] figcaption {}
+
+/* Slots Delete Button Style */
+[data-component="save-slot"] button {}
+
+/* ////////////////////////////////////////////////*/
+
+[data-component="slot-container"] {
+    /* display: flex; */
+    justify-content: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    /*margin-bottom: 8%;*/
+    margin-top: 14%;
+}
+
+[data-screen="load"],
+[data-screen="save"] {
+    background-image: url("../assets/ui/game_menu/game_menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Load */
+[data-screen="load"] h2 {
+    background-image: url(../assets/ui/game_menu/game_menu_header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 29vh;
+    padding-top: 10vh;
+    background-position: top;
+}
+
+/* Saved Games */
+[data-screen="load"] h3 {
+    padding-top: 16vh;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}

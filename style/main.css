@@ -19,6 +19,7 @@
 
 @import url('main_screen.css');
 @import url('quick_menu.css');
+@import url('load_save.css');
 
 /* General Style */
 body {
@@ -34,23 +35,28 @@ button:hover {}
 /* General Styling for Menu Screens */
 [data-screen] {}
 
-/**
+/** 
  * ===========================
- * Save and Load Menus Styling
+ * Return button on Game Menu
  * ===========================
 **/
 
-/* Slots Style */
-[data-component="save-slot"] figure {}
+[data-screen]:not([data-screen=game]) [data-action=back]>svg {
+	display: none;
+}
 
-/* Slot's Image Style */
-[data-component="save-slot"] img {}
+[data-screen]:not([data-screen=game]) [data-action=back] {
+	background-image: url(../assets/ui/game_menu/return_idle.png);
+	border-radius: 0%;
+	height: 64px;
+	width: 64px;
+	margin-top: 113px;
+	margin-left: 90%;
+}
 
-/* Slots Title Style */
-[data-component="save-slot"] figcaption {}
-
-/* Slots Delete Button Style */
-[data-component="save-slot"] button {}
+[data-screen]:not([data-screen=game]) [data-action=back]:hover {
+	background-image: url("../assets/ui/game_menu/return_hover.png");
+}
 
 /**
  * ===========================
@@ -202,10 +208,36 @@ input[type=range]::-ms-fill-upper {}
 }
 
 /** Medium Devices, Tablets (992px)**/
-@media screen and (min-width: 62em) {}
+@media screen and (min-width: 62em) {
+	[data-screen="load"] h2 {
+		height: 24.5vh;
+		padding-top: 8vh;
+	}
+
+	[data-screen="load"] h3 {
+		padding-top: 11vh;
+	}
+
+	[data-component="slot-container"] {
+		margin-top: 14%;
+	}
+}
 
 /** HD Screen, Large Devices, Wide Screens, Desktop (1200px) **/
-@media screen and (min-width: 75em) {}
+@media screen and (min-width: 75em) {
+	[data-screen="load"] h2 {
+		height: 24vh;
+		padding-top: 9vh;
+	}
+
+	[data-screen="load"] h3 {
+		padding-top: 13vh;
+	}
+
+	[data-component="slot-container"] {
+		margin-top: 13.5%;
+	}
+}
 
 /** Full HD Screen, Large Devices, Wide Screens, Large Desktops (1920px) **/
 @media screen and (min-width: 120em) {}
