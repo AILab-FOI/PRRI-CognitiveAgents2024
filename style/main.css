@@ -209,9 +209,15 @@ input[type=range]::-ms-fill-upper {}
 
 /** Medium Devices, Tablets (992px)**/
 @media screen and (min-width: 62em) {
-	[data-screen="load"] h2 {
+
+	[data-screen="load"] h2,
+	[data-screen="save"] div.horizontal.horizontal--center {
 		height: 24.5vh;
 		padding-top: 8vh;
+	}
+
+	[data-screen="save"] div.horizontal.horizontal--center {
+		padding-top: 7vh;
 	}
 
 	[data-screen="load"] h3 {
@@ -230,9 +236,15 @@ input[type=range]::-ms-fill-upper {}
 
 /** HD Screen, Large Devices, Wide Screens, Desktop (1200px) **/
 @media screen and (min-width: 75em) {
-	[data-screen="load"] h2 {
+
+	[data-screen="load"] h2,
+	[data-screen="save"] div.horizontal.horizontal--center {
 		height: 24vh;
 		padding-top: 9vh;
+	}
+
+	[data-screen="save"] div.horizontal.horizontal--center {
+		padding-top: 6vh;
 	}
 
 	[data-screen="load"] h3 {

@@ -11,10 +11,14 @@
 [data-component="save-slot"] img {}
 
 /* Slots Title Style */
-[data-component="save-slot"] figcaption {}
+[data-component="save-slot"] figcaption {
+    background-color: #A66E42;
+}
 
 /* Slots Delete Button Style */
-[data-component="save-slot"] button {}
+[data-component="save-slot"] button {
+    background-color: #3C1F14
+}
 
 /* ////////////////////////////////////////////////*/
 
@@ -37,7 +41,8 @@
 }
 
 /* Load */
-[data-screen="load"] h2 {
+[data-screen="load"] h2,
+[data-screen="save"] div.horizontal.horizontal--center {
     background-image: url(../assets/ui/game_menu/game_menu_header.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -47,6 +52,12 @@
     height: 29vh;
     padding-top: 10vh;
     background-position: top;
+}
+
+[data-screen="save"] div.horizontal.horizontal--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Saved Games */
@@ -67,4 +78,28 @@
     width: 100%;
     height: 14.5vh;
     z-index: 1;
+}
+
+[data-action=save] {
+    color: transparent;
+    height: 48px;
+    width: 223px;
+    background-image: url(../assets/ui/game_menu/save_button_idle.png);
+    border: none;
+}
+
+[data-action=save]:hover {
+    background-image: url(../assets/ui/game_menu/save_button_hover.png);
+}
+
+input[type=text] {
+    background-image: url(../assets/ui/background.png);
+    border-color: #3C1F14;
+    border-width: medium;
+    width: 50vh;
+    text-align: center;
+}
+
+alert-modal input[type=text] {
+    width: auto;
 }
