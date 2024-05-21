@@ -220,6 +220,11 @@ input[type=range]::-ms-fill-upper {}
 
 	[data-component="slot-container"] {
 		margin-top: 14%;
+		margin-bottom: 6%;
+	}
+
+	[data-component="footer-component"] {
+		height: 13vh;
 	}
 }
 
@@ -236,6 +241,11 @@ input[type=range]::-ms-fill-upper {}
 
 	[data-component="slot-container"] {
 		margin-top: 13.5%;
+		margin-bottom: 6%;
+	}
+
+	[data-component="footer-component"] {
+		height: 13vh;
 	}
 }
 
