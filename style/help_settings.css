@@ -1,0 +1,46 @@
+/* /////////// */
+/* /////////// */
+
+[data-screen=help],
+[data-screen=settings] {
+    background-image: url("../assets/ui/help_screen.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+[data-screen=settings] {
+    background-image: url("../assets/ui/settings_screen.png");
+}
+
+[data-screen=help] h2,
+[data-screen=settings] h2 {
+    display: none;
+}
+
+[data-screen=help] [data-action=back],
+[data-screen=settings] [data-action=back] {
+    margin-top: 65px !important;
+}
+
+[data-screen=help] [data-content=help] {
+    height: 100%;
+    align-content: center;
+}
+
+[data-screen=help] p {
+    background-image: url("../assets/ui/background.png");
+}
+
+/*[data-screen=help],
+[data-screen=settings] {
+    justify-content: center;
+}*/
+
+/*
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+*/
