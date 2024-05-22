@@ -173,27 +173,6 @@ text-box [data-content=character-name] {
 /* Other Images Styles */
 [data-screen="game"] [data-image] {}
 
-/**
- * ===========================
- * Range Styling
- * ===========================
-**/
-
-/* Use the background property to set a color for these */
-input[type=range]:focus::-webkit-slider-runnable-track {}
-
-input[type=range]::-webkit-slider-runnable-track {}
-
-input[type=range]:focus::-ms-fill-upper {}
-
-input[type=range]:focus::-ms-fill-lower {}
-
-input[type=range]::-moz-range-track {}
-
-input[type=range]::-ms-fill-lower {}
-
-input[type=range]::-ms-fill-upper {}
-
 /** Medium Screens, Phablets (601px) **/
 @media screen and (min-width: 37.56255em) {
 	/* Styles for the desktop version of the Quick Menu */
