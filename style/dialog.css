@@ -21,6 +21,20 @@ dialog-log .modal__content [data-content=log] {
 
 }
 
+.modal__content button[type="submit"] {
+    color: transparent;
+    height: 48px;
+    width: 223px;
+    border: none;
+    background-image: url("../assets/ui/buttons/dialog_ok_idle.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.modal__content button[type="submit"]:hover {
+    background-image: url("../assets/ui/buttons/dialog_ok_hover.png");
+}
+
 dialog-log .modal__content button {
     color: transparent;
     height: 48px;
