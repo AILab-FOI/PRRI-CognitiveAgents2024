@@ -23,13 +23,36 @@
 @import url('help_settings.css');
 @import url('dialog.css');
 
+@font-face {
+	font-family: 'Caslon';
+	src: url(../assets/fonts/CaslonAntique.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Morris';
+	src: url(../assets/fonts/MorrisRomanAlternate-Black.ttf) format('truetype');
+}
+
 /* General Style */
 body {
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	/*font-family: Georgia, 'Times New Roman', Times, serif;*/
+	font-family: 'Caslon';
+	font-size: clamp(1.5rem, 1.5rem, 2rem);
 }
 
 /* Simple Button styles*/
-button {}
+button {
+	font-family: 'Morris';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Morris';
+}
 
 /* Simple Button Style on Hover */
 button:hover {}
@@ -146,6 +169,7 @@ text-box [data-content=character-name] {
 	padding-top: 3.2rem;
 	padding-right: 8.2rem;
 	font-size: larger;
+	font-family: 'Morris';
 }
 
 /* Style for Centered Text */
