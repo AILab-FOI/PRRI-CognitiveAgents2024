@@ -18,4 +18,75 @@ dialog-log .modal__content {
 
 dialog-log .modal__content [data-content=log] {
     background: url(../assets/ui/background.png) !important;
+
+}
+
+dialog-log .modal__content button {
+    color: transparent;
+    height: 48px;
+    width: 223px;
+    border: none;
+    background-image: url("../assets/ui/buttons/dialog_log_close_idle.png");
+    background-size: cover;
+    background-position: center;
+}
+
+dialog-log .modal__content button:hover {
+    background-image: url("../assets/ui/buttons/dialog_log_close_hover.png");
+}
+
+alert-modal .modal__content [data-action="dismiss-alert"] {
+    color: transparent;
+    height: 48px;
+    width: 223px;
+    border: none;
+    background-image: url("../assets/ui/buttons/dialog_dismiss_idle.png");
+    background-size: cover;
+    background-position: center;
+}
+
+alert-modal .modal__content [data-action="dismiss-alert"]:hover {
+    background-image: url("../assets/ui/buttons/dialog_dismiss_hover.png");
+}
+
+alert-modal .modal__content [data-action="quit"] {
+    color: transparent;
+    height: 48px;
+    width: 223px;
+    border: none;
+    background-image: url("../assets/ui/buttons/dialog_quit_idle.png");
+    background-size: cover;
+    background-position: center;
+}
+
+alert-modal .modal__content [data-action="quit"]:hover {
+    background-image: url("../assets/ui/buttons/dialog_quit_hover.png");
+}
+
+alert-modal .modal__content [data-action="delete-slot"] {
+    color: transparent;
+    height: 48px;
+    width: 223px;
+    border: none;
+    background-image: url("../assets/ui/buttons/dialog_delete_idle.png");
+    background-size: cover;
+    background-position: center;
+}
+
+alert-modal .modal__content [data-action="delete-slot"]:hover {
+    background-image: url("../assets/ui/buttons/dialog_delete_hover.png");
+}
+
+alert-modal .modal__content [data-action="overwrite-slot"] {
+    color: transparent;
+    height: 48px;
+    width: 223px;
+    border: none;
+    background-image: url("../assets/ui/buttons/dialog_overwrite_idle.png");
+    background-size: cover;
+    background-position: center;
+}
+
+alert-modal .modal__content [data-action="overwrite-slot"]:hover {
+    background-image: url("../assets/ui/buttons/dialog_overwrite_hover.png");
 }
