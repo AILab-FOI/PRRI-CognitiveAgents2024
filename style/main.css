@@ -21,6 +21,7 @@
 @import url('quick_menu.css');
 @import url('load_save.css');
 @import url('help_settings.css');
+@import url('dialog.css');
 
 /* General Style */
 body {
