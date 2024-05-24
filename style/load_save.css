@@ -17,13 +17,16 @@
 
 /* Slots Delete Button Style */
 [data-component="save-slot"] button {
-    background-color: #3C1F14
+    background: #3C1F14;
+}
+
+[data-component="save-slot"] button:hover {
+    background: #A66E42;
 }
 
 /* ////////////////////////////////////////////////*/
 
 [data-component="slot-container"] {
-    /* display: flex; */
     justify-content: center;
     padding-right: 10%;
     padding-left: 10%;
@@ -78,18 +81,6 @@
     width: 100%;
     height: 14.5vh;
     z-index: 1;
-}
-
-[data-action=save] {
-    color: transparent;
-    height: 48px;
-    width: 223px;
-    background-image: url(../assets/ui/game_menu/save_button_idle.png);
-    border: none;
-}
-
-[data-action=save]:hover {
-    background-image: url(../assets/ui/game_menu/save_button_hover.png);
 }
 
 input[type=text] {

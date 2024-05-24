@@ -18,7 +18,6 @@ dialog-log .modal__content {
 
 dialog-log .modal__content [data-content=log] {
     background: url(../assets/ui/background.png) !important;
-
 }
 
 dialog-log .modal__content [data-content=log] [data-spoke]>p,
@@ -31,86 +30,9 @@ text-input [data-content=message] {
     font-size: 2rem;
 }
 
-.modal__content button[type="submit"] {
-    color: transparent;
-    height: 48px;
-    width: 223px;
-    border: none;
-    background-image: url("../assets/ui/buttons/dialog_ok_idle.png");
-    background-size: cover;
-    background-position: center;
-}
-
-.modal__content button[type="submit"]:hover {
-    background-image: url("../assets/ui/buttons/dialog_ok_hover.png");
-}
-
-dialog-log .modal__content button {
-    color: transparent;
-    height: 48px;
-    width: 223px;
-    border: none;
-    background-image: url("../assets/ui/buttons/dialog_log_close_idle.png");
-    background-size: cover;
-    background-position: center;
-}
-
-dialog-log .modal__content button:hover {
-    background-image: url("../assets/ui/buttons/dialog_log_close_hover.png");
-}
-
-alert-modal .modal__content [data-action="dismiss-alert"] {
-    color: transparent;
-    height: 48px;
-    width: 223px;
-    border: none;
-    background-image: url("../assets/ui/buttons/dialog_dismiss_idle.png");
-    background-size: cover;
-    background-position: center;
-}
-
-alert-modal .modal__content [data-action="dismiss-alert"]:hover {
-    background-image: url("../assets/ui/buttons/dialog_dismiss_hover.png");
-}
-
-alert-modal .modal__content [data-action="quit"] {
-    color: transparent;
-    height: 48px;
-    width: 223px;
-    border: none;
-    background-image: url("../assets/ui/buttons/dialog_quit_idle.png");
-    background-size: cover;
-    background-position: center;
-}
-
-alert-modal .modal__content [data-action="quit"]:hover {
-    background-image: url("../assets/ui/buttons/dialog_quit_hover.png");
-}
-
-alert-modal .modal__content [data-action="delete-slot"] {
-    color: transparent;
-    height: 48px;
-    width: 223px;
-    border: none;
-    background-image: url("../assets/ui/buttons/dialog_delete_idle.png");
-    background-size: cover;
-    background-position: center;
-}
-
-alert-modal .modal__content [data-action="delete-slot"]:hover {
-    background-image: url("../assets/ui/buttons/dialog_delete_hover.png");
-}
-
-alert-modal .modal__content [data-action="overwrite-slot"] {
-    color: transparent;
-    height: 48px;
-    width: 223px;
-    border: none;
-    background-image: url("../assets/ui/buttons/dialog_overwrite_idle.png");
-    background-size: cover;
-    background-position: center;
-}
-
-alert-modal .modal__content [data-action="overwrite-slot"]:hover {
-    background-image: url("../assets/ui/buttons/dialog_overwrite_hover.png");
+dialog-log button,
+.modal__content button {
+    width: 12rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
 }

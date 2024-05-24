@@ -43,6 +43,24 @@ body {
 /* Simple Button styles*/
 button {
 	font-family: 'Morris';
+	color: #3C1F14;
+	background-image: url("../assets/ui/button_idle.png");
+	height: 48px;
+	width: 223px;
+	border: none;
+	background-size: cover;
+	background-position: center;
+}
+
+/* Simple Button Style on Hover */
+button:hover {
+	color: #D3B28B;
+	background-image: url("../assets/ui/button_hover.png");
+}
+
+button:focus {
+	outline: none;
+	border: none;
 }
 
 h1,
@@ -53,9 +71,6 @@ h5,
 h6 {
 	font-family: 'Morris';
 }
-
-/* Simple Button Style on Hover */
-button:hover {}
 
 /* General Styling for Menu Screens */
 [data-screen] {}
