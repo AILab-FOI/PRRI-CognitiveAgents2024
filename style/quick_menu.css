@@ -10,9 +10,8 @@
 [data-component="quick-menu"] {
     background-image: url("../assets/ui/quick_menu.png");
     justify-content: center;
-    /*background-color: #3c1f14;*/
-    /*background-color: transparent;*/
-    /*background-size: 1000px;*/
+    background-color: transparent;
+    background-size: 100% 100%;
 }
 
 /* Quick Menu Buttons Style */
