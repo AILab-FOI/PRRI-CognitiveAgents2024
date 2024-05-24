@@ -36,3 +36,8 @@ dialog-log button,
     height: 2.5rem;
     font-size: 1.5rem;
 }
+
+dialog-log .modal__content [data-content=log] [data-spoke]>span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
