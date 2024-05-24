@@ -43,15 +43,15 @@
 /* Quick Menu when button Hide is clicked*/
 quick-menu.transparent {
     background-image: none;
-    justify-content: right;
+    justify-content: center;
 }
 
 quick-menu.transparent button {
-    display: none;
+    visibility: hidden;
 }
 
 quick-menu.transparent button[string="Hide"] {
-    display: inline-block;
+    visibility: visible;
 }
 
 /*Change color of icons in Quick Menu*/
