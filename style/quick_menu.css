@@ -1,0 +1,59 @@
+/**
+ * ===========================
+ * Quick Menu Styling
+ * ===========================
+**/
+
+/* These styles are applied to the Mobile version of the Quick Menu */
+
+/* Quick Menu Style */
+[data-component="quick-menu"] {
+    background-image: url("../assets/ui/quick_menu.png");
+    justify-content: center;
+    background-color: transparent;
+    background-size: 100% 100%;
+}
+
+/* Quick Menu Buttons Style */
+[data-component="quick-menu"] span {
+    color: #885641;
+}
+
+/* Quick Menu Buttons Style on Hover */
+[data-component="quick-menu"] span:hover {}
+
+[data-component="quick-menu"] button:hover {
+    border: none;
+    opacity: 0.5;
+}
+
+[data-component="quick-menu"] button:focus {
+    border: none;
+    outline: none;
+}
+
+/* Quick Menu Buttons Icon Style */
+[data-component="quick-menu"]>span>.fa {}
+
+
+/*///////////////////////////////////////////////////////*/
+
+
+/* Quick Menu when button Hide is clicked*/
+quick-menu.transparent {
+    background-image: none;
+    justify-content: center;
+}
+
+quick-menu.transparent button {
+    visibility: hidden;
+}
+
+quick-menu.transparent button[string="Hide"] {
+    visibility: visible;
+}
+
+/*Change color of icons in Quick Menu*/
+[data-component="quick-menu"] button>svg {
+    color: #885641;
+}
