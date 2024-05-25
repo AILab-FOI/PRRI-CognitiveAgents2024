@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-from flask import Flask, render_template
-from websocketserver import *
 import _thread
-from chatterbot import ChatBot
 import argparse
-from random import choice
 
+from chatterbot import ChatBot
+from flask import (Flask, render_template)
+
+from websocketserver import *
 
 app = Flask( __name__, static_folder='static' )
 
