@@ -1,0 +1,96 @@
+/**
+ * ===========================
+ * Save and Load Menus Styling
+ * ===========================
+**/
+
+/* Slots Style */
+[data-component="save-slot"] figure {}
+
+/* Slot's Image Style */
+[data-component="save-slot"] img {}
+
+/* Slots Title Style */
+[data-component="save-slot"] figcaption {
+    background-color: #A66E42;
+}
+
+/* Slots Delete Button Style */
+[data-component="save-slot"] button {
+    background: #3C1F14;
+}
+
+[data-component="save-slot"] button:hover {
+    background: #A66E42;
+}
+
+/* ////////////////////////////////////////////////*/
+
+[data-component="slot-container"] {
+    justify-content: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    gap: 1vh;
+    margin-top: 14%;
+    margin-bottom: 6%;
+}
+
+[data-screen="load"],
+[data-screen="save"] {
+    background-image: url("../assets/ui/game_menu/game_menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Load */
+[data-screen="load"] h2,
+[data-screen="save"] div.horizontal.horizontal--center {
+    background-image: url(../assets/ui/game_menu/game_menu_header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 29vh;
+    padding-top: 10vh;
+    background-position: top;
+}
+
+[data-screen="save"] div.horizontal.horizontal--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Saved Games */
+[data-screen="load"] h3 {
+    padding-top: 16vh;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+[data-component="footer-component"] {
+    background-image: url(../assets/ui/game_menu/game_menu_footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 14.5vh;
+    z-index: 1;
+}
+
+input[type=text] {
+    background-image: url(../assets/ui/background.png);
+    border-color: #3C1F14;
+    border-width: medium;
+    width: 50vh;
+    text-align: center;
+}
+
+alert-modal input[type=text] {
+    width: auto;
+}

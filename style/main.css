@@ -17,72 +17,86 @@
  * ===========================
 **/
 
+@import url('main_screen.css');
+@import url('quick_menu.css');
+@import url('load_save.css');
+@import url('help_settings.css');
+@import url('dialog.css');
+
+@font-face {
+	font-family: 'Caslon';
+	src: url(../assets/fonts/CaslonAntique.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Morris';
+	src: url(../assets/fonts/MorrisRomanAlternate-Black.ttf) format('truetype');
+}
+
 /* General Style */
 body {
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	/*font-family: Georgia, 'Times New Roman', Times, serif;*/
+	font-family: 'Caslon';
+	font-size: clamp(1.5rem, 1.5rem, 2rem);
 }
 
 /* Simple Button styles*/
-button {}
+button {
+	font-family: 'Morris';
+	color: #3C1F14;
+	background-image: url("../assets/ui/button_idle.png");
+	height: 48px;
+	width: 223px;
+	border: none;
+	background-size: cover;
+	background-position: center;
+}
 
 /* Simple Button Style on Hover */
-button:hover {}
+button:hover {
+	color: #D3B28B;
+	background-image: url("../assets/ui/button_hover.png");
+}
+
+button:focus {
+	outline: none;
+	border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Morris';
+}
 
 /* General Styling for Menu Screens */
 [data-screen] {}
 
-/**
+/** 
  * ===========================
- * Main Menu Styling
- * ===========================
-**/
-
-/* Main Menu Styling */
-[data-screen="main"] {
-	background-image: url("../assets/ui/Fantasy_project/game/gui/skulls.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-/* Main Menu Buttons Styling */
-[data-screen="main"] button {
-	background-color: transparent;
-	color: black;
-	width: 15rem;
-	text-align: center;
-	padding-right: 15px;
-	font-size: 2.5rem;
-	height: 3rem;
-}
-
-[data-screen="main"] button:hover {
-	background-color: #FFD1BA;
-	border: 2px solid #FFAB91;
-	box-shadow: 0 0 8px 8px #FFAB91;
-}
-
-[data-component="main-menu"] {
-	margin-right: 7vw;
-	margin-bottom: 10vw;
-}
-
-/**
- * ===========================
- * Save and Load Menus Styling
+ * Return button on Game Menu
  * ===========================
 **/
 
-/* Slots Style */
-[data-component="save-slot"] figure {}
+[data-screen]:not([data-screen=game]) [data-action=back]>svg {
+	display: none;
+}
 
-/* Slot's Image Style */
-[data-component="save-slot"] img {}
+[data-screen]:not([data-screen=game]) [data-action=back] {
+	background-image: url(../assets/ui/game_menu/return_idle.png);
+	border-radius: 0%;
+	height: 64px;
+	width: 64px;
+	margin-top: 113px;
+	margin-left: 90%;
+}
 
-/* Slots Title Style */
-[data-component="save-slot"] figcaption {}
-
-/* Slots Delete Button Style */
-[data-component="save-slot"] button {}
+[data-screen]:not([data-screen=game]) [data-action=back]:hover {
+	background-image: url("../assets/ui/game_menu/return_hover.png");
+}
 
 /**
  * ===========================
@@ -93,50 +107,51 @@ button:hover {}
 /* Choice Buttons style */
 
 choice-container {
-	top:45%;
-
+	top: 45%;
 }
 
 [data-component="choice-container"] button {
-	background-image: url("../assets/ui/Fantasy_project/game/gui/button/choice_hover_background.png");
-	background-color:transparent;
+	/*background-image: url("../assets/ui/Fantasy_project/game/gui/button/choice_hover_background.png");*/
+	background-image: url("../assets/ui/fantasy_project_gui/button/choice_hover_background.png");
+	background-color: transparent;
 	width: 1190px;
 	height: 50px;
-	border-radius:0px;
-	color:black;
+	border-radius: 0px;
+	color: black;
 }
 
 /* Choice Button Style on Hover */
-	[data-component="choice-container"] button:hover {
-		background-image: url("../assets/ui/Fantasy_project/game/gui/button/choice_idle_background.png");
-		width: 1190px;
-		height: 50px;
-		border-radius: 0px;
-	}
+[data-component="choice-container"] button:hover {
+	/*background-image: url("../assets/ui/Fantasy_project/game/gui/button/choice_idle_background.png");*/
+	background-image: url("../assets/ui/fantasy_project_gui/button/choice_idle_background.png");
+	width: 1190px;
+	height: 50px;
+	border-radius: 0px;
+}
 
 /* Text Box styling */
 text-box {
-	/*background-color: transparent;*/
+	background-color: transparent;
 }
 
-	text-box[mode=nvl] > [data-content=text] {
-		/*background-image: none;*/
-	}
+text-box[mode=nvl]>[data-content=text] {
+	/*background-image: none;*/
+}
 
 text-box[data-speaking=narrator]>[data-content=name] {
-	/*background: transparent;*/
+	display: none;
 }
 
 [data-component="text-box"] {
-	min-height:30%;
-	bottom: 5%;
+	min-height: 30%;
+	bottom: 7.5%;
 	overflow: visible;
-	text-align:center;
-	align-content:center;
+	text-align: center;
+	align-content: center;
 }
 
 text-box [data-content=text] {
-	background-image: url("../assets/ui/Fantasy_project/game/gui/textbox.png");
+	background-image: url("../assets/ui/game_screen/textbox.png");
 	background-repeat: no-repeat;
 	overflow: visible;
 	min-height: 280px;
@@ -152,31 +167,28 @@ text-box [data-content=dialog] {
 */
 }
 
-
-
 /* Character Name Style */
 
-[data-ui=who] {
-	padding: 3.2rem;
-	color: #3c1f14;
-}
-
 text-box [data-content=name] {
-	position: absolute; /* Position absolutely within its parent */
-	top: -100px; /* Adjust this value as needed to position it above */
-	left: 25%;
-	height:100px;
-	width:370px;
-	background-image: url("../assets/ui/namebox.png");
+	position: absolute;
+	/*top: -100px;*/
+	/*left: 25%;*/
+	margin-top: -5.5%;
+	height: 100px;
+	width: 370px;
+	background-image: url("../assets/ui/game_screen/namebox.png");
 	background-repeat: no-repeat;
 }
 
 text-box [data-content=character-name] {
-	
+	padding-top: 3.2rem;
+	padding-right: 8.2rem;
+	font-size: larger;
+	font-family: 'Morris';
 }
 
 /* Style for Centered Text */
-	[data-component="centered-dialog"] {}
+[data-component="centered-dialog"] {}
 
 /* Character Images Styles */
 [data-screen="game"] [data-character] {
@@ -201,49 +213,6 @@ text-box [data-content=character-name] {
 /* Other Images Styles */
 [data-screen="game"] [data-image] {}
 
-/**
- * ===========================
- * Quick Menu Styling
- * ===========================
-**/
-
-/* These styles are applied to the Mobile version of the Quick Menu */
-
-/* Quick Menu Style */
-[data-component="quick-menu"] {
-	background-color:#3c1f14;
-}
-
-/* Quick Menu Buttons Style */
-[data-component="quick-menu"] span {}
-
-/* Quick Menu Buttons Style on Hover */
-[data-component="quick-menu"] span:hover {}
-
-/* Quick Menu Buttons Icon Style */
-[data-component="quick-menu"]>span>.fa {}
-
-/**
- * ===========================
- * Range Styling
- * ===========================
-**/
-
-/* Use the background property to set a color for these */
-input[type=range]:focus::-webkit-slider-runnable-track {}
-
-input[type=range]::-webkit-slider-runnable-track {}
-
-input[type=range]:focus::-ms-fill-upper {}
-
-input[type=range]:focus::-ms-fill-lower {}
-
-input[type=range]::-moz-range-track {}
-
-input[type=range]::-ms-fill-lower {}
-
-input[type=range]::-ms-fill-upper {}
-
 /** Medium Screens, Phablets (601px) **/
 @media screen and (min-width: 37.56255em) {
 	/* Styles for the desktop version of the Quick Menu */
@@ -259,10 +228,58 @@ input[type=range]::-ms-fill-upper {}
 }
 
 /** Medium Devices, Tablets (992px)**/
-@media screen and (min-width: 62em) {}
+@media screen and (min-width: 62em) {
+
+	[data-screen="load"] h2,
+	[data-screen="save"] div.horizontal.horizontal--center {
+		height: 24.5vh;
+		padding-top: 8vh;
+	}
+
+	[data-screen="save"] div.horizontal.horizontal--center {
+		padding-top: 7vh;
+	}
+
+	[data-screen="load"] h3 {
+		padding-top: 11vh;
+	}
+
+	[data-component="slot-container"] {
+		margin-top: 14%;
+		margin-bottom: 6%;
+	}
+
+	[data-component="footer-component"] {
+		height: 13vh;
+	}
+}
 
 /** HD Screen, Large Devices, Wide Screens, Desktop (1200px) **/
-@media screen and (min-width: 75em) {}
+@media screen and (min-width: 75em) {
+
+	[data-screen="load"] h2,
+	[data-screen="save"] div.horizontal.horizontal--center {
+		height: 24vh;
+		padding-top: 9vh;
+	}
+
+	[data-screen="save"] div.horizontal.horizontal--center {
+		padding-top: 6vh;
+	}
+
+	[data-screen="load"] h3 {
+		padding-top: 13vh;
+	}
+
+	[data-component="slot-container"] {
+		margin-top: 13.5%;
+		margin-bottom: 6%;
+	}
+
+	[data-component="footer-component"] {
+		height: 13vh;
+	}
+}
 
 /** Full HD Screen, Large Devices, Wide Screens, Large Desktops (1920px) **/
 @media screen and (min-width: 120em) {}
