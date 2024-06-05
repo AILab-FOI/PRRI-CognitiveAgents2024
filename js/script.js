@@ -166,7 +166,6 @@ monogatari.script({
         'I stand before the front desk, patiently waiting for the guild leader to arrive. As I stand there, two members pass by, Zoro and Brol.',
         'They are exchanging friendly banter as they go and a small conversation ensues.',
 
-
         'show character z normal at left',
         'show character br normal at right',
 
@@ -390,6 +389,8 @@ monogatari.script({
 
         'After talking to Bizzar, you head over to where Rioth is waiting.',
 
+        'centered razgovor s AI',
+
         {
             'Choice': {
                 'Dialog': 'Finished talking with Bizarr...',
@@ -406,6 +407,8 @@ monogatari.script({
     'Conversation_Rioth_After_Bazarr': [
 
         'After talking to Rioth, you head over to where Bizarr is waiting.',
+
+        'centered razgovor s AI',
 
         {
             'Choice': {
@@ -432,30 +435,18 @@ monogatari.script({
     'Bizarr_and_Rioth': [
 
         'After finishing the talk with Rioth and Bizarr at the tavern, the atmosphere is still friendly and upbeat.',
-
-        {
-            'Do': 'jump Goodbye'
-
-        } 
+        'jump Goodbye'
     ],
 
     'samoRioth': [
 
         'After finishing the talk with Rioth at the tavern, the atmosphere is still friendly and upbeat.',
-
-        {
-            'Do': 'jump Goodbye'
-
-        } 
+        'jump Goodbye'
     ],
     'samoBizarr': [
 
         'After finishing the talk with Bizarr at the tavern, the atmosphere is still friendly and upbeat.',
-
-        {
-            'Do': 'jump Goodbye'
-
-        } 
+        'jump Goodbye'
     ],
 
     //Saying goodbye for now
