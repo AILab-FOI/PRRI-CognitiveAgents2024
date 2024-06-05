@@ -320,10 +320,10 @@ monogatari.script({
     'Conversation_Rioth_Start': [
 
         'show character r normal at center',
-        'Holy shit!',
-        'Arent you {{player.name}}?',
-        'I thought i heard you dont even visit this hall anymore!',
-        'What brings you here?',
+        'r Holy shit!',
+        'r Arent you {{player.name}}?',
+        'r I thought i heard you dont even visit this hall anymore!',
+        'r What brings you here?',
 
         //razgovori - moguci ishodi s CA1 - Rioth
         //OVDJE IDE AI
