@@ -158,6 +158,8 @@ monogatari.script({
         },
         //{{player.name}}
 
+        'centered <span class="custom-dialog">You have selected the name {{player.name}} and will from now on be referred to as such.</span>',
+
 
         'I roll out of bed and start to dress, preparing to head downstairs to wait for the guild leader.',
         'The atmosphere is laidback and calm, as is the norm here. The guild is like a second home, the members like extended family...',
@@ -216,6 +218,9 @@ monogatari.script({
         //Name]: ...
         //Option 2: Accept to team up with someone new.
         //[Name]: I don't have all day, Rilke.
+
+        'centered <span class="custom-dialog">You are now being presented with the first choice within the game. This choice will bear consequences.</span>',
+
         {
             'Choice': {
                 'Dialog': 'You have received a new mission. Do you accept it?',
@@ -237,6 +242,7 @@ monogatari.script({
 
     'Mission_Rejected': [
 
+        'centered <span class="custom-dialog">You have decided to reject the mission.</span>',
 
         'Hmm...',
         'if I do not have my old teammates with me, I do not think I want to take on this mission...',
@@ -268,6 +274,8 @@ monogatari.script({
 
     'Mission_Accepted': [
 
+        'centered <span class="custom-dialog">You have decided to accept the mission.</span>',
+
         'Sure, I suppose I can work with some new people for once.',
 
         'show character rk normal at center',
@@ -295,6 +303,9 @@ monogatari.script({
         'But...',
         'I would like to know more about them personally...',
 
+        'centered <span class="custom-dialog">You are given the option to choose which one of the main characters you will talk to first.</span>',
+        'centered <span class="custom-dialog">You will get to talk to both characters if you so desire so the initial choice does not matter.</span> ',
+
         {
             'Choice': {
                 'Dialog': 'You accepted the mission. Now, choose who you want to talk to first:',
@@ -321,6 +332,8 @@ monogatari.script({
 
     'Conversation_Rioth_Start': [
 
+        'centered <span class="custom-dialog">You have decided to talk to Rioth.</span>',
+
         'show character r normal at center',
         'r Holy shit!',
         'r Arent you {{player.name}}?',
@@ -333,9 +346,13 @@ monogatari.script({
         'hide character r',
         'centered <span class="custom-dialog">Razgovor s AI</span>',
 
+        //OVDJE
+
+        'centered <span class="custom-dialog">You can now choose to talk to the other remaining character or continue on with the story.</span>',
+
         {
             'Choice': {
-                'Dialog': 'You finished your conversation with Rioth...',
+                'Dialog': 'After talking to Rioth, you...',
                 'bizarr2': {
                     'Text': 'Go talk to Bizarr.',
                     'Do': 'jump Conversation_Bazarr_After_Rioth'
@@ -365,16 +382,22 @@ monogatari.script({
 
     'Conversation_Bazarr_Start': [
 
+        'centered <span class="custom-dialog">You have decided to talk to Bizarr.</span>',
+
         'show character b normal at center',
 
         'hide character b',
         'centered <span class="custom-dialog">Razgovor s AI</span>',
 
+        //OVDJE
+
+        'centered <span class="custom-dialog">You can now choose to talk to the other remaining character or continue on with the story.</span>',
+
         {
             'Choice': {
-                'Dialog': 'You finished your conversation with Bizarr...',
+                'Dialog': 'After talking to Bizarr, you...',
                 'rioth2': {
-                    'Text': 'Go talk to Bizarr.',
+                    'Text': 'Go talk to Rioth.',
                     'Do': 'jump Conversation_Rioth_After_Bizarr'
                 },
                 'continue': {
@@ -390,6 +413,8 @@ monogatari.script({
     // Ako si odabro rioth PRVI PUT, onda pricaj s bizarr
 
     'Conversation_Bazarr_After_Rioth': [
+
+        'centered <span class="custom-dialog">You decided to talk to the other remaining character.</span>',
 
         'After talking to Bizzar, you head over to where Rioth is waiting.',
 
@@ -410,9 +435,13 @@ monogatari.script({
 
     'Conversation_Rioth_After_Bazarr': [
 
+        'centered <span class="custom-dialog">You decided to talk to the other remaining character.</span>',
+
         'After talking to Rioth, you head over to where Bizarr is waiting.',
 
         'centered <span class="custom-dialog">Razgovor s AI</span>',
+
+        //OVDJE
 
         {
             'Choice': {
@@ -438,16 +467,23 @@ monogatari.script({
 
     'Bizarr_and_Rioth': [
 
+        'centered < span class= "custom-dialog" >You finished talking to both characters.</span >',
+        'centered <span class="custom-dialog">You now continue on with the story.</span>',
+
         'After finishing the talk with Rioth and Bizarr at the tavern, the atmosphere is still friendly and upbeat.',
         'jump Goodbye'
     ],
 
     'samoRioth': [
 
+        'centered <span class="custom-dialog">You decided to continue the story without talking to Bizarr.</span>',
+
         'After finishing the talk with Rioth at the tavern, the atmosphere is still friendly and upbeat.',
         'jump Goodbye'
     ],
     'samoBizarr': [
+
+        'centered <span class="custom-dialog">You decided to continue the story without talking to Rioth.</span>',
 
         'After finishing the talk with Bizarr at the tavern, the atmosphere is still friendly and upbeat.',
         'jump Goodbye'
