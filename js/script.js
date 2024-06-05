@@ -328,6 +328,7 @@ monogatari.script({
         //razgovori - moguci ishodi s CA1 - Rioth
         //OVDJE IDE AI
 
+        'hide character r',
         'centered razgovor s AI',
 
         {
@@ -364,6 +365,7 @@ monogatari.script({
 
         'show character b normal at center',
 
+        'hide character b',
         'centered razgovor s AI',
 
         {
