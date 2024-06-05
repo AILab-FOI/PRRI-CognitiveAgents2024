@@ -181,7 +181,7 @@ monogatari.script({
         'I casually roll my eyes as they walk past due to knowing how Brols gambling last night really went...', //Brol's 
         'Truth be told, he lost 10 gold coins to get a few copper ones.',
 
-        'show character rk normal at left',
+        'show character rk normal at center',
 
         'rk Good day to you.',
 
@@ -240,7 +240,7 @@ monogatari.script({
         'if I do not have my old teammates with me, I do not think I want to take on this mission...',
         'It just would not feel right.',
 
-        'show character rk normal at left',
+        'show character rk normal at center',
 
         'Rilke gives me a nod of understanding',
 
@@ -268,7 +268,7 @@ monogatari.script({
 
         'Sure, I suppose I can work with some new people for once.',
 
-        'show character rk normal at left',
+        'show character rk normal at center',
 
         'rk So you accepted the mission...',
         'rk Good choice!',
@@ -319,7 +319,7 @@ monogatari.script({
 
     'Conversation_Rioth_Start': [
 
-        'show character r normal at left',
+        'show character r normal at center',
         'Holy shit!',
         'Arent you {{player.name}}?',
         'I thought i heard you dont even visit this hall anymore!',
@@ -362,7 +362,7 @@ monogatari.script({
 
     'Conversation_Bazarr_Start': [
 
-        'show character b normal at left',
+        'show character b normal at center',
 
         'centered razgovor s AI',
 
