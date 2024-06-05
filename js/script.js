@@ -264,7 +264,7 @@ monogatari.script({
         'That night, as I lay in bed, I think to myself how lucky I am to have had such an easy day.',
         'That mission that got turned down surely will not end up being as big of a deal.',
         '...perhaps I should learn to stop overthinking things.',
-        'centered You rejected the mission. Game over.',
+        'centered <span class="custom-dialog">You rejected the mission. Game over.</span>',
         'end',
 
         // Bad Ending 1 - Vacation time
@@ -398,7 +398,7 @@ monogatari.script({
                 'Dialog': 'After talking to Bizarr, you...',
                 'rioth2': {
                     'Text': 'Go talk to Rioth.',
-                    'Do': 'jump Conversation_Rioth_After_Bizarr'
+                    'Do': 'jump Conversation_Rioth_After_Bazarr'
                 },
                 'continue': {
                     'Text': 'Continue forward.',
