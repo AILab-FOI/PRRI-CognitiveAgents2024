@@ -127,6 +127,8 @@ monogatari.script({
         'show scene room with fadeIn',
         //'show character in scene',
 
+        'centered <span class="custom-dialog">Test odlomak</span>',
+
         ' The morning sun peaks through the curtains as my eyes open. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
         ' The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',
 
@@ -329,7 +331,7 @@ monogatari.script({
         //OVDJE IDE AI
 
         'hide character r',
-        'centered razgovor s AI',
+        'centered <span class="custom-dialog">Razgovor s AI</span>',
 
         {
             'Choice': {
@@ -366,7 +368,7 @@ monogatari.script({
         'show character b normal at center',
 
         'hide character b',
-        'centered razgovor s AI',
+        'centered <span class="custom-dialog">Razgovor s AI</span>',
 
         {
             'Choice': {
@@ -391,7 +393,7 @@ monogatari.script({
 
         'After talking to Bizzar, you head over to where Rioth is waiting.',
 
-        'centered razgovor s AI',
+        'centered <span class="custom-dialog">Razgovor s AI</span>',
 
         {
             'Choice': {
@@ -410,7 +412,7 @@ monogatari.script({
 
         'After talking to Rioth, you head over to where Bizarr is waiting.',
 
-        'centered razgovor s AI',
+        'centered <span class="custom-dialog">Razgovor s AI</span>',
 
         {
             'Choice': {

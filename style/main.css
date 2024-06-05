@@ -190,6 +190,15 @@ text-box [data-content=character-name] {
 /* Style for Centered Text */
 [data-component="centered-dialog"] {}
 
+.custom-dialog {
+	color: white; /* Text color */
+	background-color: rgba(0, 0, 0, 0.7); /* Background color with transparency */
+	padding: 10px; /* Padding around the text */
+	border-radius: 5px; /* Rounded corners */
+	border: 2px solid rgb(255, 171, 145); /* Border */
+	text-align: center; /* Center align the text */
+}
+
 /* Character Images Styles */
 [data-screen="game"] [data-character] {
 	position: absolute;
