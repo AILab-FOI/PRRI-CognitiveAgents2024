@@ -1,4 +1,4 @@
-FOLDER = '/home/markus/agenti-fsa/jura'
+FOLDER = '.'
 from SimpleWebSocketServer import SimpleWebSocketServer, WebSocket
 from collections import OrderedDict
 import sys, os

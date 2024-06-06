@@ -8,7 +8,7 @@
 <body>
   <div id="paper">
     <center>
-      <h1>Jura</h1>
+      <h1>Bizzar</h1>
     </center>
 
     <div id="notSupported" style="display:none">
@@ -17,7 +17,7 @@
   
   <div class="video-container">
     <video class="video" id="agent" preload="true">
-      <source src="{{ url_for('static', filename='media/jura-anim.mp4') }}"  type="video/mp4">
+      <source src="{{ url_for('static', filename='media/test.mp4') }}"  type="video/mp4">
     </video>
   </div>
 
@@ -27,33 +27,16 @@
     <button class="button" id="record" style="display:none">Snimi pitanje!</button>
     <br />
     <select id="questions" onchange="question(this.value)">
-      <option value="">Izgovori pitanje ili ga odaberi iz padajuće liste</option>
-<option>Kako se zovu riječi koje zamjenjuju druge riječi?</option>
-<option>Koje su osobne zamjenice?</option>
-<option>Kako se zovu zamjenice kojima zamjenjujemo govorne osobe?</option>
-<option>Koje su zamjenice negovorne osobe? </option>
-<option>Kako se zove promjena oblika osobnih zamjenica?</option>
-<option>Kada zamjenicu vi pišemo velikim početnim slovom?</option>
-<option>Koje su posvojne zamjenice?</option>
-<option>Što zamjenjuju posvojne zamjenice?</option>
-<option>Na koje pitanje odgovaraju posvojne zamjenice?</option>
-<option>Što izriču posvojne zamjenice?</option>
-<option>U čemu se posvojne zamjenice slažu s imenicu uz koju stoje?</option>
-<option>Kako pišemo posvojne zamjenice vaš, vaša, vaše pri obraćanju dvjema osobama ili skupini ljudi?</option>
-<option>Kojoj skupini riječi pripadaju zamjenice?</option>
-<option>Što izriče povratna zamjenica sebe?</option>
-<option>Koji se oblici zamjenica mogu naći na početku rečenice?</option>
-<option>Ima li povratna zamjenica sebe oblike u nominativu i vokativu?</option>
-<option>Što izriče povratno-posvojna zamjenica svoj?</option>
-<option>Koje zamjenice zamjenjuje povratno-posvojna zamjenica svoj?</option>
-<option>Kojim oblicima zamjenica dajemo prednost?</option>
-<option>Koje su riječi pokazne zamjenice?</option>
-<option>Na koja pitanja odgovaraju pokazne zamjenice?</option>
-<option>Tko si ti?</option>
-<option>Tko te napravio?</option>
-<option>Kako si?</option>
-<option>Je li ti lijepo s nama?</option>
-<option>Bravo!</option>
+      <option value="">Ask question</option>
+<option>What are you good at?</option>
+<option>What makes you stand out?</option>
+<option>Are you strong?</option>
+<option>What are your skills?</option>
+<option>Is this the first mission you have been assigned to?</option>
+<option>How did your last mission go?</option>
+<option>What took place on your most recent mission?</option>
+<option>What is in store for your next mission?</option>
+
 </select>
   </center>
   <br />
@@ -75,32 +58,14 @@
   <div id="upute">
     <p>Ovdje možeš pokrenuti kognitivnog agenta Juru koji priča o zamjenicama. Napravljen je u suradnji s učiteljicom Mirjanom Halusek, prof. i učenicima II. osnovne škole Varaždin koji su izradili crtež Jure i imenovali ga. Možeš mu postavljati pitanja o zamjenicama poput:
       <ol>
-<li>Kako se zovu riječi koje zamjenjuju druge riječi?</li>
-<li>Koje su osobne zamjenice?</li>
-<li>Kako se zovu zamjenice kojima zamjenjujemo govorne osobe?</li>
-<li>Koje su zamjenice negovorne osobe? </li>
-<li>Kako se zove promjena oblika osobnih zamjenica?</li>
-<li>Kada zamjenicu vi pišemo velikim početnim slovom?</li>
-<li>Koje su posvojne zamjenice?</li>
-<li>Što zamjenjuju posvojne zamjenice?</li>
-<li>Na koje pitanje odgovaraju posvojne zamjenice?</li>
-<li>Što izriču posvojne zamjenice?</li>
-<li>U čemu se posvojne zamjenice slažu s imenicu uz koju stoje?</li>
-<li>Kako pišemo posvojne zamjenice vaš, vaša, vaše pri obraćanju dvjema osobama ili skupini ljudi?</li>
-<li>Kojoj skupini riječi pripadaju zamjenice?</li>
-<li>Što izriče povratna zamjenica sebe?</li>
-<li>Koji se oblici zamjenica mogu naći na početku rečenice?</li>
-<li>Ima li povratna zamjenica sebe oblike u nominativu i vokativu?</li>
-<li>Što izriče povratno-posvojna zamjenica svoj?</li>
-<li>Koje zamjenice zamjenjuje povratno-posvojna zamjenica svoj?</li>
-<li>Kojim oblicima zamjenica dajemo prednost?</li>
-<li>Koje su riječi pokazne zamjenice?</li>
-<li>Na koja pitanja odgovaraju pokazne zamjenice?</li>
-<li>Tko si ti?</li>
-<li>Tko te napravio?</li>
-<li>Kako si?</li>
-<li>Je li ti lijepo s nama?</li>
-<li>Bravo!</li>
+  <li>What are you good at?</li>
+  <li>What makes you stand out?</li>
+  <li>Are you strong?</li>
+  <li>What are your skills?</li>
+  <li>Is this the first mission you have been assigned to?</li>
+  <li>How did your last mission go?</li>
+  <li>What took place on your most recent mission?</li>
+  <li>What is in store for your next mission?</li>
       </ol>
       
     </p>
