@@ -68,8 +68,9 @@ monogatari.assets('images', {
 });
 
 // Define the backgrounds for each scene.
-monogatari.assets('scenes', {
-
+monogatari.assets('scenes',{
+	//Chapter 0:
+		'room': 'bedroom1.jpg'
 });
 
 
@@ -88,78 +89,116 @@ monogatari.characters({
 		sprites: {
 			normal: 'bizarr/normal.png'
 		}
+	},
+	'z': {
+		name: 'zoro',
+		color: '#FFAB91',
+		sprites: {
+			normal: '<div style="width: 50px; height: 50px; background-color: blue; border-radius: 50%;" ></div>'
+		}
+	},
+	'br': {
+		name: 'brol',
+		color: '#FFAB91',
+		sprites: {
+			normal: '<div style="width: 50px; height: 50px; background-color: red; border-radius: 50%;" ></div>'
+		}
+	},
+	'rk': {
+		name: 'rilke',
+		color: '#FFAB91',
+		sprites: {
+			normal: '<div style="width: 50px; height: 50px; background-color: yellow; border-radius: 50%;" ></div>'
+		}
 	}
 });
 
+//  Chapter 0
+// characters and scenes (gore u characters i pod assets-scenes)
+
+
+// Start of Chapter 0
+
 monogatari.script({
-	// The game starts here.
+	//DobroJutro! PrijatnaKafica
+
 	'Start': [
-		'centered text',
-		'show scene #f7f6f6 with fadeIn',
-		'centered jos teksta',
-		'centered pretvaras se da je pred tobom slika guilda or smth idk',
-		{
-			'Choice': {
-				'Dialog': 'U just woke up, who do you decide to bless with your pressence?',
-				'rioth': {
-					'Text': "Go drool at Rioth's feet",
-					'Do': 'jump Rioth'
-				},
-				'bizarr': {
-					'Text': 'Find out what that cool guys deal is',
-					'Do': 'jump Bizarr'
-				}
-			}
-		}
-	],
-	'Rioth': [
-		'show character r normal at right',
-		'r idk epik text + roasta te',
-		'centered nezz tu bi kao trebo bit razg izmedju vas',
-		'centered kad zavrsi mos ic delat nes drugo, biraj sta ces',
-		{
-			'Choice': {
-				'Dialog': 'Opcije dalje?',
-				'call': {
-					'Text': '1',
-					'Do': 'jump Call'
-				},
-				'ignore': {
-					'Text': '2',
-					'Do': 'jump Ignore'
-				}
-			}
-		}
-	],
 
-	'Bizarr': [
-		'show character b normal at right',
-		'b oof insert zanimljiv razg ovdje',
-		'centered yeah',
-		'centered baci novcic',
-		{
-			'Choice': {
-				'Dialog': 'Biraj svoju buducnost',
-				'call': {
-					'Text': '1',
-					'Do': 'jump Call'
-				},
-				'ignore': {
-					'Text': '2',
-					'Do': 'jump Ignore'
-				}
-			}
-		}
-	],
+		'show scene room with fadeIn',
+		//'show character in scene',
 
-	'Ignore': [
-		'show character r normal at center',
-		'r Ti si gay',
-		'end'
-	],
-	'Call': [
-		'show character b normal at center',
-		'b Pls be gentle uwu senpai',
-		'end'
-	]
+		' The morning sun peaks through the curtains as my eyes open. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
+		' The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',
+
+		{
+			'Input': {
+				'Text': 'What is your name?',
+				'Validation': function (input) {
+					return input.trim().length > 0;
+				},
+				'Save': function (input) {
+					this.storage({
+						player: {
+							name: input
+						}
+					});
+					return true;
+				},
+				'Revert': function () {
+					this.storage({
+						player: {
+							name: ''
+						}
+					});
+				},
+				'Warning': 'You must enter a name!'
+			}
+		},
+		//{{player.name}}
+
+
+		'I roll out of bed and start to dress, preparing to head downstairs to wait for the guild leader.',
+		'The atmosphere is laidback and calm, as is the norm here. The guild is like a second home, the members like extended family...',
+
+
+		'I stand before the front desk, patiently waiting for the guild leader to arrive. As I stand there, two members pass by, Zoro and Brol.',
+		'They are exchanging friendly banter as they go and a small conversation ensues.',
+
+
+		'show character z normal at left',
+		'show character br normal at right',
+
+		//'Dialog':
+		'z So, did your bet pay off last night?',
+		'br Yeah, I won a few copper coins... Not too bad, huh?',
+		'z Not bad, not bad at all. You gonna use it to buy some drinks?',
+		'br You know it.',
+
+		//'hide character z',
+		//'hide character b',
+
+		'I casually roll my eyes as they walk past due to knowing how Brols gambling last night really went...', //Brol's 
+		'Truth be told, he lost 10 gold coins to get a few copper ones.',
+
+		'rk Good day to you.',
+
+		'rk You are here for another mission, I assume?',
+		'rk Finally recovered, huh?',
+
+
+		'Yeah finally. Got pretty bored from this prolonged "vacation". I was wondering if you had anything in the works for me.',
+
+		'rk Hmm...',
+
+		'rk Let me check my board.',
+
+
+		'I wait patiently as Rilke looks at his precious board filled with all kinds of job posters',
+
+		'end of scene'
+		//'FadeOut'?
+
+		]
+		
 });
+
