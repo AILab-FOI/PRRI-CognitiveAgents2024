@@ -105,7 +105,7 @@ $(window).on( 'load', function(){
 
 
 function connect() {
-    ws = new WebSocket( 'wss://dragon.foi.hr/wsjura/' );
+    ws = new WebSocket( 'ws://127.0.0.1:8009' );
     window.ws = ws;
     ws.onopen = function() {
 	ws.send( 'connect' );
@@ -164,119 +164,23 @@ function play_part( part )
     {
 	case '01':
 	    agent.currentTime = 0;
-	    end = 3.6;
+	    end = 21;
 	    break;
 	case '02':
-	    agent.currentTime = 3.6;
-	    end = 11.6;
+	    agent.currentTime = 21;
+	    end = 24.5;
 	    break;
 	case '03':
-	    agent.currentTime = 11.6;
-	    end = 16.7;
+	    agent.currentTime = 24.7;
+	    end = 38;
 	    break;
 	case '04':
-	    agent.currentTime = 16.7;
-	    end = 22.6;
-	    break;
-	case '05':
-	    agent.currentTime = 22.6;
-	    end = 27.2;
-	    break;
-	case '06':
-	    agent.currentTime = 27.2;
-	    end = 34.2;
-	    break;
-	case '07':
-	    agent.currentTime = 34.2;
-	    end = 40.9;
-	    break;
-	case '08':
-	    agent.currentTime = 40.9;
-	    end = 44.6;
-	    break;
-	case '09':
-	    agent.currentTime = 44.6;
-	    end = 48.7;
-	    break;
-	case '10':
-	    agent.currentTime = 48.7;
-	    end = 53;
-	    break;
-	case '11':
-	    agent.currentTime = 53;
-	    end = 58.8;
-	    break;
-	case '12':
-	    agent.currentTime = 58.8;
-	    end = 67.3;
-	    break;
-	case '13':
-	    agent.currentTime = 67.3;
-	    end = 72;
-	    break;
-	case '14':
-	    agent.currentTime = 72;
-	    end = 77.9;
-	    break;
-	case '15':
-	    agent.currentTime = 77.9;
-	    end = 82.7;
-	    break;
-	case '16':
-	    agent.currentTime = 82.7;
-	    end = 87.5;
-	    break;
-	case '17':
-	    agent.currentTime = 87.5;
-	    end = 92.4;
-	    break;
-	case '18':
-	    agent.currentTime = 92.4;
-	    end = 100.2;
-	    break;
-	case '19':
-	    agent.currentTime = 100.2;
-	    end = 103.3;
-	    break;
-	case '20':
-	    agent.currentTime = 103.3;
-	    end = 111.2;
-	    break;
-	case '21':
-	    agent.currentTime = 111.2;
-	    end = 116;
-	    break;
-        case 'dobro':
-            agent.currentTime = 116;
-            end = 118.7;
-            break;
-        case 'hvala':
-            agent.currentTime = 118.7;
-            end = 120.6;
-            break;
-	case 'izvoli':
-	    agent.currentTime = 120.6;
-	    end = 122;
-	    break;
-        case 'lijepo':
-            agent.currentTime = 122;
-            end = 124.4;
-            break;
-	case 'ponovi':
-	    agent.currentTime = 124.4;
-	    end = 129;
-	    break;
-	case 'predstavljanje-dugo':
-	    agent.currentTime = 129;
-	    end = 142.8;
-	    break;
-	case 'predstavljanje-kratko':
-	    agent.currentTime = 142.8;
-	    end = 145.2;
+	    agent.currentTime = 38;
+	    end = 48;
 	    break;
 	default: // 'tisina'
-	    agent.currentTime = 145.2;
-	    end = 165;
+	    agent.currentTime = 48;
+	    end = 48;
 	    try
 	    {
 		if( !isMobileBrowser() )
