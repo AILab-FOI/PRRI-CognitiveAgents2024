@@ -79,36 +79,36 @@ monogatari.assets('scenes', {
 // Define the Characters
 monogatari.characters({
     'r': {
-        name: 'rioth',
-        color: '#7FB8B3',
+        name: 'Rioth',
+        color: '#565656',
         sprites: {
             normal: 'rioth/normal.png'
         }
     },
     'b': {
-        name: 'bizarr',
-        color: '#FFAB91',
+        name: 'Bizarr',
+        color: '#81523F',
         sprites: {
             normal: 'bizarr/normal.png'
         }
     },
     'z': {
-        name: 'zoro',
-        color: '#FFAB91',
+        name: 'Zoro',
+        color: '#6D6A4D',
         sprites: {
             normal: '<div style="width: 50px; height: 50px; background-color: blue; border-radius: 50%;" ></div>'
         }
     },
     'br': {
-        name: 'brol',
-        color: '#FFAB91',
+        name: 'Brol',
+        color: '#6D6A4D',
         sprites: {
             normal: '<div style="width: 50px; height: 50px; background-color: red; border-radius: 50%;" ></div>'
         }
     },
     'rk': {
-        name: 'rilke',
-        color: '#FFAB91',
+        name: 'Rilke',
+        color: '#6D6A4D',
         sprites: {
             normal: '<div style="width: 50px; height: 50px; background-color: yellow; border-radius: 50%;" ></div>'
         }
