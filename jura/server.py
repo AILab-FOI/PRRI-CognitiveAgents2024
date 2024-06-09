@@ -3,15 +3,19 @@ import _thread
 import argparse
 
 from chatterbot import ChatBot
-from flask import (Flask, render_template)
+from flask import (Flask, render_template, send_from_directory)
+
 
 from websocketserver import *
 
-app = Flask( __name__, static_folder='static' )
+app = Flask( __name__, static_folder='static/component' , static_url_path="")
 
 @app.route( '/' )
 def home():
-    return render_template( 'index.html' )
+    return send_from_directory(app.static_folder, "index.html")
+@app.route("/<path:path>")
+def serv_file(path):
+    return send_from_directory(app.static_folder, path)
 
 @app.errorhandler( 404 )
 def page_not_found( e ):
