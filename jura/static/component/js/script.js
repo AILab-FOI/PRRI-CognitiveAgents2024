@@ -112,7 +112,7 @@ monogatari.characters({
         sprites: {
             normal: '<div style="width: 50px; height: 50px; background-color: yellow; border-radius: 50%;" ></div>'
         }
-
+    }
 });
 
 
