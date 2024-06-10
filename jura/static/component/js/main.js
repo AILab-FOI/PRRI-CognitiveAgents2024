@@ -26,30 +26,20 @@
 const { $_ready, $_ } = Monogatari;
 
 // 1. Outside the $_ready function:
-
-function test()
-{
-    alert( "It's alive!!!" );
+class Footer extends Monogatari.Component {
+	render() {
+		return ``;
+	}
 }
 
-class CognitiveAgent extends Monogatari.Component {
-    render () {
-	
-	return `<button id="gumb">TEST</button>`;   
-    }
-}
+Footer.tag = 'footer-component';
+monogatari.registerComponent(Footer);
 
-CognitiveAgent.tag = 'cognitive-agent';
-monogatari.registerComponent (CognitiveAgent);
+$_ready(() => {
+	// 2. Inside the $_ready function:
 
-$_ready (() => {
-    // 2. Inside the $_ready function:
+	monogatari.init('#monogatari').then(() => {
+		// 3. Inside the init function:
 
-
-    monogatari.init ('#monogatari').then (() => {
-	// 3. Inside the init function:
-
-	document.getElementById("gumb").addEventListener("click", test);
-
-    });
+	});
 });
