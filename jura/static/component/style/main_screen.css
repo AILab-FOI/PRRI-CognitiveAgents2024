@@ -21,13 +21,16 @@
     width: 100%;
 }
 
+[data-screen="main"] button {
+    background-color: transparent;
+}
+
 /*Start button*/
 [data-screen="main"] button:nth-child(1) {
     background-image: url("../assets/ui/main_menu/buttons/start_idle.png");
     color: transparent;
     width: 383px;
     height: 93px;
-    border-radius: 30px;
 }
 
 [data-screen="main"] button:nth-child(1):hover {
