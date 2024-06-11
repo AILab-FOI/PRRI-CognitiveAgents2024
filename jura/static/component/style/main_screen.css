@@ -69,3 +69,15 @@
 [data-screen="main"] button:nth-child(4):hover {
     background-image: url("../assets/ui/main_menu/buttons/help_hover.png");
 }
+
+/*Credits button*/
+[data-screen="main"] button:nth-child(5) {
+    background-image: url("../assets/ui/main_menu/buttons/about_idle.png");
+    color: transparent;
+    width: 264px;
+    height: 50px;
+}
+
+[data-screen="main"] button:nth-child(5):hover {
+    background-image: url("../assets/ui/main_menu/buttons/about_hover.png");
+}

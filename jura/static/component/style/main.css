@@ -22,6 +22,7 @@
 @import url('load_save.css');
 @import url('help_settings.css');
 @import url('dialog.css');
+@import url('credits.css');
 
 @font-face {
 	font-family: 'Caslon';
@@ -240,7 +241,8 @@ text-box [data-content=character-name] {
 @media screen and (min-width: 62em) {
 
 	[data-screen="load"] h2,
-	[data-screen="save"] div.horizontal.horizontal--center {
+	[data-screen="save"] div.horizontal.horizontal--center,
+	[data-screen=credits] h2 {
 		height: 24.5vh;
 		padding-top: 8vh;
 	}
@@ -267,7 +269,8 @@ text-box [data-content=character-name] {
 @media screen and (min-width: 75em) {
 
 	[data-screen="load"] h2,
-	[data-screen="save"] div.horizontal.horizontal--center {
+	[data-screen="save"] div.horizontal.horizontal--center,
+	[data-screen=credits] h2 {
 		height: 24vh;
 		padding-top: 9vh;
 	}
