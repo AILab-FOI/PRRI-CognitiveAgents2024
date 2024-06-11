@@ -111,22 +111,18 @@ choice-container {
 }
 
 [data-component="choice-container"] button {
-	/*background-image: url("../assets/ui/Fantasy_project/game/gui/button/choice_hover_background.png");*/
-	background-image: url("../assets/ui/fantasy_project_gui/button/choice_hover_background.png");
+	background-image: url("../assets/ui/game_screen/choice_idle_background.png");
 	background-color: transparent;
 	width: 1190px;
 	height: 50px;
 	border-radius: 0px;
-	color: black;
+	color: #3C1F14;
 }
 
 /* Choice Button Style on Hover */
 [data-component="choice-container"] button:hover {
-	/*background-image: url("../assets/ui/Fantasy_project/game/gui/button/choice_idle_background.png");*/
-	background-image: url("../assets/ui/fantasy_project_gui/button/choice_idle_background.png");
-	width: 1190px;
-	height: 50px;
-	border-radius: 0px;
+	background-image: url("../assets/ui/game_screen/choice_hover_background.png");
+	color: #3C1F14;
 }
 
 /* Text Box styling */
