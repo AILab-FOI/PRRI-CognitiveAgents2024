@@ -191,12 +191,18 @@ text-box [data-content=character-name] {
 [data-component="centered-dialog"] {}
 
 .custom-dialog {
-	color: white; /* Text color */
-	background-color: rgba(0, 0, 0, 0.7); /* Background color with transparency */
-	padding: 10px; /* Padding around the text */
-	border-radius: 5px; /* Rounded corners */
-	border: 2px solid rgb(255, 171, 145); /* Border */
-	text-align: center; /* Center align the text */
+	color: white;
+	/* Text color */
+	background-color: rgba(0, 0, 0, 0.7);
+	/* Background color with transparency */
+	padding: 10px;
+	/* Padding around the text */
+	border-radius: 5px;
+	/* Rounded corners */
+	border: 2px solid rgb(255, 171, 145);
+	/* Border */
+	text-align: center;
+	/* Center align the text */
 }
 
 /* Character Images Styles */
@@ -207,13 +213,11 @@ text-box [data-content=character-name] {
 
 [data-screen="game"] [data-character]:not(.focus) {
 	opacity: 0.5;
-	transform: translateY(10px);
 	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 [data-screen="game"] [data-character].focus {
 	opacity: 1;
-	transform: translateY(0);
 	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
