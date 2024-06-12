@@ -147,6 +147,10 @@ text-box[data-speaking=narrator]>[data-content=name] {
 	align-content: center;
 }
 
+text-box[style="display: block;"] {
+	display: grid !important;
+}
+
 text-box [data-content=text] {
 	background-image: url("../assets/ui/game_screen/textbox.png");
 	background-repeat: no-repeat;
