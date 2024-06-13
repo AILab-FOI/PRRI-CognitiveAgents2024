@@ -4,7 +4,7 @@ var STOP = false;
 
 $(window).on( 'load', function(){
     counter = 0;
-    
+
     if (navigator.userAgent.indexOf('Firefox') > -1) {
 	document.getElementById('notSupported').style.display = 'block';
 	document.getElementById('startupute').style.display = 'none';
@@ -16,44 +16,44 @@ $(window).on( 'load', function(){
 	const button = document.getElementById('start');
 	const record = document.getElementById('record');
 	window.output = output;
-	
+
 	const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-	
-	
-	
-	
+
+
+
+
 	var init = function()
 	{
 	    recognition = new SpeechRecognition();
-	    
+
 	    window.recognition = recognition;
-	    
+
 	    recognition.lang = 'hr-HR'; // Croatian
 	    recognition.continuous = true;
 	    recognition.interimResults = false;
-	    
+
 	    recognition.onresult = (event) => {
 		const current = event.resultIndex;
 		const transcript = event.results[current][0].transcript;
-		
+
 		window.recognition.stop();
 		STOP = true;
 		output.innerHTML = transcript + ' ';
 		window.ws.send( transcript );
 	    };
-	    
+
 	    recognition.onspeechend = () => {
 		window.recognition.stop();
 		//setTimeout(function(){ recognition.start(); }, 400);
 	    };
-	    
+
 	    recognition.onerror = (event) => {
 		window.recognition.stop();
 		//setTimeout(function(){ recognition.start(); }, 400);
 	    };
 	}
 	init();
-	
+
 	button.onclick = () => {
 	    if (document.documentElement.requestFullscreen) {
 		document.documentElement.requestFullscreen();
@@ -112,23 +112,23 @@ function connect() {
 	DONT = false;
 	play_part( 'tisina' );
     };
-    
-    
-    
+
+
+
     ws.onmessage = function( msg ) {
 	console.log( msg.data );
 	console.log( msg.data.toString() );
 	play_part( msg.data.toString() );
-	
+
     };
-    
+
     ws.onclose = function(e) {
 	console.log( 'Socket is closed. Reconnect will be attempted in 1 second.', e.reason );
 	setTimeout(function() {
 	    connect();
 	}, 1000);
     };
-    
+
     ws.onerror = function(err) {
 	console.error( 'Socket encountered error: ', err.message, 'Closing socket' );
 	ws.close();
@@ -137,7 +137,7 @@ function connect() {
 
 connect();
 
-right = { 
+right = {
     'text-align': 'right',
     'width': '1000px',
     'margin-right': '-400px auto'
@@ -153,12 +153,12 @@ function play_part( part )
     CUR_PART = part;
     var agent = $( '#agent' )[ 0 ];
     var end = 0;
-    
+
     agent.play()
-    
+
     DONT = (part !== 'tisina')? true : false;
     if( part === 'tisina' ) FIRST = !FIRST
-    
+
     recognition.stop();
     switch( part )
     {
@@ -189,7 +189,7 @@ function play_part( part )
 	    catch( e ){}
 	    break;
     }
-    
+
     END = end;
 }
 
