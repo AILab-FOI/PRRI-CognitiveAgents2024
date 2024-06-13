@@ -127,7 +127,6 @@ monogatari.script({
         'show scene room with fadeIn',
         //'show character in scene',
 
-        'centered <span class=".video-container play()"></span>',
 
 
         ' The morning sun peaks through the curtains as my eyes open. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
@@ -385,14 +384,7 @@ monogatari.script({
         'centered <span class="custom-dialog">You decided to talk to the other remaining character.</span>',
         'After talking to Bizzar, you head over to where Rioth is waiting.',
         'centered <span class="custom-dialog">Razgovor s AI</span>',
-        {
-            'Video': {
-                'Source': 'path/to/your/video.mov',
-                'Type': 'video/quicktime',
-                'Description': 'Watch this video before proceeding.',
-                'Controls': true
-            }
-        },
+
         {
             'Choice': {
                 'Dialog': 'Finished talking with Bizarr...',

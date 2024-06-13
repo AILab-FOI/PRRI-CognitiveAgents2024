@@ -105,7 +105,7 @@ $(window).on( 'load', function(){
 
 
 function connect() {
-    ws = new WebSocket( 'ws://127.0.0.1:8009' );
+    ws = new WebSocket( 'ws://127.0.0.1:8000' );
     window.ws = ws;
     ws.onopen = function() {
 	ws.send( 'connect' );

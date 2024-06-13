@@ -4,12 +4,12 @@ import argparse
 
 from chatterbot import ChatBot
 from flask import (Flask, render_template, send_from_directory)
-
+from flask_cors import (CORS)
 
 from websocketserver import *
 
 app = Flask( __name__, static_folder='static/component' , static_url_path="")
-
+CORS(app)
 @app.route( '/' )
 def home():
     return send_from_directory(app.static_folder, "index.html")
@@ -47,6 +47,6 @@ if __name__ == '__main__':
         train( chatbot )
         sys.exit()
         
-    server = SimpleWebSocketServer( '0.0.0.0', 8009, NLPController )
+    server = SimpleWebSocketServer( '0.0.0.0', 8000, NLPController )
     _thread.start_new_thread( server.serveforever, () )	
     app.run( host='0.0.0.0', debug=False )
