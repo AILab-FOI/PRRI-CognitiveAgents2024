@@ -5,6 +5,7 @@ import argparse
 from chatterbot import ChatBot
 from flask import (Flask, render_template, send_from_directory)
 
+
 from websocketserver import *
 
 app = Flask( __name__, static_folder='static/component' , static_url_path="")

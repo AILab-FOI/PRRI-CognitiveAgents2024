@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\jura",
+    "\\jura\\static",
+    "\\jura\\static\\component",
+    "\\jura\\static\\component\\js"
   ],
+  "SelectedNode": "\\jura\\static\\component\\js\\storage.js",
   "PreviewInSolutionExplorer": false
 }
