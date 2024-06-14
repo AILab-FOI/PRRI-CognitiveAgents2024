@@ -70,49 +70,119 @@ monogatari.assets('images', {
 // Define the backgrounds for each scene.
 monogatari.assets('scenes', {
 	//Chapter 0:
-	'room': 'bedroom1.jpg'
+		'guildRoom': 'scene..',
+		'guildDesk': 'scene.....'
 });
 
 
 // Define the Characters
 monogatari.characters({
 	'r': {
-		name: 'Rioth',
-		color: '#565656',
+		name: 'rioth',
+		color: '#7FB8B3',
 		sprites: {
 			normal: 'rioth/normal.png'
 		}
 	},
 	'b': {
-		name: 'Bizarr',
-		color: '#81523F',
+		name: 'bizarr',
+		color: '#FFAB91',
 		sprites: {
 			normal: 'bizarr/normal.png'
 		}
 	},
 	'z': {
-		name: 'Zoro',
-		color: '#6D6A4D',
+		name: 'zorro',
+		color: '#',
 		sprites: {
-			normal: '<div style="width: 50px; height: 50px; background-color: blue; border-radius: 50%;" ></div>'
+			normal: ''
 		}
 	},
 	'br': {
-		name: 'Brol',
-		color: '#6D6A4D',
-		sprites: {
-			normal: '<div style="width: 50px; height: 50px; background-color: red; border-radius: 50%;" ></div>'
-		}
+		name: 'brol',
+		color: '#',
+		//sprites: {
+			normal: 'slikaBrol.jpg'
 	},
 	'rk': {
-		name: 'Rilke',
-		color: '#6D6A4D',
-		sprites: {
-			normal: '<div style="width: 50px; height: 50px; background-color: yellow; border-radius: 50%;" ></div>'
-		}
-	}
+		name: 'rilke',
+		color: '#',
+			//normal: 'slikaRilke.jpg'
+},
 });
 
+monogatari.script({
+	// The game starts here.
+	'Start': [
+		'centered text',
+		'show scene #f7f6f6 with fadeIn',
+		'centered jos teksta',
+		'centered pretvaras se da je pred tobom slika guilda or smth idk',
+		{
+			'Choice': {
+				'Dialog': 'U just woke up, who do you decide to bless with your pressence?',
+				'rioth': {
+					'Text': "Go drool at Rioth's feet",
+					'Do': 'jump Rioth'
+				},
+				'bizarr': {
+					'Text': 'Find out what that cool guys deal is',
+					'Do': 'jump Bizarr'
+				}
+			}
+		}
+	],
+	'Rioth': [
+		'show character r normal at right',
+		'r idk epik text + roasta te',
+		'centered nezz tu bi kao trebo bit razg izmedju vas',
+		'centered kad zavrsi mos ic delat nes drugo, biraj sta ces',
+		{
+			'Choice': {
+				'Dialog': 'Opcije dalje?',
+				'call': {
+					'Text': '1',
+					'Do': 'jump Call'
+				},
+				'ignore': {
+					'Text': '2',
+					'Do': 'jump Ignore'
+				}
+			}
+		}
+	],
+
+	'Bizarr': [
+		'show character b normal at right',
+		'b oof insert zanimljiv razg ovdje',
+		'centered yeah',
+		'centered baci novcic',
+		{
+			'Choice': {
+				'Dialog': 'Biraj svoju buducnost',
+				'call': {
+					'Text': '1',
+					'Do': 'jump Call'
+				},
+				'ignore': {
+					'Text': '2',
+					'Do': 'jump Ignore'
+				}
+			}
+		}
+	],
+
+	'Ignore': [
+		'show character r normal at center',
+		'r Ti si gay',
+		'end'
+	],
+	'Call': [
+		'show character b normal at center',
+		'b Pls be gentle uwu senpai',
+		'end'
+	]
+});
 //  Chapter 0
 // characters and scenes (gore u characters i pod assets-scenes)
 
@@ -122,10 +192,11 @@ monogatari.characters({
 monogatari.script({
 	//DobroJutro! PrijatnaKafica
 
-	'Start': [
+	'Chapter0': [
 
-		'show scene room with fadeIn',
+		'show scene guildRoom with fadeIn',
 		//'show character in scene',
+		'centered text',
 
 		' The morning sun peaks through the curtains as my eyes open. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
 		' The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',
@@ -156,17 +227,22 @@ monogatari.script({
 		},
 		//{{player.name}}
 
+		'show scene guildDesk with fadeInSlow',
+		'show character {{player.name}} centered in scene',
+		'centered text',
 
-		'I roll out of bed and start to dress, preparing to head downstairs to wait for the guild leader.',
-		'The atmosphere is laidback and calm, as is the norm here. The guild is like a second home, the members like extended family...',
+
+		'{{name}} I roll out of bed and start to dress, preparing to head downstairs to wait for the guild leader.',
+		'{{name}} The atmosphere is laidback and calm, as is the norm here.The guild is like a second home, the members like extended family...',
 
 
-		'I stand before the front desk, patiently waiting for the guild leader to arrive. As I stand there, two members pass by, Zoro and Brol.',
-		'They are exchanging friendly banter as they go and a small conversation ensues.',
+		'{{name}} I stand before the front desk, patiently waiting for the guild leader to arrive. As I stand there, two members pass by, Zoro and Brol.',
+		'{{name}} They are exchanging friendly banter as they go and a small conversation ensues.',//they're
 
 
 		'show character z normal at left',
 		'show character br normal at right',
+		'centered text',
 
 		//'Dialog':
 		'z So, did your bet pay off last night?',
@@ -174,31 +250,57 @@ monogatari.script({
 		'z Not bad, not bad at all. You gonna use it to buy some drinks?',
 		'br You know it.',
 
-		//'hide character z',
-		//'hide character b',
+		'hide character z',
+		'hide character b',
+
+		'show character {{name}} ...  left', // upper-body? upclose? closer?
+		'centered text',
 
 		'I casually roll my eyes as they walk past due to knowing how Brols gambling last night really went...', //Brol's 
 		'Truth be told, he lost 10 gold coins to get a few copper ones.',
 
+		'show character {{name}} centered in scene',
+
+
+		'show character rk right upclose in scene',
+		'show character {{player.name}} upclose left in scene',
+		'centered text',
+
 		'rk Good day to you.',
+
+		'show character rk upclose centered in scene',
+		//'zoom in character rk', 
+		'hide character {{name}}',
 
 		'rk You are here for another mission, I assume?',
 		'rk Finally recovered, huh?',
 
+		'hide character rk',
+		'show {{player.name}} centered in scene',
+		'centered text',
 
-		'Yeah finally. Got pretty bored from this prolonged "vacation". I was wondering if you had anything in the works for me.',
+
+		'{{player.name}} Yeah finally. Got pretty bored from this prolonged "vacation". I was wondering if you had anything in the works for me.',
+
+		'show character {{player.name}} left in scene',
+		'show character rk right in scene',
 
 		'rk Hmm...',
 
+		'zoom in character rk',
+		//'hide {{player.name}}',
+		'centered text',
+
 		'rk Let me check my board.',
 
+		'centered text',
+		'hide character rk',
+		'show character {{player.name}} centered',
 
-		'I wait patiently as Rilke looks at his precious board filled with all kinds of job posters',
+		'{{player.name}} I wait patiently as Rilke looks at his precious board filled with all kinds of job posters',
 
 		'end of scene'
 		//'FadeOut'?
-
-	]
-
+		
 });
 
