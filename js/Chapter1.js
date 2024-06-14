@@ -15,11 +15,11 @@
 			' The journey has been long and arduous, with us having traveled through dense forests and treacherous mountain paths for the past 8 hours.',
 			' The air is thick with moisture, making it hard to breathe easily as we walk. ',
 			' The sun is starting to set, painting the sky with hues of pink and orange as the shadows from the thick foliage slowly grow longer.',
-			' Sounds of animals echo through the forest, the only sound besides the wind gently swaying the tree branches above us.',
-			' We are taking careful steps as we move over the uneven terrain.',
+			' Sounds of animals echo through the forest, the only sound besides the wind gently swaying the tree branches above you.',
+			' You are taking careful steps as you move over the uneven terrain.',
 			' The path is filled with various hazards, from loose rocks to small animals scurrying around.',
-			' The thick foliage makes it hard to see further ahead, but I catch glimpses of Rioth and Bizarr walking ahead of me.',
-			' My gaze keeps shifting between the two of them, wondering if I should perhaps try and talk to at least one of my teammates.',
+			' The thick foliage makes it hard to see further ahead, but you catch glimpses of Rioth and Bizarr walking ahead of you.',
+			' Your gaze keeps shifting between the two of them, wondering if you should perhaps try and talk to at least one of your teammates.',
 		
 		'centered text',
 		'show character in scene',
@@ -38,7 +38,7 @@
 
 			' Bizarr on the other hand seems the complete opposite, with an upbeat and cheerful expression as he walks ahead.',
 			' He has an air of confidence about him, as if he is open and welcoming to anyone who wants to talk to him.',
-			' Should I talk with Rioth or Bizarr?'
+			' Should you talk with Rioth or Bizarr?'
 	],
 
 // CA converations
@@ -58,7 +58,7 @@
 	'show character b',
 	'centered text',
 
-	' Maybe I should just ask him why he even became a swordsman in the first place?',
+	' Maybe you should just ask him why he even became a swordsman in the first place?',
 	
 	' b Heh, well, to be honest, I had to... kind of go where the food was when I was growing up.',
 	' b My family were simple poor farmers, so I had to take whatever work I could get.',
@@ -74,11 +74,11 @@
 
 'Choice' :[
 
-	'Huh?',
-	'I guess I could tell him the truth and that it was curiosity that drew me into this line of work or I could..',
-	'I could simply try and not answer and look around.',
-
-	{ 
+	' Huh?',
+	' You guess that you could tell him the truth and that it was curiosity that drew you into this line of work or you could..',
+	' You could simply try and not answer and look around.',
+],
+	 
 	//Choice 1: 'Answered (+2 points)'
 Choice:[
 {		
@@ -92,8 +92,8 @@ Choice:[
 			
 ],
 },
+],
 
-{
 
 'Continue_Story': [
 
@@ -106,10 +106,10 @@ Choice:[
 
 		'centered text',
 
-	' I have been fascinated with the unknown and the fantastical for as long as I can remember,',
+	' You have been fascinated with the unknown and the fantastical for as long as you can remember,',
 	' so this feels like a great way to explore that.',
 	' And sword...',
-	' yeah I simply cant use bow to save my life.',
+	' yeah you simply cant use bow to save your life.',
 
     'show scene with fadeOut',
 ],
@@ -126,7 +126,7 @@ Bizarr_joins_the_talk: [
 	'show scene #... with fadeIn', //firest 
 	'show character Bizarr',
 
-'Bizarr, who had been listening nearby, steps in and interjects the conversation between us two.',
+' Bizarr, who had been listening nearby, steps in and interjects the conversation between us two.',
 
 'centered text',
 'show character Bizarr',
@@ -169,7 +169,7 @@ Rioth_joins_the_talk: [
 'centered text',
 'show characters Rioth and Bizarr in scene',
 
-    'Rioth, who had been listening nearby, steps in and interjects the conversation between us two.',
+    ' Rioth, who had been listening nearby, steps in and interjects the conversation between us two.',
 
 'centered text',
 
@@ -216,16 +216,17 @@ Choices_Outcomes : [
     
 'centered text',
 
-    Choosing, 'Listen to them argue'  [
+    Choosing, 'Listen to them argue' : [
 
-        ' I continue to listen to their pointless arguing and think why am I stuck with this two people.',
-        ' I start to rethink my life choices as I hold my head'
+        ' You continue to listen to their pointless arguing and think why am I stuck with this two people.',
+        ' And start to rethink your life choices as you hold your head',
     ],
 
-'centered text',   
 
-    Choosing 'Calm them down': [
-     
+    Choosing, 'Calm them down' : [
+
+'centered text',
+
     ' {{player.name}} Hey, guys, listen up. ',
     ' {{player.name}} There is no need to start arguing about which plan is better...',
     ' {{player.name}} Its obvious that both have their merits, but the important thing right now is that-',
@@ -234,7 +235,7 @@ Choices_Outcomes : [
     
 'centered text',
 
-    ' Rioth and Bizarr both ignore me and continue their back-and-forth',
+    ' Rioth and Bizarr both ignore you and continue their back-and-forth',
 
         
         ' r Theres nothing to discuss. We are going the usual route which is fast and simple, thats all there is to it.',
@@ -247,11 +248,11 @@ Choices_Outcomes : [
 Choices_Outcomes:[
 'centered text',
 
-' As the pair argue, I notice an odd and curious sound coming from somewhere in the bushes nearby.',
-' I take note of the sound, thinking about whether to investigate it or stay focused on their current conversation.',
+' As the pair argue, you notice an odd and curious sound coming from somewhere in the bushes nearby.',
+' Take note of the sound, thinking about whether to investigate it or stay focused on their current conversation.',
 
 
-' Should I investigate this noise, or keep listening to them argue?',
+' Should you investigate this noise, or keep listening to them argue?',
 ' It might be nothing, but it could also be something important...',
 ],
 // AI 
@@ -263,16 +264,16 @@ Choices: [
 'show scene FadeIn',
 'centered text',
 	
-' While listening to Rioth and Bizarr argue, my attention is drawn to a new and puzzling sound coming from beyond the bushes.',
-' It sounds like something moving nearby, and the more I listen, the louder and closer it seems to get.',
+' While listening to Rioth and Bizarr argue, your attention is drawn to a new and puzzling sound coming from beyond the bushes.',
+' It sounds like something moving nearby, and the more you listen, the louder and closer it seems to get.',
 
 	' {{player.name}} Hmm... pretty sure that theres something else near us now.',
 	
-' I focus more and realise what that awful sound is and quickly yell to my team',
+' You focus more and realise what that awful sound is and quickly yell to your team',
 	
 	' {{player.name}} " Watch out! Bugbear!',
 	
-'We all prepare for the battle as the fight begins, with the ambushing bugbear charging towards us.',
+'You all prepare for the battle as the fight begins, with the ambushing bugbear charging towards you.',
 {	
 
 // Bad ending 2: Curiosity killed the cat
@@ -281,11 +282,11 @@ Choices: [
 'show scene FadeIn',
 'centered text',
 
-' While listening to Rioth and Bizarr argue, I hear a peculiar, faint noise from amongst the trees.', 
-' I decide to investigate on my own, unsure of what it might be.',
-' However, as soon as I step few meters away from my team, a large, gnarly, bugbear ambushes me from his hiding spot, quickly managing to being me down in one hit.',
+' While listening to Rioth and Bizarr argue, you hear a peculiar, faint noise from amongst the trees.', 
+' So you decide to investigate on your own, unsure of what it might be.',
+' However, as soon as you step few meters away from your team, a large, gnarly, bugbear ambushes you from his hiding spot, quickly managing to being you down in one hit.',
 
-' With my last breaths, I feel sheer terror as the bugbear lowers immense axe above my head and everything fades to black.',
+' With your last breaths, you feel sheer terror as the bugbear lowers immense axe above your head and everything fades to black.',
 
 'end scene',
 
@@ -305,7 +306,7 @@ Choices: [
 'centered text',
 'show characters Bizarr and Rioth in scene',
 
-' My words get cut off by a strange noise coming from the bushes.',
+' Your words get cut off by a strange noise coming from the bushes.',
 ' Both Rioth and Bizarr turn around to hear it as well.',
 
 
@@ -315,12 +316,12 @@ Choices: [
 'centered text',
 'show characters Bizarr and Rioth in scene',
 
-' Bizarr and the Rioth turn to face me but see a huge Bugbear few meters behind me with a giant axe held in one hand.',
-' With a low grumbling noise coming from him, the Bugbear runs at us.',
+' Bizarr and the Rioth turn to face you, but see a huge Bugbear few meters behind you with a giant axe held in one hand.',
+' With a low grumbling noise coming from him, the Bugbear runs towards you.',
 
 	' r Get behind me!',
 
-'Without hesitation, Rioth grabs a hold of the me and Bizarr as she pushes us backwards, putting herself between the Bugbear and us.',
+'Without hesitation, Rioth grabs a hold of the me and Bizarr as she pushes us backwards, putting herself between the Bugbear and you.',
 
 'scene FadeOut',
 
@@ -352,33 +353,33 @@ Rest :
 	' b Lets just take it easy for a bit, then continue tomorrow. I can make us a meal and you two can set up the tents and rest.',
 	' b That work for everyone?',
 
-'Rioth and I both nod, as we start setting up the camp.',
+'Rioth and you both nod, as you start setting up the camp.',
 
 //Bad ending 3: Should have taken that potion...
 
 
-' Rioth gathers up some wood from the surrounding area, carefully selecting dried branches and logs before starting to make a pile for us to use as firewood.',
-' Bizarr starts heating up a pot of soup, adding various ingredients from his pack to make a hearty meal for us to eat.',
-' I set up the bedding for us to rest for the night, setting up our bedrolls and covering them with blankets for warmth.',
+' Rioth gathers up some wood from the surrounding area, carefully selecting dried branches and logs before starting to make a pile for you to use as firewood.',
+' Bizarr starts heating up a pot of soup, adding various ingredients from his pack to make a hearty meal for you to eat.',
+' You set up the bedding to rest for the night, setting up your bedrolls and covering them with blankets for warmth.',
 
 ' The night is quiet, but not completely silent.',
-' We can hear the occasional rustle of leaves in the wind, and the distant cry of some nocturnal creatures.',
+' You all can hear the occasional rustle of leaves in the wind, and the distant cry of some nocturnal creatures.',
 
-' After eating the warm, hearty soup that Bizarr had made for us, we each make our way to our separate tents and settle down for the night.',
+' After eating the warm, hearty soup that Bizarr had made, each of you make your way to separate tents and settle down for the night.',
 
 ' Rioth disappears into her tent quickly, as if eager to get some rest.', 
 ' Bizarr looks around for a moment before entering his own tent, a slight yawn escaping his mouth as he does.',
-' I stand in front of my tent for a moment, taking a glance around the campsite before entering and getting into my bedroll',
+' You stand in front of tent for a moment, taking a glance around the campsite before entering and getting into your bedroll',
 
-' I lay there in my bedroll, slowly drifting off to sleep, when suddenly I am awoken by a strange noise.',
-' Confused and disoriented, I realize that theres a cloth covering my head, making it impossible to see.',
-' Panic starts to set in as my mind races to make sense of whats happening.',
-' I struggle weakly, trying to free myself. ',
-' But my left arm is still damaged and useless, while my right arm is kept pinned down.',
-' My mind is racing, trying to figure out whats happening, when I feel the sharp pain of a blade piercing through my body.',
+' You lay there in your bedroll, slowly drifting off to sleep, when suddenly you are awoken by a strange noise.',
+' Confused and disoriented, you realize that theres a cloth covering your head, making it impossible to see.',
+' Panic starts to set in as mind races to make sense of whats happening.',
+' You struggle weakly, trying to free yourself. ',
+' But your left arm is still damaged and useless, while right arm is kept pinned down.',
+' Your mind is racing, trying to figure out whats happening, when suddenly you feel the sharp pain of a blade piercing through body.',
 
-' Everything goes black as I lie there, slowly losing last bits of consciousness as the pain subsides.',
-' The last thing Im aware of is a sound of voice fading away as I slip into darkness.', 
+' Everything goes black as you lie there, slowly losing last bits of consciousness as the pain subsides.',
+' The last thing you are aware of is a sound of voice fading away as you slip into darkness.', 
 //Bad ending 3
 
 'scene FadeOut black'
@@ -410,15 +411,15 @@ Rest :
 	' b That work for everyone?',
 
 
-' Rioth and I both nod, as we start setting up the camp.',
+' Rioth and you both nod, as you start setting up the camp.',
 
 'centered text',
 'show character Rioth and Bizarr in scene',
 
-' We all set up our camp for the night.',
-' Rioth starts gathering some firewood, Bizarr is doing soup by the looks of it and I am simply organizing and setting up bedding',
+' You all set up your camp for the night.',
+' Rioth starts gathering some firewood, Bizarr is doing soup by the looks of it and you are simply organizing and setting up bedding',
 
-' There is a moment of quiet as we settle into the campsite, and I decide to break the silence by talking to Rioth',
+' There is a moment of quiet as you settle into the campsite, and you decide to break the silence by talking to Rioth',
 
 'centered text',
 'hide character Bizarr',
@@ -459,18 +460,110 @@ Finishing_setting_up_camp : [
 
 // 1st option
 // Help Rioth (+1 point) - 
-// Talk with Rioth (+1 point) If first time talking to her, the dialogue from before is here instead.
-//If not, the following dialogue takes place.- Compliment her (+2 points)
+Help_Rioth : [
+'scene FadeIn',
+'show character Rioth in scene',
+'centered text',
+
+	' {{player.name}} I will join you.',
+	' {{player.name}} That way we can eat sooner. Im starving as well.',
+],
+
+// Talk with Rioth (+1 point)
+// NOTE : If first time talking to her, the dialogue from before is here instead.
+Talk_with_Rioth : [
+
+'scene FadeIn',
+'show character Rioth in scene',
+'centered text',
+
+' You feel like there is a deeper reason for her adventuring. How would you get her to tell you?',
+
+	' {{player.name}} "Why are you really here? Surely you would have attempted something else before this?',
+
+ 	' r Curious, are ya? ',
+ 	' r Sure, I wll tell you, as long as you keep it between us. You know how I said that my village was never in any kind of conflict?',
+ 	' r Well, that made us soft. Not me... ',
+ 	' r I was born a rock. But the village? No real defenses or any kind of protection.',
+ 	' r Because of this our place, if discovered, is very susceptible to bandit raids. ',
+ 	' r This one band demanded that we pay a monthly tribute if we want to be left alone, or "protected" as they put it. ',
+ 	' r I may be strong, but I am the only one who can be considered a combatant in the vilage.',
+ 	' r Not much that I can do alone, besides earn money my own way to pay for the tribute.',
+ 	' r This is the quickest way for me to make money and send it home...',
+
+// Talk (+2) / Stay quiet (-1)
+], 
+
+//NOTE : If not, the following dialogue takes place.
+Compliment_her : [
+	//(+2 points)
+'scene  FadeIn',
+'show character Rioth in scene',
+'centered text',
+
+' You had no idea it was something like that.',
+' Nice to see someone actually has a selfless motivation here. You guess a compliment is in order!',
+
+	' {{player.name}} Wow, thats pretty cool Rioth!',
+	' r ... Thank you, ... {{player.name}}.',
+],
+
+//getting together
 
 
 // 2nd option
-// Help Bizarr (+1 point) - 
-// Talk with Bizarr (+1 point) If first time talking to him, the dialogue from before is here instead.
-//If not, the following dialogue takes place.
-//- (+2 points) Za ovo ne treba special AI voice line , samo je end of convo (didn't know how to end it here)
+
+Help_Bizarr: [
+//(+1 point)
+'scene FadeIn',
+'show character Bizarr in scene',
+'centered text',
+
+	' {{player.name}} I wll go help Bizarr. That way everything is prepared sooner.',
+],
+//Talk (+1) / Stay quiet (0),
+// Talk with Bizarr (+1 point) 
+// NOTE: If first time talking to him, the dialogue from before is here instead.
+
+Talk_with_Bizarr : [
+//(+1point) 
+'scene FadeIn',
+'show character Bizarr in scene',
+'centered text',
+
+	' {{player.name}} Hey if you dont mind me asking while we prepare stuff together, but what made you become an adventurer?',
+
+	' b Heh, well, to be honest, I had to...',
+	' b kind of go where the food was when I was growing up.',
+	' b My family were simple poor farmers, so I had to take whatever work I could get and cooking was a not good idea then since I used to suck at cooking.',
+	' b To be honest if it was not swords, it would have been bows, or something else.',
+	' b Really, I just took up swords because it was the first opportunity I had. ',
+
+// NOTE: If not, the following dialogue takes place.
+// (+2 points) Za ovo ne treba special AI voice line , samo je end of convo (didn't know how to end it here)
+// Talk (+2) / Stay quiet (-1)
+'centered text',
+' You nod in understanding as Bizarr speaks, listening intently.',
+
+	' {{player.name}} I see...so it was more of a matter of circumstance then.',
+
+	' b Yeah, pretty much.',
+	' b My family was poor and I just had to take whatever odd jobs I could get to make ends meet.',
+	' b Swordfighting was the first opportunity that came up,...',
+	' b so I went with it..',
+
+	' {{player.name}} That makes sense.',
+	' {{player.name}} I can understand having to go with what opportunities come your way.',
+
+ 	' b Exactly!',
+	' b Sometimes you just got to do what you got to do to get by, ya know?',
+
+'Bizarr and you finish preparing your part of the campsite.',
+'scene FadeOut',
+],
 
 
-Getting_together: [
+Getting_together : [
 
 	'show scene FadeIn',
 	'centered text',
@@ -495,9 +588,7 @@ Getting_together: [
 	'centered text',
 
 		' {{player.name}} Well, umm, its certainly a-',
-	
 		' r Is this a joke?',
-	
 		' b Beg your pardon?', 
 
 	'hide Bizarr',
@@ -518,15 +609,14 @@ Getting_together: [
 	'show character Bizarr in scene',
 	'centered text',
 
-
 		' b I guess I was expecting too much from her.',
 		' b No village girl can enjoy this high class food.. What does she know anyway?',
 		' b Not like she can do better, right?',
 	
 		' {{player.name}} Lets leave it at that.',
 	
-	' You barely finish your food without making a face of disgust. Both you and Bizarr clean up the campfire as you head for your tents.'
-
+	' You barely finish your food without making a face of disgust. Both you and Bizarr clean up the campfire as you head for your tents.',
+	'scene FadeOut',
 ],
 
 // new character - MuaD'Ib , MuaD'ib = m
@@ -540,9 +630,7 @@ Tent_time: [
 	' You walk around a forest, just like the one you were walking through during the day. Suddenly, he appears.',
 	
 		' ??? Greetings.',
-	
 		' {{player.name}} What the hell are you?',
-	
 		' ???: "Do you know what they call the shadow of the second moon?',
 	
 	'Looking up at the sky, there definetly is a second mooon.',
@@ -586,6 +674,7 @@ Tent_time: [
 	' You quickly do an escape maneuver and swat the other person out of your tent.',
 	
 	' You run out of the tent, hoping to catch the culprit red handed!',
+	'scene FadeOut',
 
 ],
 
@@ -628,10 +717,11 @@ Outside_of_the_tent : [
 	' {{player.name}} I see...',
 	' {{player.name}} Well, whatever.',
 	' {{player.name}} I dealt with this stuff before so it aint that big of a deal..',
-	' {{player.name}}  Just go back to sleep.',
+	' {{player.name}} Just go back to sleep.',
 
 'hide Bizarr',
 //'show character {{player.name}}'??
+
 'centered text ',
 
 ' Bullshit!',
@@ -648,10 +738,6 @@ Outside_of_the_tent : [
 ' In the morning we need to make a choice if we will go around or directly to orcs. ',
 'scene FadeOut',
 'End of Chapter1'
-]
-},]
-},
 ],},
-],}
-],}
-];
+],},
+],};
