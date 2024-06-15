@@ -83,19 +83,27 @@ monogatari.assets('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets('scenes', {
+    'dark': 'dark.jpg',
     //Chapter 0:
     'room': 'bedroom1.jpg',
     'hall': 'guild-hall1.jpg',
     'town': 'town-entrance1.jpg',
+    //Chapter 1:
     'camp': 'camp-dusk2.jpg',
     'night': 'camp-night1.jpg',
-    'dream': 'dream.jpg',
-    'dark': 'dark.jpg'
+    'dream': 'dream.jpg'
 });
 
 
 // Define the Characters
 monogatari.characters({
+    'y': {
+        name: 'You',
+        color: '#000000',
+        sprites: {
+            normal: '<div style="width: 50px; height: 50px; background-color: blue; border-radius: 50%;" ></div>'
+        }
+    },
     'r': {
         name: 'Rioth',
         color: '#565656',
@@ -149,20 +157,22 @@ monogatari.characters({
 
 
 
-// Start of Chapter 0
+
 
 monogatari.script({
-    //DobroJutro! PrijatnaKafica
 
     'Start': [
 
+        // Dobro jutro! Prijatna kafica
+
+        'show scene dark with fadeIn',
+
+        'centered <span class="custom-dialog">Chapter 0 - Just an average day</span>',
+
         'show scene room with fadeIn',
-        //'show character in scene',
 
-        'centered <span class="custom-dialog">Test odlomak</span>',
-
-        ' The morning sun peaks through the curtains as you open your eyes. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
-        ' The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',
+        'The morning sun peaks through the curtains as you open your eyes. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
+        'The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',
 
         {
             'Input': {
@@ -188,58 +198,39 @@ monogatari.script({
                 'Warning': 'You must enter a name!'
             }
         },
-        //{{player.name}}
 
         'centered <span class="custom-dialog">You have selected the name {{player.name}} and will from now on be referred to as such.</span>',
-
 
         'You roll out of bed and start to dress, preparing to head downstairs to wait for the guild leader.',
         'The atmosphere is laidback and calm, as is the norm here. The guild is like a second home, the members like extended family...',
 
         'show scene hall with fadeIn',
 
-
         'I stand before the front desk, patiently waiting for the guild leader to arrive. As I stand there, two members pass by, Zoro and Brol.',
         'They are exchanging friendly banter as they go and a small conversation ensues.',
 
-        'show character z normal at left',
-        'show character br normal at right',
-
-        //'Dialog':
         'z So, did your bet pay off last night?',
         'br Yeah, I won a few copper coins... Not too bad, huh?',
         'z Not bad, not bad at all. You gonna use it to buy some drinks?',
         'br You know it.',
 
-        //'hide character z',
-        //'hide character b',
-
-        'I casually roll my eyes as they walk past due to knowing how Brols gambling last night really went...', //Brol's 
+        'I casually roll my eyes as they walk past due to knowing how Brols gambling last night really went...',
         'Truth be told, he lost 10 gold coins to get a few copper ones.',
 
-        'show character rk normal at center',
-
         'rk Good day to you.',
-
         'rk You are here for another mission, I assume?',
         'rk Finally recovered, huh?',
-
-
-        'Yeah finally. Got pretty bored from this prolonged "vacation". I was wondering if you had anything in the works for me.',
-
+        'y Yeah finally. Got pretty bored from this prolonged "vacation". I was wondering if you had anything in the works for me.',
         'rk Hmm...',
-
         'rk Let me check my board.',
-
 
         'I wait patiently as Rilke looks at his precious board filled with all kinds of job posters',
 
-        // Chapter 0 - TalkingToLeader
+        // TalkingToLeader
 
         'rk How do you feel about going to hell?',
-
-        'Would prefer to stay on this plane.',
-        'Not in a mood to travel to hell just yet...',
+        'y Would prefer to stay on this plane.',
+        'y Not in a mood to travel to hell just yet...',
 
         'rk So something more local..',
         'rk How about killing an adult green dragon?',
