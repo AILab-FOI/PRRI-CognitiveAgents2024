@@ -664,6 +664,41 @@ monogatari.script({
         'jump Choices'
     ],
 
+    'Choices': [
+        {
+            'Choice': {
+                'Dialog': 'Maybe you should calm them down?',
+                'listen': {
+                    'Text': 'Listen to them argue',
+                    'Do': 'jump Listen'
+                },
+                'calm': {
+                    'Text': 'Calm them down',
+                    'Do': 'jump Calm'
+                }
+            }
+        }
+    ],
+
+    'Listen': [
+
+        'I continue to listen to their pointless arguing and think why am I stuck with this two people.',
+        'I start to rethink my life choices as I hold my head.',
+
+    ],
+
+    'Calm': [
+
+        'y Hey, guys, listen up. Theres no need to start arguing about which plan is better.',
+        'y Its obvious that both have their merits, but the important thing right now is that-',
+
+        'Rioth and Bizarr both ignore me and continue their back-and-forth.',
+
+        'r Theres nothing to discuss. We are going the usual route which is fast and simple, thats all there is to it.',
+        'b And Im saying that my way is better. Just trust me on this. We cant risk wasting any more time than we already have.',
+
+    ],
+
     'Dream': [
 
         'show scene camp with fadeIn',
