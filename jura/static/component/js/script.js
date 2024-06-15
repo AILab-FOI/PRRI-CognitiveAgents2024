@@ -555,45 +555,114 @@ monogatari.script({
 
         'centered <span class="custom-dialog">You have decided to talk to Rioth.</span>',
 
-        'hrm',
+        'show character r normal at left',
 
-        //razgovori - moguci ishodi s CA1 - Rioth
+        'y Hey, Rioth! Mind if I talk to you for a minute?',
+
         //OVDJE IDE AI
 
         'hide character r',
+
         'centered <span class="custom-dialog">Razgovor s AI</span>',
 
-        //OVDJE
-
-        //KRAJ AI
-
-        'jump Dream'
+        'jump Direct_Attack'
     ],
-
-    //Done with Conversation - Rioth
-
-
-    // Talking to CA2
 
     'Conversation_Bazarr2': [
 
         'centered <span class="custom-dialog">You have decided to talk to Bizarr.</span>',
 
-        'show character b normal at center',
+        'show character b normal at right',
+
+        'y Hey, Bizarr! Mind if I talk to you for a minute?',
+
+        //OVDJE IDE AI
 
         'hide character b',
+
         'centered <span class="custom-dialog">Razgovor s AI</span>',
 
-        //OVDJE
-
-        //KRAJ AI
-
-        'centered <span class="custom-dialog">You can now choose to talk to the other remaining character or continue on with the story.</span>',
-
-        'jump Dream',
+        'jump Go_Around'
     ],
 
-    // IVANOV DIO :DDDD
+    'Direct_Attack': [
+
+        'show character r normal at left',
+
+        'r Have you tought up some kind of plan already? Cause I have.',
+
+        'I perk up as Rioth speaks, showing a curious expression as I wait for her to continue',
+
+        'r This may be my first team mission, but it isnt my first time dealing with the orcs',
+        'r They may be powerful and durable, but dont have much coordination.',
+        'r The best way to deal with them is quickly and directly before they get the chance to orginize properly.',
+        'r Also, there may be hostages involved.',
+        'y I was also thinkig about that. The quicker we get there the better.',
+        'r Exectly! Im glad we think the same way.',
+        'r It would be best to not take any detours, especially through the forest. I HATE the forest.',
+        'r I get stuck on every branch on the way. If I was like the little guy with us, it would be a breeze for me!',
+        'y Ill keep that in mind. Sending you through any kind of tight space seems like a bad idea anyway.',
+
+        'jump Bizarr_Joins'
+    ],
+
+    'Go_Around': [
+
+        'show character b normal at right',
+
+        'b You know, Ive been thinking and got an idea on how we could get around those orcs.',
+
+        'I perk up as Bizarr speaks, showing a curious expression as I wait for him to continue',
+
+        'b You see, there could be a different path that we could take to reach the cave.',
+        'b Its a little more work and time, but it would put us right behind the orcs and allow us to catch them off guard.',
+        'b That way we can even see if there are those missing locals too.',
+        'y That...that actually seems like a solid idea.',
+        'b Indeed. It would take longer and might be a bit taxing to navigate, but it would definitely give us the advantage.',
+        'b And thats what well need if we want to rescue the locals.',
+        'y And with the element of surprise, we could make quick work of those orcs as well.',
+
+        'jump Rioth_Joins'
+    ],
+
+    'Bizarr_Joins': [
+
+        'Bizarr, who had been listening nearby, steps in and interjects the conversation between us two.',
+
+        'show character b normal at right',
+
+        'b Wait, what? You want to go the direct route?',
+        'r Well, yeah. Its the fastest way there. Is that not what we need right now?',
+        'b Yes, time is of the essence. But we should also try to not get killed immediately.',
+        'b Frontal assault cant even be counted as a plan. We need to go around and see if there are any other entrances.',
+        'b That way we can ambush the orcs!',
+        'b We would also save the hostages earlier this way, since they would probably be kept somwhere in the back of the cave.',
+        'r What good is another entrance if by the time we get there the hostages are dead, and the orcs are ready for any kind of attack?',
+        'b Well its not my fault that you are a giant musclehead that cant get through a simple forest!',
+        'b This so called "plan" you came up with is so typical for someone like you.',
+        'r Listen here whimp, Im not gonna be talked down by some kind of smartass who thinks he knows everything.',
+        'r Ive seen more combat than you, so what I say goes. I bet you are just scared of a little fight with the bad guys.',
+        'r Trying to get the easy way out for yourself, huh?',
+
+        'jump Choices'
+    ],
+
+    'Rioth_Joins': [
+
+        'Rioth, who had been listening nearby, steps in and interjects the conversation between us two.',
+
+        'show character r normal at left',
+
+        'r Are you out of your mind? We dont have any time to waste, we need to take the direct route to the orcs and eliminate them as soon as possible.',
+        'b Whoa, no need to get so agitated. I just thought the indirect way would be more effective...',
+        'r Theres nothing to discuss. We go straight to the orcs, end of story.',
+        'b Look, Im just saying that the indirect route might be more effective and help us-',
+        'r No. Theres nothing to discuss, this path will bring us faster to the cave and we are not wasting any more time on trying to find a different one.',
+        'b Look, you might have better combat skills and strength, but I know better than anyone how to navigate these mountains and forests.',
+        'b So you need to just listen to me and trust that the indirect approach will result in a better outcome.',
+
+        'jump Choices'
+    ],
 
     'Dream': [
 
