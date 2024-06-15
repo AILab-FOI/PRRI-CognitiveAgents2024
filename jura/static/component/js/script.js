@@ -278,8 +278,12 @@ monogatari.script({
         'That night, as I lay in bed, I think to myself how lucky I am to have had such an easy day.',
         'That mission that got turned down surely will not end up being as big of a deal.',
         '...perhaps I should learn to stop overthinking things.',
+
+        'show scene dark with fadeIn',
+
         'centered <span class="custom-dialog">Ending 1 - Vacation time</span>',
-        'end',
+
+        'end'
     ],
 
     'Mission_Accepted': [
@@ -685,18 +689,70 @@ monogatari.script({
         'I continue to listen to their pointless arguing and think why am I stuck with this two people.',
         'I start to rethink my life choices as I hold my head.',
 
+        'As the pair argue, I notice an odd and curious sound coming from somewhere in the bushes nearby.',
+        'I take note of the sound, thinking about whether to investigate it or stay focused on their current conversation.',
+        'Should I investigate this noise, or keep listening to them argue? It might be nothing, but it could also be something important...',
+
+        {
+            'Choice': {
+                'Dialog': 'Should you investigate?',
+                'investigate': {
+                    'Text': 'Investigate the sound',
+                    'Do': 'jump Investigate'
+                },
+                'focus': {
+                    'Text': 'Focus on the sound',
+                    'Do': 'jump Focus'
+                }
+            }
+        }
+    ],
+
+    'Investigate': [
+
+        'While listening to Rioth and Bizarr argue, I hear a peculiar, faint noise from amongst the trees.',
+        'I decide to investigate on my own, unsure of what it might be.',
+        'However, as soon as I step few meters away from my team, a large, gnarly, bugbear ambushes me from his hiding spot.',
+        'He quickly manages to bring me down in one hit.',
+        'With my last breaths, I feel sheer terror as the bugbear lowers immense axe above my head and everything fades to black.',
+
+        'show scene dark with fadeIn',
+
+        'centered <span class="custom-dialog">Ending 2 - Curiosity killed the cat</span>',
+
+        'end'
+    ],
+
+    'Focus': [
+
+        'While listening to Rioth and Bizarr argue, my attention is drawn to a new and puzzling sound coming from beyond the bushes.',
+        'It sounds like something moving nearby, and the more I listen, the louder and closer it seems to get.',
+        'I focus more and realise what that awful sound is and quickly yell to my team.',
+
+        'y Watch out! Bugbear!',
+
+        'We all prepare for the battle as the fight begins, with the ambushing bugbear charging towards us.',
+
+        'jump Bugbear'
     ],
 
     'Calm': [
 
-        'y Hey, guys, listen up. Theres no need to start arguing about which plan is better.',
-        'y Its obvious that both have their merits, but the important thing right now is that-',
+        'y Hey, guys, enough...youre starting to-',
 
-        'Rioth and Bizarr both ignore me and continue their back-and-forth.',
+        'My words get cut off by a strange noise coming from the bushes. Both Rioth and Bizarr turn around to hear it as well.',
 
-        'r Theres nothing to discuss. We are going the usual route which is fast and simple, thats all there is to it.',
-        'b And Im saying that my way is better. Just trust me on this. We cant risk wasting any more time than we already have.',
+        'b Did you guys hear that?',
+        'r It is probably nothi-',
 
+        'Bizarr and the Rioth turn to face me but see a huge Bugbear few meters behind me with a giant axe held in one hand.',
+        'With a low grumbling noise coming from him, the Bugbear runs at us.',
+
+        'r Get behind me!',
+
+        'Without hesitation, Rioth grabs a hold of the me and Bizarr as she pushes us backwards, putting herself between the Bugbear and us.',
+
+        'jump Bugbear'
     ],
 
     'Dream': [
