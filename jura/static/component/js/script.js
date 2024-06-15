@@ -795,7 +795,7 @@ monogatari.script({
         'y Look, I know its an expensive healing potion, I dont want to just take it.',
         'b But Im...offering it to you. Its my way of saying sorry for nearly chopping your arm off.',
         'y Dont worry. Ill be fine.',
-        'y "I feel like we could really use a break. Lets set up camp for the night and get some rest.',
+        'y I feel like we could really use a break. Lets set up camp for the night and get some rest.',
         'r Agreed. No point in trying to push further when were all tired and out of breath.',
         'b Exactly. Lets just take it easy for a bit, then continue tomorrow.',
         'b I can make us a meal and you two can set up the tents and rest. That work for everyone?',
@@ -837,7 +837,7 @@ monogatari.script({
 
         'Bizarr gives a slight laugh, as if trying to lighten the mood after what he did.',
 
-        'y "I feel like we could really use a break. Lets set up camp for the night and get some rest.',
+        'y I feel like we could really use a break. Lets set up camp for the night and get some rest.',
         'r Agreed. No point in trying to push further when were all tired and out of breath.',
         'b Exactly. Lets just take it easy for a bit, then continue tomorrow.',
         'b I can make us a meal and you two can set up the tents and rest. That work for everyone?',
@@ -849,6 +849,8 @@ monogatari.script({
         'We all set up our camp for the night.',
         'Rioth starts gathering some firewood, Bizarr is doing soup by the looks of it and I am simply organizing and setting up bedding.',
         'Theres a moment of quiet as we settle into the campsite, and I decide to break the silence by talking to Rioth.',
+
+        'show character r normal at left',
 
         'y Hey. Just wanted to say thanks for basically soloing the bugbear.',
         'r Its no problem. I didnt want any of you to get hurt on my watch.',
@@ -863,128 +865,174 @@ monogatari.script({
 
         'As you pinch the last tent, Rioth gets up and wipes the sweat of her head.',
 
-        'r Phew, finally done with that. Im gonna get some wood for the fire. Hopefully the little guy can cook well, because Im starving.'
+        'r Phew, finally done with that. Im gonna get some wood for the fire. Hopefully the little guy can cook well, because Im starving.',
+
+        {
+            'Choice': {
+                'Dialog': 'Who deserves your help the most?',
+                'wood': {
+                    'Text': 'Help Rioth',
+                    'Do': 'jump Wood'
+                },
+                'food': {
+                    'Text': 'Help Bizarr',
+                    'Do': 'jump Food'
+                }
+            }
+        }
+    ],
+
+    'Wood': [
+
+        'centered <span class="custom-dialog">You have decided to help Rioth.</span>',
+
+        'y Ill join you. That way we can eat sooner. Im starving as well.',
+
+        //OVDJE IDE AI
+
+        'centered <span class="custom-dialog">Razgovor s AI</span>',
+
+        'jump Dream'
+
+    ],
+
+    'Food': [
+
+        'centered <span class="custom-dialog">You have decided to help Bizarr.</span>',
+
+        'y Ill go help Bizarr. That way everything is prepared sooner.',
+
+        //OVDJE IDE AI
+
+        'centered <span class="custom-dialog">Razgovor s AI</span>',
+
+        'jump Dream'
 
     ],
 
     'Dream': [
 
-        'show scene camp with fadeIn',
+        // Getting together
 
-        'centered <span class="custom-dialog">As the wood is brought to the campsite, you start the fire.</span>',
-        'centered <span class="custom-dialog">Bizarr starts with his cooking. All three of you sit down and talk.</span>',
+        'show scene night with fadeIn',
+
+        'As the wood is brought to the campsite, you start the fire.',
+        'Bizarr starts with his cooking. All three of you sit down and talk.',
 
         'show character r normal at left',
         'show character b normal at right',
 
-        'centered <span class="custom-dialog">When the food is done, Bizarr hands everyone a bowl and serves them their meal.</span>',
+        'When the food is done, Bizarr hands everyone a bowl and serves them their meal.',
 
         'b This one is a specialty from where I come from. We even have festivals with cooking competitions with this exact recipe.',
         'b I didnt win the last one, but thats cause the other guy cheated. No way in hell would I lose otherwise.',
 
-        'centered <span class="custom-dialog">He gives you plenty of hope.</span>',
-        'centered <span class="custom-dialog">However, just from a simple glance at your bowl you can tell that something is off.</span>',
-        'centered <span class="custom-dialog">Taking one spoonfull just confirms it.</span>',
-        'centered <span class="custom-dialog">...</span>',
-        'centered <span class="custom-dialog">It doesnt taste good.</span>',
+        'He gives you plenty of hope.',
+        'However, just from a simple glance at your bowl you can tell that something is off.',
+        'Taking one spoonfull just confirms it.',
+        '...',
+        'It doesnt taste good.',
 
-        'Well, umm, its certainly a-',
+        'y Well, umm, its certainly a-',
         'r Is this a joke?',
         'b Beg your pardon?',
         'r Listen kid, Im gonna spare you my words. Hopefully your people are just insane and its not your awfull cooking skills.',
         'r Thanks for the food. Just so you know, with every bite Im gonna be wishing I was eating anything else. Ill eat it so that I dont die of starvation.',
 
-        'centered <span class="custom-dialog">Rioth finishes her serving with one swift strike.</span>',
-        'centered <span class="custom-dialog">She leaves the bowl and goes to her tent while clenching her stomach.</span>',
+        'Rioth finishes her serving with one swift strike.',
+        'She leaves the bowl and goes to her tent while clenching her stomach.',
 
         'hide character r',
 
-        'centered <span class="custom-dialog">Its fairly obvious she didnt enjoy what she was eating.</span>',
+        'Its fairly obvious she didnt enjoy what she was eating.',
 
         'b I guess I was expecting too much from her. No village girl can enjoy this high class food.',
         'b What does she know anyway? Not like she can do better, right?',
-        'Lets leave it at that.',
+        'y Lets leave it at that.',
 
-        'centered <span class="custom-dialog">You barely finish your food without making a face of disgust.</span>',
-        'centered <span class="custom-dialog">Both you and Bizarr clean up the campfire as you head for your tents.</span>',
+        'You barely finish your food without making a face of disgust.',
+        'Both you and Bizarr clean up the campfire as you head for your tents.',
 
-        'hide character b',
-        'show scene night with fadeIn',
+        // Tent time
 
-        'centered <span class="custom-dialog">You fall asleep fairly guickly from exhaustion.</span>',
-        'centered <span class="custom-dialog">As you drift into deep slumber, you start to dream.</span>',
+        'show scene dark with fadeIn',
+
+        'You fall asleep fairly guickly from exhaustion.',
+        'As you drift into deep slumber, you start to dream.',
 
         'show scene dream with fadeIn',
 
-        'centered <span class="custom-dialog">You walk around a forest, just like the one you were walking through during the day.</span>',
-        'centered <span class="custom-dialog">Suddenly, he appears.</span>',
+        'You walk around a forest, just like the one you were walking through during the day.',
+        'Suddenly, he appears.',
 
         'show character ? normal at center',
 
         '? Greetings.',
-        'What the hell are you?',
+        'y What the hell are you?',
         '? Do you know what they call the shadow of the second moon?',
 
-        'centered <span class="custom-dialog">Looking up at the sky, there definetly is a second mooon.</span>',
-        'centered <span class="custom-dialog">And yes, it somehow has a shadow.</span>',
+        'Looking up at the sky, there definetly is a second mooon.</span>',
+        'And yes, it somehow has a shadow.</span>',
         'centered <span class="custom-dialog">Do you know the name?</span>',
 
-        'Of course I dont.',
+        'y Of course I dont.',
         '? They call it, MuaDIb.',
-        'You are... Muadib ? ',
+        'y You are... Muadib ? ',
 
         'hide character ?',
         'show character m normal at center',
 
         'm I am Paul... MuaDib.',
-        'Great. What are you anyway, Paul?',
+        'y Great. What are you anyway, Paul?',
         'm Well I would tell you, but it seems that someone is entering your tent as we speak.',
-        'What tent?',
+        'y What tent?',
         'm You are dreaming dumdum. Go and see for yourself. You will wake up soon anyway. Maybe we can continue our conversation later.',
 
         'hide character m',
         'show scene dark with fadeIn',
 
-        'centered <span class="custom-dialog">As you exit your dream, you wake up and see...</span>',
-        'centered <span class="custom-dialog">...</span>',
-        'centered <span class="custom-dialog">nothing?</span>',
-        'centered <span class="custom-dialog">Your arms and legs cant move. You are slowly running out of breath.</span>',
-        'centered <span class="custom-dialog">Someone is clenching you down and trying to strangle you by putting something over your head!</span>',
-        'centered <span class="custom-dialog">As you grasp your situation, you calm yourself down.</span>',
-        'centered <span class="custom-dialog">This is not your first time.</span>',
-        'centered <span class="custom-dialog">There are a lot of bounties on your head after all.</span>',
-        'centered <span class="custom-dialog">You quickly do an escape maneuver and swat the other person out of your tent.</span>',
-        'centered <span class="custom-dialog">You run out of the tent, hoping to catch the culprit red handed!</span>',
+        'As you exit your dream, you wake up and see...',
+        '...',
+        'nothing?',
+        'Your arms and legs cant move. You are slowly running out of breath.',
+        'Someone is clenching you down and trying to strangle you by putting something over your head!',
+        'As you grasp your situation, you calm yourself down.',
+        'This is not your first time.',
+        'There are a lot of bounties on your head after all.',
+        'You quickly do an escape maneuver and swat the other person out of your tent.',
+        'You run out of the tent, hoping to catch the culprit red handed!',
+
+        // Outside of the tent
 
         'show scene night with fadeIn',
 
-        'centered <span class="custom-dialog">As you head out, the only person you see is Bizarr poking his little head out of his tent.</span>',
+        'As you head out, the only person you see is Bizarr poking his little head out of his tent.',
 
         'show character b normal at right',
 
         'b What was that noise?',
-        'I was... attacked.',
+        'y I was... attacked.',
         'r You were WHAT?',
 
-        'centered <span class="custom-dialog">Rioth bursts out of her tent.</span>',
+        'Rioth bursts out of her tent.',
 
         'show character r normal at left',
 
         'r By whom! WHERE ARE THEY!',
-        'Well I expected them to be-',
+        'y Well I expected them to be-',
 
-        'centered <span class="custom-dialog">Before you can finish your sentence, Rioth falls to her knees and clenches her stomach.</span>',
+        'Before you can finish your sentence, Rioth falls to her knees and clenches her stomach.',
 
         'r My god. It still hurts like HELL. Guess I shouldnt have eaten that. How can I even sleep like this ?',
         'r Im sorry, I think Im gonna vomit. To spare you the sight Ill do it in the forest.',
 
         'hide character r',
 
-        'centered <span class="custom-dialog">Rioth storms off, leaving you with a still shocked Bizarr.</span>',
+        'Rioth storms off, leaving you with a still shocked Bizarr.',
 
-        'Did you hear anyobody run away from the camp?',
+        'y Did you hear anyobody run away from the camp?',
         'b No, I must have woken up just as they were starting to leave.',
-        'I see. Well, whatever. I dealt with this stuff before so it aint that big of a deal. Just go back to sleep.',
+        'y I see. Well, whatever. I dealt with this stuff before so it aint that big of a deal. Just go back to sleep.',
 
         'show scene dark with fadeIn',
 
@@ -992,7 +1040,7 @@ monogatari.script({
         'One of them wakes up just at the right time so that he can hide in his tent and claim he heard nothing?',
         'The other one didnt help me, even though she said she couldnt sleep? And now she runs off?',
         'There is only one logical conclusion from this chain of events. One of those two...',
-        'centered <span class="custom-dialog">is lying!</span>',
+        'y is lying!',
 
         'end of scene'
     ]
