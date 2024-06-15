@@ -87,6 +87,7 @@ monogatari.assets('scenes', {
     //Chapter 0:
     'room': 'bedroom1.jpg',
     'hall': 'guild-hall1.jpg',
+    'tavern': 'tavern1.jpg',
     'town': 'town-entrance1.jpg',
     //Chapter 1:
     'camp': 'camp-dusk2.jpg',
@@ -161,6 +162,8 @@ monogatari.characters({
 
 monogatari.script({
 
+    // Chapter 0
+
     'Start': [
 
         // Dobro jutro! Prijatna kafica
@@ -226,21 +229,13 @@ monogatari.script({
 
         'I wait patiently as Rilke looks at his precious board filled with all kinds of job posters',
 
-        // TalkingToLeader
+        // Talking to the Leader
 
         'rk How do you feel about going to hell?',
         'y Would prefer to stay on this plane.',
         'y Not in a mood to travel to hell just yet...',
-
         'rk So something more local..',
         'rk How about killing an adult green dragon?',
-
-        // prvo grananje
-
-        //Option 1: Reject to team up with someone new.
-        //Name]: ...
-        //Option 2: Accept to team up with someone new.
-        //[Name]: I don't have all day, Rilke.
 
         'centered <span class="custom-dialog">You are now being presented with the first choice within the game. This choice will bear consequences.</span>',
 
@@ -260,18 +255,13 @@ monogatari.script({
         }
     ],
 
-
-    //Option 1: Reject to team up with someone new.
-
     'Mission_Rejected': [
 
         'centered <span class="custom-dialog">You have decided to reject the mission.</span>',
 
-        'Hmm...',
-        'if I do not have my old teammates with me, I do not think I want to take on this mission...',
-        'It just would not feel right.',
-
-        'show character rk normal at center',
+        'y Hmm...',
+        'y If I do not have my old teammates with me, I do not think I want to take on this mission...',
+        'y It just would not feel right.',
 
         'Rilke gives me a nod of understanding',
 
@@ -282,43 +272,36 @@ monogatari.script({
         'The decision is made, and Rilke bids me farewell as I head out of the guild.',
         'I leave the building, feeling relaxed and free for the first time in a while.',
 
-        'show scene town with fadeIn',
+        'show scene room with fadeIn',
 
         'That night, as I lay in bed, I think to myself how lucky I am to have had such an easy day.',
         'That mission that got turned down surely will not end up being as big of a deal.',
         '...perhaps I should learn to stop overthinking things.',
-        'centered <span class="custom-dialog">You rejected the mission. Game over.</span>',
+        'centered <span class="custom-dialog">Ending 1 - Vacation time</span>',
         'end',
-
-        // Bad Ending 1 - Vacation time
     ],
-
-    //Option 2: Accept to team up with someone new.
 
     'Mission_Accepted': [
 
         'centered <span class="custom-dialog">You have decided to accept the mission.</span>',
 
-        'Sure, I suppose I can work with some new people for once.',
-
-        'show character rk normal at center',
-
+        'y Sure, I suppose I can work with some new people for once.',
         'rk So you accepted the mission...',
         'rk Good choice!',
         'rk I was hoping you would take it on.',
         'rk Let me give you a little information on the two people we have assigned to your team.',
         'rk The first is a woman barbarian named Rioth, who is known for her strength and battle prowess.',
         'rk The second is a male knight named Bizarr, who is a skilled swordsman, I hear.',
-
-        'Sounds promising.',
-        'Where are they now?',
-
+        'y Sounds promising.',
+        'y Where are they now?',
         'rk Right now, they are both over at the tavern.',
         'rk I highly suggest you go there and introduce yourself, get to know them a bit before starting this mission.',
+        'y Sounds like a good idea.',
+        'y Thanks and goodbye, Rilke!',
 
-        'Sounds like a good idea.',
-        'Thanks and goodbye, Rilke!',
         'I wave my hand to Rilke as I go to the tavern.',
+
+        'show scene tavern with fadeIn',
 
         'I wonder what I should ask him first...',
         'Should I ask about the skills he has or what kind of missions he has been on?',
@@ -344,33 +327,22 @@ monogatari.script({
         }
     ],
 
-    //'scene of tavern',
-
-    // Walking to CA1
-
-    // Talking to CA1
-
-
-    // ako odaberes rioth PRVI PUT
-
     'Conversation_Rioth_Start': [
 
         'centered <span class="custom-dialog">You have decided to talk to Rioth.</span>',
 
         'show character r normal at center',
+
         'r Holy shit!',
         'r Arent you {{player.name}}?',
         'r I thought i heard you dont even visit this hall anymore!',
         'r What brings you here?',
 
-        //razgovori - moguci ishodi s CA1 - Rioth
-        //OVDJE IDE AI
+        // OVDJE IDE AI
 
         'hide character r',
+
         'centered <span class="custom-dialog">Razgovor s AI</span>',
-
-        //OVDJE
-
         'centered <span class="custom-dialog">You can now choose to talk to the other remaining character or continue on with the story.</span>',
 
         {
@@ -388,32 +360,21 @@ monogatari.script({
         }
     ],
 
-    //Done with Conversation - Rioth
-
-
-    // Going to talk to the other CA2
-
-
-    //After finishing your conversation with Rioth, you begin walking towards where Bizarr is waiting
-
-
-    // Talking to CA2
-
-    // ako biras bazarr PRVI PUT
-    // AI dio
-    // name
-
     'Conversation_Bazarr_Start': [
 
         'centered <span class="custom-dialog">You have decided to talk to Bizarr.</span>',
 
         'show character b normal at center',
 
+        'b Hello there. My name is Bizarr.',
+        'b I am fighter from the guild as you can see.',
+        'b Are you my new comrade on the mission?',
+
+        // OVDJE IDE AI
+
         'hide character b',
+
         'centered <span class="custom-dialog">Razgovor s AI</span>',
-
-        //OVDJE
-
         'centered <span class="custom-dialog">You can now choose to talk to the other remaining character or continue on with the story.</span>',
 
         {
@@ -431,15 +392,11 @@ monogatari.script({
         }
     ],
 
-    //Going to talk to the other CA
-
-    // Ako si odabro rioth PRVI PUT, onda pricaj s bizarr
-
     'Conversation_Bazarr_After_Rioth': [
 
         'centered <span class="custom-dialog">You decided to talk to the other remaining character.</span>',
 
-        'After talking to Bizzar, you head over to where Rioth is waiting.',
+        'After talking to Rioth, you head over to where Bizarr is waiting.',
 
         'centered <span class="custom-dialog">Razgovor s AI</span>',
 
@@ -448,52 +405,40 @@ monogatari.script({
                 'Dialog': 'Finished talking with Bizarr...',
                 'continue': {
                     'Text': 'Continue forward.',
-                    'Do': 'jump Goodbye'
+                    'Do': 'jump Bizarr_and_Rioth'
                 }
             }
         }
     ],
 
-    // ako si odabro bazarr PRVI PUT, onda pricaj s rioth
-
     'Conversation_Rioth_After_Bazarr': [
 
         'centered <span class="custom-dialog">You decided to talk to the other remaining character.</span>',
 
-        'After talking to Rioth, you head over to where Bizarr is waiting.',
+        'After talking to Bizarr, you head over to where Rioth is waiting.',
 
         'centered <span class="custom-dialog">Razgovor s AI</span>',
-
-        //OVDJE
 
         {
             'Choice': {
                 'Dialog': 'Finished talking with Rioth...',
                 'continue': {
                     'Text': 'Continue forward.',
-                    'Do': 'jump Goodbye'
+                    'Do': 'jump Bizarr_and_Rioth'
                 }
             }
         }
     ],
 
-
-
-    // finished talking to both..
-    // Player can ask questions. After questions have been asked the player continues to other CA or if they already talked to him they go to wait in front of the town entrance for meetup.
-    // - ovo je vjerojatno prvi i zadnji put kad igrac moze razgovarati sa oba lika, posto je poanta igrice da nadalje igrac mora sam izabrati lika s kojim zeli razgovarati
-    // - naravno sa likom kojim ne pricamo gubimo mali broj bodova, a s likom kojim pricamo dobivamo / gubimo bodove ovisno o nasem razgovoru
-
-
-
-    // If user wants to continue conversation with Rioth
+    // Saying goodbye for now
 
     'Bizarr_and_Rioth': [
 
-        'centered < span class= "custom-dialog" >You finished talking to both characters.</span >',
+        'centered <span class="custom-dialog">You finished talking to both characters.</span>',
         'centered <span class="custom-dialog">You now continue on with the story.</span>',
 
         'After finishing the talk with Rioth and Bizarr at the tavern, the atmosphere is still friendly and upbeat.',
+
         'jump Goodbye'
     ],
 
@@ -502,6 +447,7 @@ monogatari.script({
         'centered <span class="custom-dialog">You decided to continue the story without talking to Bizarr.</span>',
 
         'After finishing the talk with Rioth at the tavern, the atmosphere is still friendly and upbeat.',
+
         'jump Goodbye'
     ],
     'samoBizarr': [
@@ -509,13 +455,11 @@ monogatari.script({
         'centered <span class="custom-dialog">You decided to continue the story without talking to Rioth.</span>',
 
         'After finishing the talk with Bizarr at the tavern, the atmosphere is still friendly and upbeat.',
+
         'jump Goodbye'
     ],
 
-    //Saying goodbye for now
-
     'Goodbye': [
-
 
         'I cannot help but feel a little excited getting to know some new people.',
         'With a quick smile, I head off to my room for my sword and backpack.',
@@ -523,31 +467,40 @@ monogatari.script({
 
         'show scene town with fadeIn',
 
-        // Entrance of the Town ?
-
         'Rioth and Bizarr are already waiting, standing beside the gate and making small talk about the upcoming mission.',
         'It is clear that they have been chatting for quite some time...',
 
         'show character r normal at left',
         'show character b normal at right',
 
-        //Entrance of the Town tu?
-        //'scene of the town entrance FadeIn'
-
         'Rioth and Bizarr glance over and notice me as I approach...',
+
         'b Ah, there you are.',
         'b Glad you finally made it out here.',
         'b I was beginning to wonder if youd gotten lost.',
-
-        'I was not lost...',
-        'Just went to quickly grab my things.',
-
+        'y I was not lost...',
+        'y Just went to quickly grab my things.',
         'r Well, now that we are all here, lets get going.',
 
         'The mood is casual and lighthearted',
         '...as I fall into step with them and begin to walk along the road toward our destination.',
 
-        //tu bi trebala bit neka scena kao fancy end of ch0
+        'jump Part1'
+    ],
+
+    // Chapter 1
+
+    'Part1': [
+
+        // Walking
+
+        'show scene dark with fadeIn',
+
+        'centered <span class="custom-dialog">Chapter 1 - On the road</span>',
+
+        'show scene dream with fadeIn',
+
+        'centered <span class="custom-dialog">8 hours later...</span>',
 
         'The journey has been long and arduous, with us having traveled through dense forests and treacherous mountain paths for the past 8 hours.',
         'The air is thick with moisture, making it hard to breathe easily as we walk. ',
