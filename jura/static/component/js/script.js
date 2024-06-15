@@ -755,6 +755,118 @@ monogatari.script({
         'jump Bugbear'
     ],
 
+    'Bugbear': [
+
+        'The Bugbear comes charging in, his huge axe held up high.',
+        'A low growling comes from the creature, and it seems like it might kill us right then and there.',
+        'Rioth quickly moves in and manages to strike the Bugbear, making him stagger back for a moment.',
+        'Bizarr also strikes it, but the impact of his sword seems to ricochet off its thick hide and it manages to strike my left arm in return.',
+        'While Bizarr is busy injuring me, Rioth manages to hit the Bugbear just below the neck, sending him staggering back and leaving him vulnerable to another hit.',
+        'She quickly takes advantage of the opportunity and goes to deal the finishing blow as she slams her axe in his head.',
+        'As it falls to the ground, she goes to search the body for any items of value. Meanwhile I see Bizarr running to me.',
+
+        'b Oh, uhh...sorry about the attack. It was totally an accident I swear to everything that is holy. Umm... I might have something for that.',
+
+        'Bizarr starts going though his bag and pulls out a vial with glowing liquid.',
+
+        'b Here you go...this healing potion should help with that. Its not the strongest one, but it should work well enough.',
+
+        'He holds out the bottle for me to take, with a friendly expression on his face.',
+
+        {
+            'Choice': {
+                'Dialog': 'Do you take the potion from your assailant?',
+                'accept': {
+                    'Text': 'Accept Healing Potion',
+                    'Do': 'jump Accept'
+                },
+                'decline': {
+                    'Text': 'Decline Healing Potion',
+                    'Do': 'jump Decline'
+                }
+            }
+        }
+    ],
+
+    'Decline': [
+
+        'y Oh, well, thank you...but I dont want to take something so valuable from you.',
+        'b Are you kidding?',
+        'y Look, I know its an expensive healing potion, I dont want to just take it.',
+        'b But Im...offering it to you. Its my way of saying sorry for nearly chopping your arm off.',
+        'y Dont worry. Ill be fine.',
+        'y "I feel like we could really use a break. Lets set up camp for the night and get some rest.',
+        'r Agreed. No point in trying to push further when were all tired and out of breath.',
+        'b Exactly. Lets just take it easy for a bit, then continue tomorrow.',
+        'b I can make us a meal and you two can set up the tents and rest. That work for everyone?',
+
+        'Rioth and I both nod, as we start setting up the camp.',
+
+        'show scene camp with fadeIn',
+
+        'Rioth gathers up some wood from the surrounding area, carefully selecting dried branches and logs before starting to make a pile for us to use as firewood.',
+        'Bizarr starts heating up a pot of soup, adding various ingredients from his pack to make a hearty meal for us to eat.',
+        'I set up the bedding for us to rest for the night, setting up our bedrolls and covering them with blankets for warmth.',
+        'The night is quiet, but not completely silent. We can hear the occasional rustle of leaves in the wind, and the distant cry of some nocturnal creatures.',
+        'After eating the warm, hearty soup that Bizarr had made for us, we each make our way to our separate tents and settle down for the night.',
+        'Rioth disappears into her tent quickly, as if eager to get some rest.',
+        'Bizarr looks around for a moment before entering his own tent, a slight yawn escaping his mouth as he does.',
+        'I stand in front of my tent for a moment, taking a glance around the campsite before entering and getting into my bedroll.',
+
+        'show scene dark with fadeIn',
+
+        'I lay there in my bedroll, slowly drifting off to sleep, when suddenly I am awoken by a strange noise.',
+        'Confused and disoriented, I realize that theres a cloth covering my head, making it impossible to see.',
+        'Panic starts to set in as my mind races to make sense of whats happening.I struggle weakly, trying to free myself.',
+        'But my left arm is still damaged and useless, while my right arm is kept pinned down.',
+        'My mind is racing, trying to figure out whats happening, when I feel the sharp pain of a blade piercing through my body.',
+        'Everything goes black as I lie there, slowly losing last bits of consciousness as the pain subsides.',
+        'The last thing Im aware of is a sound of voice fading away as I slip into darkness.',
+
+        'centered <span class="custom-dialog">Ending 3 - Should have taken that potion...</span>',
+
+        'end'
+    ],
+
+    'Accept': [
+
+        'I nod slightly, accepting the vial of healing potion from Bizarr.',
+
+        'y Thank you. Sure you wont need it later ? ',
+        'b No and its no problem. Its the least I could do after what happened back there.',
+
+        'Bizarr gives a slight laugh, as if trying to lighten the mood after what he did.',
+
+        'y "I feel like we could really use a break. Lets set up camp for the night and get some rest.',
+        'r Agreed. No point in trying to push further when were all tired and out of breath.',
+        'b Exactly. Lets just take it easy for a bit, then continue tomorrow.',
+        'b I can make us a meal and you two can set up the tents and rest. That work for everyone?',
+
+        'Rioth and I both nod, as we start setting up the camp.',
+
+        'show scene camp with fadeIn',
+
+        'We all set up our camp for the night.',
+        'Rioth starts gathering some firewood, Bizarr is doing soup by the looks of it and I am simply organizing and setting up bedding.',
+        'Theres a moment of quiet as we settle into the campsite, and I decide to break the silence by talking to Rioth.',
+
+        'y Hey. Just wanted to say thanks for basically soloing the bugbear.',
+        'r Its no problem. I didnt want any of you to get hurt on my watch.',
+        'r Too bad I didnt anticipate you two would somehow injure each other or better said Bizarr would injure you.',
+
+        'Rioth drops some firewood near the camp.',
+
+        'r Also, Bugbears arent the toughest opponents Ive faced.',
+        'y Really? So youve fought much tougher foes than that bugbear?',
+        'r Yeah, Ive gone up against Ogres, Trolls, and even a few Giants before.',
+        'r The giant was probably the toughest of them all, but I still managed to take them down in the end.',
+
+        'As you pinch the last tent, Rioth gets up and wipes the sweat of her head.',
+
+        'r Phew, finally done with that. Im gonna get some wood for the fire. Hopefully the little guy can cook well, because Im starving.'
+
+    ],
+
     'Dream': [
 
         'show scene camp with fadeIn',
