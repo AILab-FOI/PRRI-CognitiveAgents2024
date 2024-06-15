@@ -686,6 +686,8 @@ monogatari.script({
 
     'Listen': [
 
+        'centered <span class="custom-dialog">You have decided to keep listening to them.</span>',
+
         'I continue to listen to their pointless arguing and think why am I stuck with this two people.',
         'I start to rethink my life choices as I hold my head.',
 
@@ -710,6 +712,8 @@ monogatari.script({
 
     'Investigate': [
 
+        'centered <span class="custom-dialog">You have decided to investigate the noise.</span>',
+
         'While listening to Rioth and Bizarr argue, I hear a peculiar, faint noise from amongst the trees.',
         'I decide to investigate on my own, unsure of what it might be.',
         'However, as soon as I step few meters away from my team, a large, gnarly, bugbear ambushes me from his hiding spot.',
@@ -725,6 +729,8 @@ monogatari.script({
 
     'Focus': [
 
+        'centered <span class="custom-dialog">You have decided to keep focusing on the sound.</span>',
+
         'While listening to Rioth and Bizarr argue, my attention is drawn to a new and puzzling sound coming from beyond the bushes.',
         'It sounds like something moving nearby, and the more I listen, the louder and closer it seems to get.',
         'I focus more and realise what that awful sound is and quickly yell to my team.',
@@ -737,6 +743,8 @@ monogatari.script({
     ],
 
     'Calm': [
+
+        'centered <span class="custom-dialog">You have decided to calm the party down.</span>',
 
         'y Hey, guys, enough...youre starting to-',
 
@@ -790,6 +798,8 @@ monogatari.script({
 
     'Decline': [
 
+        'centered <span class="custom-dialog">You have refused the potion.</span>',
+
         'y Oh, well, thank you...but I dont want to take something so valuable from you.',
         'b Are you kidding?',
         'y Look, I know its an expensive healing potion, I dont want to just take it.',
@@ -829,6 +839,8 @@ monogatari.script({
     ],
 
     'Accept': [
+
+        'centered <span class="custom-dialog">You have accepted the potion.</span>',
 
         'I nod slightly, accepting the vial of healing potion from Bizarr.',
 
