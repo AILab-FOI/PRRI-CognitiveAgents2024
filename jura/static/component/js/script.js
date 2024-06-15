@@ -90,6 +90,7 @@ monogatari.assets('scenes', {
     'tavern': 'tavern1.jpg',
     'town': 'town-entrance1.jpg',
     //Chapter 1:
+    'forest': 'forest1.jpg',
     'camp': 'camp-dusk2.jpg',
     'night': 'camp-night1.jpg',
     'dream': 'dream.jpg'
@@ -482,6 +483,9 @@ monogatari.script({
         'y Just went to quickly grab my things.',
         'r Well, now that we are all here, lets get going.',
 
+        'hide character r',
+        'hide character b',
+
         'The mood is casual and lighthearted',
         '...as I fall into step with them and begin to walk along the road toward our destination.',
 
@@ -498,7 +502,7 @@ monogatari.script({
 
         'centered <span class="custom-dialog">Chapter 1 - On the road</span>',
 
-        'show scene dream with fadeIn',
+        'show scene forest with fadeIn',
 
         'centered <span class="custom-dialog">8 hours later...</span>',
 
@@ -511,15 +515,26 @@ monogatari.script({
         'The thick foliage makes it hard to see further ahead, but you catch glimpses of Rioth and Bizarr walking ahead of you.',
         'Your gaze keeps shifting between the two of them, wondering if you should perhaps try and talk to at least one of your teammates.',
 
+        // The thoughts about who to talk to
+
         'You glance in the direction Rioth is located at.',
+
+        'show character r normal at left',
+
         'She appears to have a stoic look on her face, her gaze firm ahead as she walks with a determined stride.',
         'She seems more like the type to prefer to stick to herself, rather than engaging in casual conversation.',
         'But she seems like she knows what she is doing and could be a great source of advice or support if needed.',
 
+        'hide character r',
+
         'You switch your gaze towards Bizarr',
+
+        'show character b normal at right',
 
         'He on the other hand seems the complete opposite, with an upbeat and cheerful expression as he walks ahead.',
         'He has an air of confidence about him, as if he is open and welcoming to anyone who wants to talk to him.',
+
+        'hide character b',
 
         {
             'Choice': {
