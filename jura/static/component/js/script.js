@@ -12,7 +12,9 @@ monogatari.action('message').messages({
     }
 });
 
+
 var agent = document.getElementById('agent');
+
 
 // Funkcija za prikaz bota
 function showBot(videoPath) {
@@ -27,7 +29,7 @@ function showBot(videoPath) {
     if (videoPath) {
         agent.innerHTML = `
             <video width="200" height="200" controls autoplay>
-                <source src="${videoPath}" type="video/mp4">
+                <source src="${videoPath}" type="video/mov">
                 Your browser does not support the video tag.
             </video>
             <button class="hide-button" onclick="hideBot()">Završi razgovor.</button>
@@ -129,7 +131,7 @@ monogatari.assets('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets('scenes', {
-    'dark': 'dark.jpg',
+    'dark': 'black.jpg',
     //Chapter 0:
     'room': 'bedroom1.jpg',
     'hall': 'guild-hall1.jpg',
