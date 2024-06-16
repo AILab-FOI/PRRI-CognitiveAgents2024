@@ -15,18 +15,40 @@ monogatari.action('message').messages({
 var agent = document.getElementById('agent');
 
 // Funkcija za prikaz bota
-function showBot() {
-    agent.style.display = 'block';
+function showBot(videoPath) {
+    // Provjera postoji li već bot-container
+    let botContainer = document.getElementById('bot-container');
+    if (!botContainer) {
+        botContainer = document.createElement('div');
+        botContainer.id = 'bot-container';
+        document.body.appendChild(botContainer);
+    }
+
+    // Dodavanje video elementa u bot-container
+    botContainer.innerHTML = `
+        <video id="bot-video" controls autoplay>
+            <source src="${videoPath}" type="video/mov">
+            Your browser does not support the video tag.
+        </video>
+    `;
+    botContainer.style.display = 'block';
 }
+
+//Test - showBot('../assets/videos/bizarr.mov');
 
 // Funkcija za sakrivanje bota
 function hideBot() {
-    agent.style.display = 'none';
+    const botContainer = document.getElementById('bot-container');
+    if (botContainer) {
+        botContainer.style.display = 'none';
+        botContainer.innerHTML = ''; // Clear content
+    }
 }
+
 
 function triggerBotInteraction(section) {
     if (section.includes('Razgovor s AI')) {
-        showBot();
+        showBot(videoPath);
         question('bok'); // Pokrećemo interakciju s botom
     } else {
         hideBot(); // Sakrivamo bota
@@ -80,7 +102,7 @@ monogatari.configuration('credits', {
             "Sandra Sačarić", "Jakov Kadić"
         ],
         "Developers": [
-            "Sonja Kolarić", "Ivan Simić", "Luka Pošta", "Dora Garafolić", "Dorijan Kos", "Jana Jambrešić", "Frano Simić", "Karlo Rosenthal", "Karmelo Mrvica", "Mateo Zović"
+            "Sonja Kolarić", "Ivan Simić", "Luka Pošta", "Dora Garafolić", "Dorijan Kos", "Jana Jambrešić", "Frano Šimić", "Karlo Rosenthal", "Karmelo Mrvica", "Mateo Zović"
         ]
     },
     "Assets": {
@@ -216,6 +238,9 @@ monogatari.script({
         'centered <span class="custom-dialog">Chapter 0 - Just an average day</span>',
 
         'show scene room with fadeIn',
+
+        //test
+        'centered <span class="custom-dialog">Razgovor s AI</span>',
 
         'The morning sun peaks through the curtains as you open your eyes. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
         'The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',
