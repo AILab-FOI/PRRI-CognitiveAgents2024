@@ -172,13 +172,13 @@ text-box [data-content=dialog] {
     width: 200px;
     height: 200px;
     background-color: red;
-    display: none; /*skriveno po defaultu*/
+    display: none; /* Skriveno po defaultu*/
 }
 
     #agent video {
-        width: 100%; /* prilagodjava sirini agenta */
-        height: 100%; /* prilagodjava visini agenta */
-        object-fit: cover; /* prilagodjava video bez gubitka proporcija */
+        width: 100%; /* Prilagodjava sirini agenta */
+        height: 100%; /* Prilagodjava visini agenta */
+        object-fit: cover; /* Prilagodjava video bez gubitka proporcija */
     }
 
     #agent .hide-button {

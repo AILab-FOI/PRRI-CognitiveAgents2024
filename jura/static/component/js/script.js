@@ -16,26 +16,32 @@ var agent = document.getElementById('agent');
 
 // Funkcija za prikaz bota
 function showBot(videoPath) {
-    // Provjera postoji li vec postoji
+    // Provjera postoji li već agent div
     if (!agent) {
         agent = document.createElement('div');
         agent.id = 'agent';
         document.body.appendChild(agent);
     }
 
-    // Dodavanje video elementa u agent div
-    agent.innerHTML = `
-        <video width="200" height="200" controls autoplay>
-            <source src="${videoPath}" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <button class="hide-button" onclick="hideBot()">Završi razgovor.</button>
-    `;
-    agent.classList.add('active');
-    agent.style.display = 'block';
+    // Dodavanje video elementa u agent div samo ako je videoPath definiran
+    if (videoPath) {
+        agent.innerHTML = `
+            <video width="200" height="200" controls autoplay>
+                <source src="${videoPath}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="hide-button" onclick="hideBot()">Završi razgovor.</button>
+        `;
+        agent.classList.add('active');
+        agent.style.display = 'block';
+        // Pokrećemo interakciju s botom samo ako je funkcija question definirana
+        if (typeof question === 'function') {
+            question('bok'); // Primjer pokretanja interakcije s botom
+        } else {
+            console.error('Funkcija question nije definirana!');
+        }
+    }
 }
-
-//Test - showBot('../assets/videos/bizarr.mov');
 
 // Funkcija za sakrivanje bota
 function hideBot() {
@@ -48,18 +54,8 @@ function hideBot() {
 
 
 // Funkcija za pokretanje interakcije s botom
-/*function triggerBotInteraction(section, videoPath) {
-    if (section.includes('Razgovor s AI')) {
-        showBot(videoPath); // Prikazujemo bota s navedenim video path-om
-        question('bok'); // Pokrecemo interakciju s botom
-    } else {
-        hideBot(); // Sakrivamo bota
-    }
-}*/
-
 function triggerBotInteraction(videoPath) {
     showBot(videoPath); // Prikazujemo bota s navedenim video path-om
-    question('bok'); // Pokrecemo interakciju s botom
 }
 
 // Define the notifications used in the game
@@ -228,7 +224,13 @@ monogatari.script({
         //test
         'centered <span class="custom-dialog">Razgovor s AI</span>',
         //"triggerBotInteraction('Razgovor s AI', '../assets/videos/bizarr.mov')",
-        "triggerBotInteraction('../assets/videos/bizarr.mov')",
+        {
+            'Function': {
+                'Call': function () {
+                    triggerBotInteraction('../assets/videos/bizarr.mov');
+                }
+            }
+        },
 
         'The morning sun peaks through the curtains as you open your eyes. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
         'The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',
