@@ -17,64 +17,42 @@ var agent = document.getElementById('agent');
 // Funkcija za prikaz bota
 function showBot(videoPath) {
     // Provjera postoji li već bot-container
-    let botContainer = document.getElementById('bot-container');
-    if (!botContainer) {
-        botContainer = document.createElement('div');
-        botContainer.id = 'bot-container';
-        document.body.appendChild(botContainer);
+    if (!agent) {
+        agent = document.createElement('div');
+        agent.id = 'agent';
+        document.body.appendChild(agent);
     }
 
-    // Dodavanje video elementa u bot-container
-    botContainer.innerHTML = `
-        <video id="bot-video" controls autoplay>
-            <source src="${videoPath}" type="video/mov">
+    // Dodavanje video elementa u agent div
+    agent.innerHTML = `
+        <video width="200" height="200" controls autoplay>
+            <source src="${videoPath}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     `;
-    botContainer.style.display = 'block';
+    agent.style.display = 'block';
 }
 
 //Test - showBot('../assets/videos/bizarr.mov');
 
 // Funkcija za sakrivanje bota
 function hideBot() {
-    const botContainer = document.getElementById('bot-container');
-    if (botContainer) {
-        botContainer.style.display = 'none';
-        botContainer.innerHTML = ''; // Clear content
+    if (agent) {
+        agent.style.display = 'none';
+        agent.innerHTML = ''; // Očistite sadržaj kako biste spriječili preklapanje videozapisa
     }
 }
 
 
-function triggerBotInteraction(section) {
+// Funkcija za pokretanje interakcije s botom
+function triggerBotInteraction(section, videoPath) {
     if (section.includes('Razgovor s AI')) {
-        showBot(videoPath);
+        showBot(videoPath); // Prikazujemo bota s navedenim video path-om
         question('bok'); // Pokrećemo interakciju s botom
     } else {
         hideBot(); // Sakrivamo bota
     }
 }
-
-// Funkcija za prikazivanje sadržaja i aktiviranje bota gdje je potrebno
-function displayContent(section) {
-    var contentHtml = '';
-    section.forEach(item => {
-        if (typeof item === 'string') {
-            contentHtml += '<p>' + item + '</p>';
-        } else if (typeof item === 'object' && item.Choice) {
-            contentHtml += '<p>' + item.Choice.Dialog + '</p>';
-            for (var option in item.Choice) {
-                if (option !== 'Dialog') {
-                    contentHtml += '<button onclick="' + item.Choice[option].Do + '">' + item.Choice[option].Text + '</button>';
-                }
-            }
-        }
-    });
-
-    $('#content').html(contentHtml);
-    triggerBotInteraction(contentHtml);
-}
-
 
 // Define the notifications used in the game
 monogatari.action('notification').notifications({
@@ -241,6 +219,7 @@ monogatari.script({
 
         //test
         'centered <span class="custom-dialog">Razgovor s AI</span>',
+        "triggerBotInteraction('Razgovor s AI', '../assets/videos/bizarr1.mp4')",
 
         'The morning sun peaks through the curtains as you open your eyes. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
         'The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',
