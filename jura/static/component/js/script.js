@@ -33,9 +33,23 @@ monogatari.action('canvas').objects({
 
 // Credits of the people involved in the creation of this awesome game
 monogatari.configuration('credits', {
-
+    "Developers": {
+        "Project management": [
+            "Sandra Sačarić", "Jakov Kadić"
+        ],
+        "Developers": [
+            "Sonja Kolarić", "Ivan Simić", "Luka Pošta", "Dora Garafolić", "Dorijan Kos", "Jana Jambrešić", "Frano Simić", "Karlo Rosenthal", "Karmelo Mrvica", "Mateo Zović"
+        ]
+    },
+    "Assets": {
+        "game_screen, main_menu, button_hover.png, button_idle.png, dialog.png, help_screen.png, quick_menu.png, settings_screen.png, slider.png, slider_thumb.png, game_menu.png, return_hover.png, return_idle.png, save_button_hover.png, save_button_idle.png, choice_idle_background.png, textbox.png, choice_hover_background.png, main_menu_bg.png, start_idle.png, about_hover.png, about_idle.png, help_hover.png, help_idle.png, load_hover.png, load_idle.png, options_hover.png, options_idle.png, start_hover.png":
+            "Skolaztika, <a href='https://skolaztika.itch.io/fantasy-renpy-gui-template'>Link to assets pack</a>",
+        "namebox.png":
+            "<a href='https://www.deviantart.com/cospigeon'>Fylgjur</a>, <a href='https://lunarmoonstudios.itch.io/antique-inspired-gui'>Link to assets pack</a>"
+    }
 });
 
+/*  */
 
 // Define the images that will be available on your game's image gallery
 monogatari.assets('gallery', {
@@ -113,7 +127,7 @@ monogatari.characters({
             normal: '<div style="width: 50px; height: 50px; background-color: yellow; border-radius: 50%;" ></div>'
         }
     }
-})
+});
 
 
 
@@ -481,7 +495,7 @@ monogatari.script({
 
     'Goodbye': [
 
-        
+
         'I cannot help but feel a little excited getting to know some new people.',
         'With a quick smile, I head off to my room for my sword and backpack.',
         'As I exit the tavern, I make my way to the entrance of the town.',

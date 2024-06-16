@@ -22,6 +22,7 @@
 @import url('load_save.css');
 @import url('help_settings.css');
 @import url('dialog.css');
+@import url('credits.css');
 
 @font-face {
 	font-family: 'Caslon';
@@ -111,22 +112,18 @@ choice-container {
 }
 
 [data-component="choice-container"] button {
-	/*background-image: url("../assets/ui/Fantasy_project/game/gui/button/choice_hover_background.png");*/
-	background-image: url("../assets/ui/fantasy_project_gui/button/choice_hover_background.png");
+	background-image: url("../assets/ui/game_screen/choice_idle_background.png");
 	background-color: transparent;
 	width: 1190px;
 	height: 50px;
 	border-radius: 0px;
-	color: black;
+	color: #3C1F14;
 }
 
 /* Choice Button Style on Hover */
 [data-component="choice-container"] button:hover {
-	/*background-image: url("../assets/ui/Fantasy_project/game/gui/button/choice_idle_background.png");*/
-	background-image: url("../assets/ui/fantasy_project_gui/button/choice_idle_background.png");
-	width: 1190px;
-	height: 50px;
-	border-radius: 0px;
+	background-image: url("../assets/ui/game_screen/choice_hover_background.png");
+	color: #3C1F14;
 }
 
 /* Text Box styling */
@@ -148,6 +145,10 @@ text-box[data-speaking=narrator]>[data-content=name] {
 	overflow: visible;
 	text-align: center;
 	align-content: center;
+}
+
+text-box[style="display: block;"] {
+	display: grid !important;
 }
 
 text-box [data-content=text] {
@@ -191,12 +192,18 @@ text-box [data-content=character-name] {
 [data-component="centered-dialog"] {}
 
 .custom-dialog {
-	color: white; /* Text color */
-	background-color: rgba(0, 0, 0, 0.7); /* Background color with transparency */
-	padding: 10px; /* Padding around the text */
-	border-radius: 5px; /* Rounded corners */
-	border: 2px solid rgb(255, 171, 145); /* Border */
-	text-align: center; /* Center align the text */
+	color: white;
+	/* Text color */
+	background-color: rgba(0, 0, 0, 0.7);
+	/* Background color with transparency */
+	padding: 10px;
+	/* Padding around the text */
+	border-radius: 5px;
+	/* Rounded corners */
+	border: 2px solid rgb(255, 171, 145);
+	/* Border */
+	text-align: center;
+	/* Center align the text */
 }
 
 /* Character Images Styles */
@@ -207,13 +214,11 @@ text-box [data-content=character-name] {
 
 [data-screen="game"] [data-character]:not(.focus) {
 	opacity: 0.5;
-	transform: translateY(10px);
 	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
 [data-screen="game"] [data-character].focus {
 	opacity: 1;
-	transform: translateY(0);
 	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
@@ -240,7 +245,8 @@ text-box [data-content=character-name] {
 @media screen and (min-width: 62em) {
 
 	[data-screen="load"] h2,
-	[data-screen="save"] div.horizontal.horizontal--center {
+	[data-screen="save"] div.horizontal.horizontal--center,
+	[data-screen=credits] h2 {
 		height: 24.5vh;
 		padding-top: 8vh;
 	}
@@ -267,7 +273,8 @@ text-box [data-content=character-name] {
 @media screen and (min-width: 75em) {
 
 	[data-screen="load"] h2,
-	[data-screen="save"] div.horizontal.horizontal--center {
+	[data-screen="save"] div.horizontal.horizontal--center,
+	[data-screen=credits] h2 {
 		height: 24vh;
 		padding-top: 9vh;
 	}
