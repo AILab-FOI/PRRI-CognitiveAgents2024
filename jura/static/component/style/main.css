@@ -173,6 +173,13 @@ text-box [data-content=dialog] {
 	background-color: red; 
 	display: none; /*skriveno po defaultu*/
 }
+
+	#agent video {
+		width: 100%; /* prilagodjava sirini agenta */
+		height: 100%; /* prilagodjava visini agenta */
+		object-fit: cover; /* prilagodjava video bez gubitka proporcija */
+	}
+
 /* Character Name Style */
 
 text-box [data-content=name] {
