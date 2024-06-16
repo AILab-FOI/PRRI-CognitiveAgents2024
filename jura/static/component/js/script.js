@@ -73,7 +73,7 @@ monogatari.assets('sounds', {
 
 // Define the videos used in the game.
 monogatari.assets('videos', {
-
+    'bizzar':'bizzar.mov'
 });
 
 // Define the images used in the game.
@@ -141,7 +141,7 @@ monogatari.script({
         'show scene room with fadeIn',
         //'show character in scene',
 
-        'centered <span class="custom-dialog">Test odlomak</span>',
+
 
         ' The morning sun peaks through the curtains as my eyes open. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
         ' The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',
@@ -395,28 +395,16 @@ monogatari.script({
     // name
 
     'Conversation_Bazarr_Start': [
-
-        'centered <span class="custom-dialog">You have decided to talk to Bizarr.</span>',
-
-        'show character b normal at center',
-
-        'hide character b',
+        'centered <span class="custom-dialog">You decided to talk to the other remaining character.</span>',
+        'After talking to Bizzar, you head over to where Rioth is waiting.',
         'centered <span class="custom-dialog">Razgovor s AI</span>',
-
-        //OVDJE
-
-        'centered <span class="custom-dialog">You can now choose to talk to the other remaining character or continue on with the story.</span>',
 
         {
             'Choice': {
-                'Dialog': 'After talking to Bizarr, you...',
-                'rioth2': {
-                    'Text': 'Go talk to Rioth.',
-                    'Do': 'jump Conversation_Rioth_After_Bazarr'
-                },
+                'Dialog': 'Finished talking with Bizarr...',
                 'continue': {
                     'Text': 'Continue forward.',
-                    'Do': 'jump samoBizarr'
+                    'Do': 'jump Goodbye'
                 }
             }
         }
