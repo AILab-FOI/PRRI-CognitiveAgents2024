@@ -223,14 +223,8 @@ monogatari.script({
 
         //test
         'centered <span class="custom-dialog">Razgovor s AI</span>',
-        //"triggerBotInteraction('Razgovor s AI', '../assets/videos/bizarr.mov')",
-        {
-            'Function': {
-                'Call': function () {
-                    triggerBotInteraction('../assets/videos/bizarr.mov');
-                }
-            }
-        },
+
+        triggerBotInteraction("../assets/videos/bizarr.mov"),
 
         'The morning sun peaks through the curtains as you open your eyes. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
         'The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',
