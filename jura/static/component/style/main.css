@@ -167,6 +167,12 @@ text-box [data-content=dialog] {
 */
 }
 
+#agent {
+	width: 200px; 
+	height: 200px;
+	background-color: red; 
+	display: none; 
+}
 /* Character Name Style */
 
 text-box [data-content=name] {
