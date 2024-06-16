@@ -4,6 +4,8 @@
     "\\jura",
     "\\jura\\static",
     "\\jura\\static\\component",
+    "\\jura\\static\\component\\assets",
+    "\\jura\\static\\component\\assets\\scenes",
     "\\jura\\static\\component\\js"
   ],
   "PreviewInSolutionExplorer": false
