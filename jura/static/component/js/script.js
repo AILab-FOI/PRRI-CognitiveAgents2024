@@ -16,7 +16,7 @@ var agent = document.getElementById('agent');
 
 // Funkcija za prikaz bota
 function showBot(videoPath) {
-    // Provjera postoji li već bot-container
+    // Provjera postoji li vec postoji
     if (!agent) {
         agent = document.createElement('div');
         agent.id = 'agent';
@@ -29,7 +29,9 @@ function showBot(videoPath) {
             <source src="${videoPath}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
+        <button class="hide-button" onclick="hideBot()">Završi razgovor.</button>
     `;
+    agent.classList.add('active');
     agent.style.display = 'block';
 }
 
@@ -39,19 +41,25 @@ function showBot(videoPath) {
 function hideBot() {
     if (agent) {
         agent.style.display = 'none';
-        agent.innerHTML = ''; // Očistite sadržaj kako biste spriječili preklapanje videozapisa
+        agent.classList.remove('active');
+        agent.innerHTML = ''; // Ciscenje da se izbjegne overlap
     }
 }
 
 
 // Funkcija za pokretanje interakcije s botom
-function triggerBotInteraction(section, videoPath) {
+/*function triggerBotInteraction(section, videoPath) {
     if (section.includes('Razgovor s AI')) {
         showBot(videoPath); // Prikazujemo bota s navedenim video path-om
-        question('bok'); // Pokrećemo interakciju s botom
+        question('bok'); // Pokrecemo interakciju s botom
     } else {
         hideBot(); // Sakrivamo bota
     }
+}*/
+
+function triggerBotInteraction(videoPath) {
+    showBot(videoPath); // Prikazujemo bota s navedenim video path-om
+    question('bok'); // Pokrecemo interakciju s botom
 }
 
 // Define the notifications used in the game
@@ -219,7 +227,8 @@ monogatari.script({
 
         //test
         'centered <span class="custom-dialog">Razgovor s AI</span>',
-        "triggerBotInteraction('Razgovor s AI', '../assets/videos/bizarr1.mp4')",
+        //"triggerBotInteraction('Razgovor s AI', '../assets/videos/bizarr.mov')",
+        "triggerBotInteraction('../assets/videos/bizarr.mov')",
 
         'The morning sun peaks through the curtains as you open your eyes. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
         'The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',
