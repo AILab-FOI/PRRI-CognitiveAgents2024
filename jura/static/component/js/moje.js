@@ -17,12 +17,12 @@ var agent = document.getElementById('agent');
 
 
 // Funkcija za prikaz bota
-function showBot(videoPath) {
+/*function showBot(videoPath) {
     // Provjera postoji li već agent div
     if (!agent) {
         agent = document.createElement('div');
         agent.id = 'agent';
-        document.body.appendChild(agent);
+        //document.body.appendChild(agent);
     }
 
     // Dodavanje video elementa u agent div samo ako je videoPath definiran
@@ -37,6 +37,7 @@ function showBot(videoPath) {
         agent.classList.add('active');
         agent.style.display = 'block';
         // Pokrećemo interakciju s botom samo ako je funkcija question definirana
+        // ???
         if (typeof question === 'function') {
             question('bok'); // Primjer pokretanja interakcije s botom
         } else {
@@ -44,6 +45,8 @@ function showBot(videoPath) {
         }
     }
 }
+
+//sa strane servera detektirati koji je aktivan, mehanizam koji ce sluziti da proslijedjujemo odredjenom botu pitanje, poruka koja se salje sadrzi inf o tome kojem se salje upit, 
 
 // Funkcija za sakrivanje bota
 function hideBot() {
@@ -54,11 +57,10 @@ function hideBot() {
     }
 }
 
-
 // Funkcija za pokretanje interakcije s botom
 function triggerBotInteraction(videoPath) {
     showBot(videoPath); // Prikazujemo bota s navedenim video path-om
-}
+}*/
 
 // Define the notifications used in the game
 monogatari.action('notification').notifications({
@@ -158,14 +160,16 @@ monogatari.characters({
         name: 'Rioth',
         color: '#565656',
         sprites: {
-            normal: 'rioth/normal.png'
+            normal: 'rioth/normal.png',
+            ai: '<video id="rioth" width="200" height="200" controls autoplay><source src="../assets/videos/rioth.webm" type="video/mov"></video>'
         }
     },
     'b': {
         name: 'Bizarr',
         color: '#81523F',
         sprites: {
-            normal: 'bizarr/normal.png'
+            normal: 'bizarr/normal.png',
+            ai: '<video width="200" height="200" controls autoplay><source src="../assets/videos/bizarr.webm" type="video/mov"></video>'
         }
     },
     'z': {
@@ -226,7 +230,9 @@ monogatari.script({
         //test
         'centered <span class="custom-dialog">Razgovor s AI</span>',
 
-        triggerBotInteraction("../assets/videos/bizarr.mov"),
+        'show character r ai at center,',
+
+        //triggerBotInteraction("../assets/videos/bizarr.mov"),
 
         'The morning sun peaks through the curtains as you open your eyes. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
         'The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',

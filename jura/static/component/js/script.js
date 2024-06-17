@@ -1,4 +1,4 @@
-﻿/*global monogatari */
+/*global monogatari */
 
 // Define the messages used in the game.
 monogatari.action('message').messages({
@@ -11,6 +11,56 @@ monogatari.action('message').messages({
 		`
     }
 });
+
+
+var agent = document.getElementById('agent');
+
+
+// Funkcija za prikaz bota
+/*function showBot(videoPath) {
+    // Provjera postoji li već agent div
+    if (!agent) {
+        agent = document.createElement('div');
+        agent.id = 'agent';
+        //document.body.appendChild(agent);
+    }
+
+    // Dodavanje video elementa u agent div samo ako je videoPath definiran
+    if (videoPath) {
+        agent.innerHTML = `
+            <video width="200" height="200" controls autoplay>
+                <source src="${videoPath}" type="video/mov">
+                Your browser does not support the video tag.
+            </video>
+            <button class="hide-button" onclick="hideBot()">Završi razgovor.</button>
+        `;
+        agent.classList.add('active');
+        agent.style.display = 'block';
+        // Pokrećemo interakciju s botom samo ako je funkcija question definirana
+        // ???
+        if (typeof question === 'function') {
+            question('bok'); // Primjer pokretanja interakcije s botom
+        } else {
+            console.error('Funkcija question nije definirana!');
+        }
+    }
+}
+
+//sa strane servera detektirati koji je aktivan, mehanizam koji ce sluziti da proslijedjujemo odredjenom botu pitanje, poruka koja se salje sadrzi inf o tome kojem se salje upit, 
+
+// Funkcija za sakrivanje bota
+function hideBot() {
+    if (agent) {
+        agent.style.display = 'none';
+        agent.classList.remove('active');
+        agent.innerHTML = ''; // Ciscenje da se izbjegne overlap
+    }
+}
+
+// Funkcija za pokretanje interakcije s botom
+function triggerBotInteraction(videoPath) {
+    showBot(videoPath); // Prikazujemo bota s navedenim video path-om
+}*/
 
 // Define the notifications used in the game
 monogatari.action('notification').notifications({
@@ -38,7 +88,7 @@ monogatari.configuration('credits', {
             "Sandra Sačarić", "Jakov Kadić"
         ],
         "Developers": [
-            "Sonja Kolarić", "Ivan Simić", "Luka Pošta", "Dora Garafolić", "Dorijan Kos", "Jana Jambrešić", "Frano Simić", "Karlo Rosenthal", "Karmelo Mrvica", "Mateo Zović"
+            "Sonja Kolarić", "Ivan Simić", "Luka Pošta", "Dora Garafolić", "Dorijan Kos", "Jana Jambrešić", "Frano Šimić", "Karlo Rosenthal", "Karmelo Mrvica", "Mateo Zović"
         ]
     },
     "Assets": {
@@ -73,6 +123,7 @@ monogatari.assets('sounds', {
 
 // Define the videos used in the game.
 monogatari.assets('videos', {
+    'rioth': 'rioth.webm'
 
 });
 
@@ -83,7 +134,7 @@ monogatari.assets('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets('scenes', {
-    'dark': 'dark.jpg',
+    'dark': 'black.jpg',
     //Chapter 0:
     'room': 'bedroom1.jpg',
     'hall': 'guild-hall1.jpg',
@@ -103,14 +154,16 @@ monogatari.characters({
         name: 'You',
         color: '#000000',
         sprites: {
-            normal: '<div style="width: 50px; height: 50px; background-color: blue; border-radius: 50%;" ></div>'
+            //normal: '<div style="width: 50px; height: 50px; background-color: blue; border-radius: 50%;" ></div>'
         }
     },
     'r': {
         name: 'Rioth',
         color: '#565656',
         sprites: {
-            normal: 'rioth/normal.png'
+            normal: 'rioth/normal.png',
+            //ai: '<div id="rioth" class="bot"><video width="200" height="200" controls autoplay><source src="/rioth/rioth.webm" type="video/webm"></video></div>'
+            ai: 'rioth/rioth.webm'
         }
     },
     'b': {
@@ -118,27 +171,28 @@ monogatari.characters({
         color: '#81523F',
         sprites: {
             normal: 'bizarr/normal.png'
+            //ai: '<video width="200" height="200" controls autoplay><source src="../assets/videos/bizarr.webm" type="video/mov"></video>'
         }
     },
     'z': {
         name: 'Zoro',
         color: '#6D6A4D',
         sprites: {
-            normal: '<div style="width: 50px; height: 50px; background-color: blue; border-radius: 50%;" ></div>'
+            //normal: '<div style="width: 50px; height: 50px; background-color: blue; border-radius: 50%;" ></div>'
         }
     },
     'br': {
         name: 'Brol',
         color: '#6D6A4D',
         sprites: {
-            normal: '<div style="width: 50px; height: 50px; background-color: red; border-radius: 50%;" ></div>'
+            //normal: '<div style="width: 50px; height: 50px; background-color: red; border-radius: 50%;" ></div>'
         }
     },
     'rk': {
         name: 'Rilke',
         color: '#6D6A4D',
         sprites: {
-            normal: '<div style="width: 50px; height: 50px; background-color: yellow; border-radius: 50%;" ></div>'
+            //normal: '<div style="width: 50px; height: 50px; background-color: yellow; border-radius: 50%;" ></div>'
         }
     },
     '?': {
@@ -174,6 +228,16 @@ monogatari.script({
         'centered <span class="custom-dialog">Chapter 0 - Just an average day</span>',
 
         'show scene room with fadeIn',
+
+        //test
+        'centered <span class="custom-dialog">Razgovor s AI</span>',
+
+        //prikazivanje videa
+        //'show video rioth modal',
+
+        ////'show character r ai at center,',
+
+        //triggerBotInteraction("../assets/videos/bizarr.mov"),
 
         'The morning sun peaks through the curtains as you open your eyes. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
         'The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',

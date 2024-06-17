@@ -39,7 +39,9 @@ $(window).on( 'load', function(){
 		window.recognition.stop();
 		STOP = true;
 		output.innerHTML = transcript + ' ';
-		window.ws.send( transcript );
+		//novo
+		let activeBot = getActiveBot();
+        window.ws.send(JSON.stringify({ bot: activeBot, message: transcript }));
 	    };
 
 	    recognition.onspeechend = () => {
@@ -107,10 +109,11 @@ $(window).on( 'load', function(){
 function connect() {
     ws = new WebSocket( 'ws://127.0.0.1:8000' );
     window.ws = ws;
+
     ws.onopen = function() {
-	ws.send( 'connect' );
-	DONT = false;
-	play_part( 'tisina' );
+	    ws.send( 'connect' );
+	    DONT = false;
+	    play_part( 'tisina' );
     };
 
 
@@ -119,6 +122,8 @@ function connect() {
 	console.log( msg.data );
 	console.log( msg.data.toString() );
 	play_part( msg.data.toString() );
+	//novo
+	setActiveBot(data.bot);
 
     };
 
