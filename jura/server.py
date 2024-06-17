@@ -47,6 +47,6 @@ if __name__ == '__main__':
         train( chatbot )
         sys.exit()
         
-    server = SimpleWebSocketServer( '0.0.0.0', 8000, NLPController )
+    server = SimpleWebSocketServer('0.0.0.0', 8000, NLPController)
     _thread.start_new_thread( server.serveforever, () )	
     app.run( host='0.0.0.0', debug=False )

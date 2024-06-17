@@ -105,37 +105,37 @@ $(window).on( 'load', function(){
 
 
 function connect() {
-    ws = new WebSocket( 'ws://127.0.0.1:8000' );
+    ws = new WebSocket('ws://127.0.0.1:8000');
     window.ws = ws;
-    ws.onopen = function() {
-	ws.send( 'connect' );
-	DONT = false;
-	play_part( 'tisina' );
+
+    ws.onopen = function () {
+        console.log('Socket connected.');
+        ws.send('connect');
+        DONT = false;
+        play_part('tisina');
     };
 
-
-
-    ws.onmessage = function( msg ) {
-	console.log( msg.data );
-	console.log( msg.data.toString() );
-	play_part( msg.data.toString() );
-
+    ws.onmessage = function (msg) {
+        console.log('Message received:', msg.data);
+        play_part(msg.data.toString());
     };
 
-    ws.onclose = function(e) {
-	console.log( 'Socket is closed. Reconnect will be attempted in 1 second.', e.reason );
-	setTimeout(function() {
-	    connect();
-	}, 1000);
+    ws.onclose = function (e) {
+        console.log('Socket is closed. Reconnect will be attempted in 1 second.', e.reason);
+        setTimeout(function () {
+            connect();
+        }, 1000);
     };
 
-    ws.onerror = function(err) {
-	console.error( 'Socket encountered error: ', err.message, 'Closing socket' );
-	ws.close();
+    ws.onerror = function (err) {
+        console.error('Socket encountered error:', err.message, 'Closing socket');
+        ws.close();
     };
 }
 
+// Pokreni funkciju za povezivanje na WebSocket server
 connect();
+
 
 right = {
     'text-align': 'right',

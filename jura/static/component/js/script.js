@@ -70,6 +70,7 @@ monogatari.assets('sounds', {
 // Define the videos used in the game.
 
 monogatari.assets('videos', {
+'ri': 'rioth.webm'
 });
 
 // Define the images used in the game.
@@ -171,6 +172,8 @@ monogatari.script({
         'centered <span class="custom-dialog">Chapter 0 - Just an average day</span>',
 
         'show scene room with fadeIn',
+
+        'show video ri modal',
 
         'The morning sun peaks through the curtains as you open your eyes. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
         'The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',

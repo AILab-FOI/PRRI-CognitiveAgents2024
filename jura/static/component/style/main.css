@@ -190,7 +190,7 @@ text-box [data-content=dialog] {
         border: 1px solid #ccc;
         border-radius: 5px;
         cursor: pointer;
-        display: none; /* Skriveno po defaultu */
+        display: block; /* Skriveno po defaultu */
     }
 
     #agent.active .hide-button {
