@@ -1,4 +1,4 @@
-﻿/*global monogatari */
+/*global monogatari */
 
 // Define the messages used in the game.
 monogatari.action('message').messages({
@@ -11,6 +11,54 @@ monogatari.action('message').messages({
 		`
     }
 });
+
+
+var agent = document.getElementById('agent');
+
+
+// Funkcija za prikaz bota
+function showBot(videoPath) {
+    // Provjera postoji li već agent div
+    if (!agent) {
+        agent = document.createElement('div');
+        agent.id = 'agent';
+        document.body.appendChild(agent);
+    }
+
+    // Dodavanje video elementa u agent div samo ako je videoPath definiran
+    if (videoPath) {
+        agent.innerHTML = `
+            <video width="200" height="200" controls autoplay>
+                <source src="${videoPath}" type="video/mov">
+                Your browser does not support the video tag.
+            </video>
+            <button class="hide-button" onclick="hideBot()">Završi razgovor.</button>
+        `;
+        agent.classList.add('active');
+        agent.style.display = 'block';
+        // Pokrećemo interakciju s botom samo ako je funkcija question definirana
+        if (typeof question === 'function') {
+            question('bok'); // Primjer pokretanja interakcije s botom
+        } else {
+            console.error('Funkcija question nije definirana!');
+        }
+    }
+}
+
+// Funkcija za sakrivanje bota
+function hideBot() {
+    if (agent) {
+        agent.style.display = 'none';
+        agent.classList.remove('active');
+        agent.innerHTML = ''; // Ciscenje da se izbjegne overlap
+    }
+}
+
+
+// Funkcija za pokretanje interakcije s botom
+function triggerBotInteraction(videoPath) {
+    showBot(videoPath); // Prikazujemo bota s navedenim video path-om
+}
 
 // Define the notifications used in the game
 monogatari.action('notification').notifications({
@@ -38,7 +86,7 @@ monogatari.configuration('credits', {
             "Sandra Sačarić", "Jakov Kadić"
         ],
         "Developers": [
-            "Sonja Kolarić", "Ivan Simić", "Luka Pošta", "Dora Garafolić", "Dorijan Kos", "Jana Jambrešić", "Frano Simić", "Karlo Rosenthal", "Karmelo Mrvica", "Mateo Zović"
+            "Sonja Kolarić", "Ivan Simić", "Luka Pošta", "Dora Garafolić", "Dorijan Kos", "Jana Jambrešić", "Frano Šimić", "Karlo Rosenthal", "Karmelo Mrvica", "Mateo Zović"
         ]
     },
     "Assets": {
@@ -83,7 +131,7 @@ monogatari.assets('images', {
 
 // Define the backgrounds for each scene.
 monogatari.assets('scenes', {
-    'dark': 'dark.jpg',
+    'dark': 'black.jpg',
     //Chapter 0:
     'room': 'bedroom1.jpg',
     'hall': 'guild-hall1.jpg',
@@ -174,6 +222,11 @@ monogatari.script({
         'centered <span class="custom-dialog">Chapter 0 - Just an average day</span>',
 
         'show scene room with fadeIn',
+
+        //test
+        'centered <span class="custom-dialog">Razgovor s AI</span>',
+
+        triggerBotInteraction("../assets/videos/bizarr.mov"),
 
         'The morning sun peaks through the curtains as you open your eyes. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
         'The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',
