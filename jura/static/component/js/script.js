@@ -1,4 +1,5 @@
-﻿/*global monogatari */
+
+/*global monogatari */
 
 // Define the messages used in the game.
 monogatari.action('message').messages({
@@ -22,13 +23,13 @@ monogatari.action('notification').notifications({
 });
 
 // Define the Particles JS Configurations used in the game
-monogatari.action('particles').particles({
 
-});
+monogatari.action('particles').particles({
+)};
+
 
 // Define the canvas objects used in the game
-monogatari.action('canvas').objects({
-
+monogatari.action ('canvas').objects ({
 });
 
 // Credits of the people involved in the creation of this awesome game
@@ -49,40 +50,35 @@ monogatari.configuration('credits', {
     }
 });
 
-/*  */
 
 // Define the images that will be available on your game's image gallery
-monogatari.assets('gallery', {
-
+monogatari.assets ('gallery', {
 });
 
 // Define the music used in the game.
 monogatari.assets('music', {
-
 });
 
 // Define the voice files used in the game.
 monogatari.assets('voices', {
-
 });
 
 // Define the sounds used in the game.
 monogatari.assets('sounds', {
-
 });
 
 // Define the videos used in the game.
-monogatari.assets('videos', {
 
+monogatari.assets('videos', {
 });
 
 // Define the images used in the game.
-monogatari.assets('images', {
 
+monogatari.assets('images', {
 });
 
-// Define the backgrounds for each scene.
-monogatari.assets('scenes', {
+// Define the backgrounds for each scene.   
+monogatari.assets ('scenes', {
     'dark': 'dark.jpg',
     //Chapter 0:
     'room': 'bedroom1.jpg',
@@ -94,6 +90,7 @@ monogatari.assets('scenes', {
     'camp': 'camp-dusk2.jpg',
     'night': 'camp-night1.jpg',
     'dream': 'dream.jpg'
+
 });
 
 
