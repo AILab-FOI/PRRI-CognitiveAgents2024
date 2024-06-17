@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="df557c6e-7d2c-40ce-88f6-a6428eeaf22a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/characters/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/characters/bizarr/normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/characters/rioth/normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/CaslonAntique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/MorrisRomanAlternate-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/gallery/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon.icns" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon_120x120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon_128x128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon_150x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon_152x152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon_167x167.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon_180x180.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon_192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon_310x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon_310x310.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon_48x48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon_512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon_60x60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon_70x70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon_76x76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/icon_96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/backgrounds/main-menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/music/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scenes/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scenes/bedroom1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scenes/camp-dawn1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scenes/camp-dawn2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scenes/camp-dusk1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scenes/camp-dusk2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scenes/camp-night1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scenes/guild-hall1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scenes/tavern1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scenes/town-entrance1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sounds/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/button_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/button_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/dialog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/Config/config_ground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/Config/config_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/Config/config_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/Config/config_shover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/Config/config_sidle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/HelpButtons/gamepad_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/HelpButtons/gamepad_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/HelpButtons/gamepad_selected_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/HelpButtons/keyboard_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/HelpButtons/keyboard_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/HelpButtons/keyboard_selected_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/HelpButtons/mouse_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/HelpButtons/mouse_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/HelpButtons/mouse_selected_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/SaveLoad/saveload_ground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/SaveLoad/saveload_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/SaveLoad/saveload_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/SaveLoad/saveload_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/abouthistory/divider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/abouthistory/menu_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/abouthistory/menu_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/bar/bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/bar/left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/bar/right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/bar/top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/choice_hover_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/choice_idle_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/gallerybutton1_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/gallerybutton1_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/gallerybutton1_selected_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/gallerybutton2_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/gallerybutton2_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/gallerybutton2_selected_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/gallerybutton3_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/gallerybutton3_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/gallerybutton3_selected_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/gallerybutton4_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/gallerybutton4_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/gallerybutton4_selected_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/gallerybutton_idle_blank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/gallerybutton_selecthover_blank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/hover_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/idle_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/quick_hover_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/quick_idle_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/return_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/button/return_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/ctc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/font/CaslonAntique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/font/MorrisRomanAlternate-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/frame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/gallery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/game_menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/main_menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/main_menu/buttons/about_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/main_menu/buttons/about_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/main_menu/buttons/gallery_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/main_menu/buttons/gallery_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/main_menu/buttons/help_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/main_menu/buttons/help_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/main_menu/buttons/load_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/main_menu/buttons/load_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/main_menu/buttons/options_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/main_menu/buttons/options_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/main_menu/buttons/quit_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/main_menu/buttons/quit_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/main_menu/buttons/start_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/main_menu/buttons/start_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/namebox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/notify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/nvl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/overlay/confirm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/overlay/game_menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/overlay/game_menu_.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/scrollbar/horizontal_hover_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/scrollbar/horizontal_hover_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/scrollbar/horizontal_idle_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/scrollbar/horizontal_idle_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/scrollbar/vertical_hover_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/scrollbar/vertical_hover_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/scrollbar/vertical_idle_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/scrollbar/vertical_idle_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/skip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/skulls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/slider/horizontal_hover_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/slider/horizontal_hover_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/slider/horizontal_idle_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/slider/horizontal_idle_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/slider/vertical_hover_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/slider/vertical_hover_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/slider/vertical_idle_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/slider/vertical_idle_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/textbox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/fantasy_project_gui/window_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/game_menu/game_menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/game_menu/game_menu_footer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/game_menu/game_menu_header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/game_menu/return_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/game_menu/return_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/game_menu/save_button_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/game_menu/save_button_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/game_screen/namebox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/game_screen/textbox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/help_screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/main_menu/buttons/help_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/main_menu/buttons/help_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/main_menu/buttons/load_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/main_menu/buttons/load_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/main_menu/buttons/options_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/main_menu/buttons/options_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/main_menu/buttons/start_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/main_menu/buttons/start_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/main_menu/main_menu_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/quick_menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/settings_screen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/slider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ui/slider_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/videos/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/voices/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/core/monogatari.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/core/monogatari.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/core/monogatari.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/debug/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/debug/debug.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/electron/entitlements.mac.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/electron/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/electron/notarize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/electron/preload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/error/400.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/error/401.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/error/403.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/error/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/error/405.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/error/408.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/error/429.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/error/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/error/503.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/nginx/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/nginx/common/general.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/nginx/common/security.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/nginx/nginx.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/nginx/sites-available/localhost.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/nginx/sites-enabled/localhost.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scripttest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/scriptyes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/storage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/Config/config_ground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/Config/config_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/Config/config_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/Config/config_shover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/Config/config_sidle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/HelpButtons/gamepad_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/HelpButtons/gamepad_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/HelpButtons/gamepad_selected_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/HelpButtons/keyboard_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/HelpButtons/keyboard_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/HelpButtons/keyboard_selected_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/HelpButtons/mouse_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/HelpButtons/mouse_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/HelpButtons/mouse_selected_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/SaveLoad/saveload_ground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/SaveLoad/saveload_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/SaveLoad/saveload_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/SaveLoad/saveload_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/abouthistory/divider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/abouthistory/menu_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/abouthistory/menu_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/bar/bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/bar/left.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/bar/right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/bar/top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/choice_hover_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/choice_idle_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/gallerybutton1_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/gallerybutton1_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/gallerybutton1_selected_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/gallerybutton2_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/gallerybutton2_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/gallerybutton2_selected_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/gallerybutton3_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/gallerybutton3_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/gallerybutton3_selected_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/gallerybutton4_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/gallerybutton4_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/gallerybutton4_selected_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/gallerybutton_idle_blank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/gallerybutton_selecthover_blank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/hover_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/idle_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/quick_hover_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/quick_idle_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/return_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/button/return_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/ctc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/font/CaslonAntique.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/font/MorrisRomanAlternate-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/frame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/gallery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/game_menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/main_menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/main_menu/buttons/about_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/main_menu/buttons/about_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/main_menu/buttons/gallery_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/main_menu/buttons/gallery_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/main_menu/buttons/help_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/main_menu/buttons/help_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/main_menu/buttons/load_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/main_menu/buttons/load_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/main_menu/buttons/options_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/main_menu/buttons/options_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/main_menu/buttons/quit_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/main_menu/buttons/quit_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/main_menu/buttons/start_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/main_menu/buttons/start_idle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/namebox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/notify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/nvl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/overlay/confirm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/overlay/game_menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/overlay/game_menu_.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/scrollbar/horizontal_hover_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/scrollbar/horizontal_hover_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/scrollbar/horizontal_idle_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/scrollbar/horizontal_idle_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/scrollbar/vertical_hover_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/scrollbar/vertical_hover_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/scrollbar/vertical_idle_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/scrollbar/vertical_idle_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/skip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/skulls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/slider/horizontal_hover_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/slider/horizontal_hover_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/slider/horizontal_idle_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/slider/horizontal_idle_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/slider/vertical_hover_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/slider/vertical_hover_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/slider/vertical_idle_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/slider/vertical_idle_thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/textbox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/fantasy_project_gui/window_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/help_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/help_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/help_idle.png" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/help_idle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/load_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/load_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/load_idle.png" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/load_idle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/options_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/options_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/options_idle.png" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/options_idle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/start_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/start_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/start_idle.png" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/assets/ui/main_menu/buttons/start_idle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/js/moje.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/js/pravi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/js/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/style/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/style/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/style/help_settings.css" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/style/help_settings.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/style/load_save.css" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/style/load_save.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/style/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/style/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/style/main_screen.css" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/style/main_screen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jura/static/component/style/quick_menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/jura/static/component/style/quick_menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/help_settings.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/load_save.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/main_screen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/quick_menu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2i0yKORkxyDKip61TJlO7diQYPj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.server.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Sandra__new"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5b207ade9991-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17890.14" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df557c6e-7d2c-40ce-88f6-a6428eeaf22a" name="Changes" comment="" />
+      <created>1718641726032</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718641726032</updated>
+    </task>
+    <servers />
+  </component>
+</project>

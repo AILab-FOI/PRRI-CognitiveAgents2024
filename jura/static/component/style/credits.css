@@ -1,0 +1,28 @@
+[data-screen=credits] {
+    background-image: url("../assets/ui/game_menu/game_menu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+[data-screen=credits] h2 {
+    background-image: url(../assets/ui/game_menu/game_menu_header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 29vh;
+    padding-top: 10vh;
+    background-position: top;
+}
+
+[data-content=credits] {
+    justify-content: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    gap: 1vh;
+    margin-top: 14%;
+    margin-bottom: 6%;
+}

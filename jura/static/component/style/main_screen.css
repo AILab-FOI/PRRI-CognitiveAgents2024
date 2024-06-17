@@ -18,7 +18,11 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 100%;
+    width: 100.7%;
+}
+
+[data-screen="main"] button {
+    background-color: transparent;
 }
 
 /*Start button*/
@@ -27,7 +31,6 @@
     color: transparent;
     width: 383px;
     height: 93px;
-    border-radius: 30px;
 }
 
 [data-screen="main"] button:nth-child(1):hover {
@@ -68,4 +71,16 @@
 
 [data-screen="main"] button:nth-child(4):hover {
     background-image: url("../assets/ui/main_menu/buttons/help_hover.png");
+}
+
+/*Credits button*/
+[data-screen="main"] button:nth-child(5) {
+    background-image: url("../assets/ui/main_menu/buttons/about_idle.png");
+    color: transparent;
+    width: 264px;
+    height: 50px;
+}
+
+[data-screen="main"] button:nth-child(5):hover {
+    background-image: url("../assets/ui/main_menu/buttons/about_hover.png");
 }
