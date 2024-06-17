@@ -17,67 +17,87 @@
  * ===========================
 **/
 
+@import url('main_screen.css');
+@import url('quick_menu.css');
+@import url('load_save.css');
+@import url('help_settings.css');
+@import url('dialog.css');
+
+@font-face {
+    font-family: 'Caslon';
+    src: url(../assets/fonts/CaslonAntique.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Morris';
+    src: url(../assets/fonts/MorrisRomanAlternate-Black.ttf) format('truetype');
+}
+
 /* General Style */
 body {
-
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+    font-family: 'Caslon';
+    font-size: clamp(1.5rem, 1.5rem, 2rem);
 }
 
 /* Simple Button styles*/
 button {
-
+    font-family: 'Morris';
+    color: #3C1F14;
+    background-image: url("../assets/ui/button_idle.png");
+    height: 48px;
+    width: 223px;
+    border: none;
+    background-size: cover;
+    background-position: center;
 }
 
-/* Simple Button Style on Hover */
-button:hover {
+    /* Simple Button Style on Hover */
+    button:hover {
+        color: #D3B28B;
+        background-image: url("../assets/ui/button_hover.png");
+    }
 
+    button:focus {
+        outline: none;
+        border: none;
+    }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Morris';
 }
 
 /* General Styling for Menu Screens */
 [data-screen] {
-
 }
 
-/**
+    /** 
  * ===========================
- * Main Menu Styling
- * ===========================
-**/
-
-/* Main Menu Styling */
-[data-screen="main"] {
-
-}
-
-/* Main Menu Buttons Styling */
-[data-screen="main"] button {
-
-}
-
-/**
- * ===========================
- * Save and Load Menus Styling
+ * Return button on Game Menu
  * ===========================
 **/
 
-/* Slots Style */
-[data-component="save-slot"] figure {
+    [data-screen]:not([data-screen=game]) [data-action=back] > svg {
+        display: none;
+    }
 
-}
+    [data-screen]:not([data-screen=game]) [data-action=back] {
+        background-image: url(../assets/ui/game_menu/return_idle.png);
+        border-radius: 0%;
+        height: 64px;
+        width: 64px;
+        margin-top: 113px;
+        margin-left: 90%;
+    }
 
-/* Slot's Image Style */
-[data-component="save-slot"] img {
-
-}
-
-/* Slots Title Style */
-[data-component="save-slot"] figcaption {
-
-}
-
-/* Slots Delete Button Style */
-[data-component="save-slot"] button {
-
-}
+        [data-screen]:not([data-screen=game]) [data-action=back]:hover {
+            background-image: url("../assets/ui/game_menu/return_hover.png");
+        }
 
 /**
  * ===========================
@@ -86,154 +106,241 @@ button:hover {
 **/
 
 /* Choice Buttons style */
+
+choice-container {
+    top: 45%;
+}
+
 [data-component="choice-container"] button {
-
+    /*background-image: url("../assets/ui/Fantasy_project/game/gui/button/choice_hover_background.png");*/
+    background-image: url("../assets/ui/fantasy_project_gui/button/choice_hover_background.png");
+    background-color: transparent;
+    width: 1190px;
+    height: 50px;
+    border-radius: 0px;
+    color: black;
 }
 
-/* Choice Button Style on Hover */
-[data-component="choice-container"] button:hover {
-
-}
+    /* Choice Button Style on Hover */
+    [data-component="choice-container"] button:hover {
+        /*background-image: url("../assets/ui/Fantasy_project/game/gui/button/choice_idle_background.png");*/
+        background-image: url("../assets/ui/fantasy_project_gui/button/choice_idle_background.png");
+        width: 1190px;
+        height: 50px;
+        border-radius: 0px;
+    }
 
 /* Text Box styling */
-[data-component="text-box"] {
-
+text-box {
+    background-color: transparent;
 }
 
-/* Character Name Style */
-[data-ui="who"] {
+    text-box[mode=nvl] > [data-content=text] {
+        /*background-image: none;*/
+    }
 
+    text-box[data-speaking=narrator] > [data-content=name] {
+        display: none;
+    }
+
+[data-component="text-box"] {
+    min-height: 30%;
+    bottom: 7.5%;
+    overflow: visible;
+    text-align: center;
+    align-content: center;
+}
+
+text-box [data-content=text] {
+    background-image: url("../assets/ui/game_screen/textbox.png");
+    background-repeat: no-repeat;
+    overflow: visible;
+    min-height: 280px;
+    background-position: center center;
+}
+
+text-box [data-content=dialog] {
+    padding: 5rem;
+    max-width: 50%;
+    margin-left: 25%;
+    color: #3c1f14;
+    /*padding: 0;
+*/
+}
+
+#agent {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: none; /* Skriveno po defaultu*/
+}
+
+    #agent video {
+        width: 100%; /* Prilagodjava sirini agenta */
+        height: 100%; /* Prilagodjava visini agenta */
+        object-fit: cover; /* Prilagodjava video bez gubitka proporcija */
+    }
+
+    #agent .hide-button {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        padding: 5px 10px;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none; /* Skriveno po defaultu */
+    }
+
+    #agent.active .hide-button {
+        display: block; /* Prikazano kada je agent aktivan */
+    }
+
+/* Character Name Style */
+
+text-box [data-content=name] {
+    position: absolute;
+    /*top: -100px;*/
+    /*left: 25%;*/
+    margin-top: -5.5%;
+    height: 100px;
+    width: 370px;
+    background-image: url("../assets/ui/game_screen/namebox.png");
+    background-repeat: no-repeat;
+}
+
+text-box [data-content=character-name] {
+    padding-top: 3.2rem;
+    padding-right: 8.2rem;
+    font-size: larger;
+    font-family: 'Morris';
 }
 
 /* Style for Centered Text */
 [data-component="centered-dialog"] {
+}
 
+.custom-dialog {
+    color: white; /* Text color */
+    background-color: rgba(0, 0, 0, 0.7); /* Background color with transparency */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid rgb(255, 171, 145); /* Border */
+    text-align: center; /* Center align the text */
 }
 
 /* Character Images Styles */
 [data-screen="game"] [data-character] {
-
+    position: absolute;
+    bottom: 0;
 }
+
+    [data-screen="game"] [data-character]:not(.focus) {
+        opacity: 0.5;
+        transform: translateY(10px);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    [data-screen="game"] [data-character].focus {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+
 
 /* Other Images Styles */
 [data-screen="game"] [data-image] {
-
-}
-
-/**
- * ===========================
- * Quick Menu Styling
- * ===========================
-**/
-
-/* These styles are applied to the Mobile version of the Quick Menu */
-
-/* Quick Menu Style */
-[data-component="quick-menu"] {
-
-}
-
-/* Quick Menu Buttons Style */
-[data-component="quick-menu"] span {
-
-}
-
-/* Quick Menu Buttons Style on Hover */
-[data-component="quick-menu"] span:hover {
-
-}
-
-/* Quick Menu Buttons Icon Style */
-[data-component="quick-menu"] > span > .fa {
-
-}
-
-/**
- * ===========================
- * Range Styling
- * ===========================
-**/
-
-/* Use the background property to set a color for these */
-input[type=range]:focus::-webkit-slider-runnable-track {
-
-}
-
-input[type=range]::-webkit-slider-runnable-track {
-
-}
-
-input[type=range]:focus::-ms-fill-upper {
-
-}
-
-input[type=range]:focus::-ms-fill-lower {
-
-}
-
-input[type=range]::-moz-range-track {
-
-}
-
-input[type=range]::-ms-fill-lower {
-
-}
-
-input[type=range]::-ms-fill-upper {
-
 }
 
 /** Medium Screens, Phablets (601px) **/
 @media screen and (min-width: 37.56255em) {
-	/* Styles for the desktop version of the Quick Menu */
+    /* Styles for the desktop version of the Quick Menu */
 
-	/* Quick Menu Style */
-	[data-component="quick-menu"] {
+    /* Quick Menu Style */
+    [data-component="quick-menu"] {
+    }
 
-	}
+        /* Quick Menu Buttons Style */
+        [data-component="quick-menu"] span {
+        }
 
-	/* Quick Menu Buttons Style */
-	[data-component="quick-menu"] span {
-
-	}
-
-	/* Quick Menu Buttons Style on Hover */
-	[data-component="quick-menu"] span:hover {
-
-	}
+            /* Quick Menu Buttons Style on Hover */
+            [data-component="quick-menu"] span:hover {
+            }
 }
 
 /** Medium Devices, Tablets (992px)**/
 @media screen and (min-width: 62em) {
 
+    [data-screen="load"] h2,
+    [data-screen="save"] div.horizontal.horizontal--center {
+        height: 24.5vh;
+        padding-top: 8vh;
+    }
+
+    [data-screen="save"] div.horizontal.horizontal--center {
+        padding-top: 7vh;
+    }
+
+    [data-screen="load"] h3 {
+        padding-top: 11vh;
+    }
+
+    [data-component="slot-container"] {
+        margin-top: 14%;
+        margin-bottom: 6%;
+    }
+
+    [data-component="footer-component"] {
+        height: 13vh;
+    }
 }
 
 /** HD Screen, Large Devices, Wide Screens, Desktop (1200px) **/
 @media screen and (min-width: 75em) {
 
+    [data-screen="load"] h2,
+    [data-screen="save"] div.horizontal.horizontal--center {
+        height: 24vh;
+        padding-top: 9vh;
+    }
+
+    [data-screen="save"] div.horizontal.horizontal--center {
+        padding-top: 6vh;
+    }
+
+    [data-screen="load"] h3 {
+        padding-top: 13vh;
+    }
+
+    [data-component="slot-container"] {
+        margin-top: 13.5%;
+        margin-bottom: 6%;
+    }
+
+    [data-component="footer-component"] {
+        height: 13vh;
+    }
 }
 
 /** Full HD Screen, Large Devices, Wide Screens, Large Desktops (1920px) **/
 @media screen and (min-width: 120em) {
-
 }
 
 /** Retina Screen , Large Devices, Wide Screens(2560px) **/
 @media screen and (min-width: 160em) {
-
 }
 
 /** 4k Screens, Large Devices, Wide Screens (3840px) **/
 @media screen and (min-width: 240em) {
-
 }
 
 /** 5k Screens, Large Devices, Wide Screens (5000px) **/
 @media screen and (min-width: 312.5em) {
-
 }
 
 /** 8k Screens, Large Devices, Wide Screens (8000px) **/
 @media screen and (min-width: 500em) {
-
 }
