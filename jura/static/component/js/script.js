@@ -25,7 +25,7 @@ monogatari.action('notification').notifications({
 // Define the Particles JS Configurations used in the game
 
 monogatari.action('particles').particles({
-)};
+});
 
 
 // Define the canvas objects used in the game
