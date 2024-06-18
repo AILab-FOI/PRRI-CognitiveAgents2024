@@ -210,7 +210,7 @@ monogatari.script({
 
         'show scene hall with fadeIn',
 
-        'I stand before the front desk, patiently waiting for the guild leader to arrive. As I stand there, two members pass by, Zoro and Brol.',
+        'You stand before the front desk, patiently waiting for the guild leader to arrive. As you stand there, two members pass by, Zoro and Brol.',
         'They are exchanging friendly banter as they go and a small conversation ensues.',
 
         'z So, did your bet pay off last night?',
@@ -218,7 +218,7 @@ monogatari.script({
         'z Not bad, not bad at all. You gonna use it to buy some drinks?',
         'br You know it.',
 
-        'I casually roll my eyes as they walk past due to knowing how Brols gambling last night really went...',
+        'You casually roll your eyes as they walk past due to knowing how Brols gambling last night really went...',
         'Truth be told, he lost 10 gold coins to get a few copper ones.',
 
         'rk Good day to you.',
@@ -228,7 +228,7 @@ monogatari.script({
         'rk Hmm...',
         'rk Let me check my board.',
 
-        'I wait patiently as Rilke looks at his precious board filled with all kinds of job posters',
+        'You wait patiently as Rilke looks at his precious board filled with all kinds of job posters',
 
         // Talking to the Leader
 
@@ -270,14 +270,14 @@ monogatari.script({
         'rk I understand not wanting to dive into something like this without people you trust by your side.',
         'rk I will give the mission to someone else who might be eager to try out a new team setup.',
 
-        'The decision is made, and Rilke bids me farewell as I head out of the guild.',
-        'I leave the building, feeling relaxed and free for the first time in a while.',
+        'The decision is made, and Rilke bids you farewell as you head out of the guild.',
+        'You leave the building, feeling relaxed and free for the first time in a while.',
 
         'show scene room with fadeIn',
 
-        'That night, as I lay in bed, I think to myself how lucky I am to have had such an easy day.',
+        'That night, as you lay in bed, you think to yourself how lucky you are to have had such an easy day.',
         'That mission that got turned down surely will not end up being as big of a deal.',
-        '...perhaps I should learn to stop overthinking things.',
+        '...perhaps you should learn to stop overthinking things.',
 
         'show scene dark with fadeIn',
 
@@ -304,15 +304,15 @@ monogatari.script({
         'y Sounds like a good idea.',
         'y Thanks and goodbye, Rilke!',
 
-        'I wave my hand to Rilke as I go to the tavern.',
+        'You wave your hand to Rilke and head towards the tavern.',
 
         'show scene tavern with fadeIn',
 
-        'I wonder what I should ask him first...',
-        'Should I ask about the skills he has or what kind of missions he has been on?',
-        'Or maybe... I should rather ask why he even joined this team?',
-        'But...',
-        'I would like to know more about them personally...',
+        'y I wonder what I should ask them first...',
+        'y Should I ask about the skills they have or what kind of missions they have been on?',
+        'y Or maybe... I should rather ask why they even joined this team?',
+        'y But...',
+        'y I would like to know more about them personally...',
 
         'centered <span class="custom-dialog">You are given the option to choose which one of the main characters you will talk to first.</span>',
         'centered <span class="custom-dialog">You will get to talk to both characters if you so desire so the initial choice does not matter.</span> ',
@@ -466,9 +466,9 @@ monogatari.script({
 
     'Goodbye': [
 
-        'I cannot help but feel a little excited getting to know some new people.',
-        'With a quick smile, I head off to my room for my sword and backpack.',
-        'As I exit the tavern, I make my way to the entrance of the town.',
+        'You cannot help but feel a little excited getting to know some new people.',
+        'With a quick smile, you head off to your room for your sword and backpack.',
+        'As you exit the tavern, you make your way to the entrance of the town.',
 
         'show scene town with fadeIn',
 
@@ -478,7 +478,7 @@ monogatari.script({
         'show character r normal at left',
         'show character b normal at right',
 
-        'Rioth and Bizarr glance over and notice me as I approach...',
+        'Rioth and Bizarr glance over and notice you as you approach...',
 
         'b Ah, there you are.',
         'b Glad you finally made it out here.',
@@ -491,7 +491,7 @@ monogatari.script({
         'hide character b',
 
         'The mood is casual and lighthearted',
-        '...as I fall into step with them and begin to walk along the road toward our destination.',
+        '...as you fall into step with them and begin to walk along the road toward your destination.',
 
         'jump Part1'
     ],
@@ -595,7 +595,7 @@ monogatari.script({
 
         'r Have you tought up some kind of plan already? Cause I have.',
 
-        'I perk up as Rioth speaks, showing a curious expression as I wait for her to continue',
+        'You perk up as Rioth speaks, showing a curious expression as you wait for her to continue',
 
         'r This may be my first team mission, but it isnt my first time dealing with the orcs',
         'r They may be powerful and durable, but dont have much coordination.',
@@ -616,7 +616,7 @@ monogatari.script({
 
         'b You know, Ive been thinking and got an idea on how we could get around those orcs.',
 
-        'I perk up as Bizarr speaks, showing a curious expression as I wait for him to continue',
+        'You perk up as Bizarr speaks, showing a curious expression as you wait for him to continue',
 
         'b You see, there could be a different path that we could take to reach the cave.',
         'b Its a little more work and time, but it would put us right behind the orcs and allow us to catch them off guard.',
@@ -631,7 +631,7 @@ monogatari.script({
 
     'Bizarr_Joins': [
 
-        'Bizarr, who had been listening nearby, steps in and interjects the conversation between us two.',
+        'Bizarr, who had been listening nearby, steps in and interjects the conversation between you two.',
 
         'show character b normal at right',
 
@@ -653,7 +653,7 @@ monogatari.script({
 
     'Rioth_Joins': [
 
-        'Rioth, who had been listening nearby, steps in and interjects the conversation between us two.',
+        'Rioth, who had been listening nearby, steps in and interjects the conversation between you two.',
 
         'show character r normal at left',
 
@@ -688,12 +688,12 @@ monogatari.script({
 
         'centered <span class="custom-dialog">You have decided to keep listening to them.</span>',
 
-        'I continue to listen to their pointless arguing and think why am I stuck with this two people.',
-        'I start to rethink my life choices as I hold my head.',
+        'You continue to listen to their pointless arguing and think why you are stuck with this two people.',
+        'You start to rethink your life choices as you hold your head in your arms.',
 
-        'As the pair argue, I notice an odd and curious sound coming from somewhere in the bushes nearby.',
-        'I take note of the sound, thinking about whether to investigate it or stay focused on their current conversation.',
-        'Should I investigate this noise, or keep listening to them argue? It might be nothing, but it could also be something important...',
+        'As the pair argue, you notice an odd and curious sound coming from somewhere in the bushes nearby.',
+        'You take note of the sound, thinking about whether to investigate it or stay focused on their current conversation.',
+        'Should you investigate this noise, or keep listening to them argue? It might be nothing, but it could also be something important...',
 
         {
             'Choice': {
@@ -703,7 +703,7 @@ monogatari.script({
                     'Do': 'jump Investigate'
                 },
                 'focus': {
-                    'Text': 'Focus on the sound',
+                    'Text': 'Focus on the group',
                     'Do': 'jump Focus'
                 }
             }
@@ -714,11 +714,11 @@ monogatari.script({
 
         'centered <span class="custom-dialog">You have decided to investigate the noise.</span>',
 
-        'While listening to Rioth and Bizarr argue, I hear a peculiar, faint noise from amongst the trees.',
-        'I decide to investigate on my own, unsure of what it might be.',
-        'However, as soon as I step few meters away from my team, a large, gnarly, bugbear ambushes me from his hiding spot.',
-        'He quickly manages to bring me down in one hit.',
-        'With my last breaths, I feel sheer terror as the bugbear lowers immense axe above my head and everything fades to black.',
+        'While listening to Rioth and Bizarr argue, you hear a peculiar, faint noise from amongst the trees.',
+        'You decide to investigate on your own, unsure of what it might be.',
+        'However, as soon as you step few meters away from my team, a large, gnarly, bugbear ambushes you from his hiding spot.',
+        'He quickly manages to bring you down in one hit.',
+        'With your last breaths, you feel sheer terror as the bugbear lowers an immense axe above your head and everything fades to black.',
 
         'show scene dark with fadeIn',
 
@@ -729,15 +729,15 @@ monogatari.script({
 
     'Focus': [
 
-        'centered <span class="custom-dialog">You have decided to keep focusing on the sound.</span>',
+        'centered <span class="custom-dialog">You have decided to keep focusing on the group.</span>',
 
-        'While listening to Rioth and Bizarr argue, my attention is drawn to a new and puzzling sound coming from beyond the bushes.',
-        'It sounds like something moving nearby, and the more I listen, the louder and closer it seems to get.',
-        'I focus more and realise what that awful sound is and quickly yell to my team.',
+        'While listening to Rioth and Bizarr argue, your attention is drawn to a new and puzzling sound coming from beyond the bushes.',
+        'It sounds like something moving nearby, and the more you listen, the louder and closer it seems to get.',
+        'You focus more and realise what that awful sound is and quickly yell to your team.',
 
         'y Watch out! Bugbear!',
 
-        'We all prepare for the battle as the fight begins, with the ambushing bugbear charging towards us.',
+        'You all prepare for the battle as the fight begins, with the ambushing bugbear charging towards you.',
 
         'jump Bugbear'
     ],
@@ -748,17 +748,17 @@ monogatari.script({
 
         'y Hey, guys, enough...youre starting to-',
 
-        'My words get cut off by a strange noise coming from the bushes. Both Rioth and Bizarr turn around to hear it as well.',
+        'Your words get cut off by a strange noise coming from the bushes. Both Rioth and Bizarr turn around to hear it as well.',
 
         'b Did you guys hear that?',
         'r It is probably nothi-',
 
-        'Bizarr and the Rioth turn to face me but see a huge Bugbear few meters behind me with a giant axe held in one hand.',
-        'With a low grumbling noise coming from him, the Bugbear runs at us.',
+        'Bizarr and the Rioth turn to face you but see a huge Bugbear a few meters behind you with a giant axe held in one hand.',
+        'With a low grumbling noise coming from him, the Bugbear runs at you.',
 
         'r Get behind me!',
 
-        'Without hesitation, Rioth grabs a hold of the me and Bizarr as she pushes us backwards, putting herself between the Bugbear and us.',
+        'Without hesitation, Rioth grabs a hold of you and Bizarr as she pushes you backwards, putting herself between the Bugbear and the group.',
 
         'jump Bugbear'
     ],
@@ -766,12 +766,12 @@ monogatari.script({
     'Bugbear': [
 
         'The Bugbear comes charging in, his huge axe held up high.',
-        'A low growling comes from the creature, and it seems like it might kill us right then and there.',
+        'A low growling comes from the creature, and it seems like it might kill you right then and there.',
         'Rioth quickly moves in and manages to strike the Bugbear, making him stagger back for a moment.',
-        'Bizarr also strikes it, but the impact of his sword seems to ricochet off its thick hide and it manages to strike my left arm in return.',
-        'While Bizarr is busy injuring me, Rioth manages to hit the Bugbear just below the neck, sending him staggering back and leaving him vulnerable to another hit.',
+        'Bizarr also strikes it, but the impact of his sword seems to ricochet off its thick hide and it manages to strike your left arm in return.',
+        'While Bizarr is busy injuring you, Rioth manages to hit the Bugbear just below the neck, sending him staggering back and leaving him vulnerable to another hit.',
         'She quickly takes advantage of the opportunity and goes to deal the finishing blow as she slams her axe in his head.',
-        'As it falls to the ground, she goes to search the body for any items of value. Meanwhile I see Bizarr running to me.',
+        'As it falls to the ground, she goes to search the body for any items of value. Meanwhile you see Bizarr running towards you.',
 
         'b Oh, uhh...sorry about the attack. It was totally an accident I swear to everything that is holy. Umm... I might have something for that.',
 
@@ -779,7 +779,7 @@ monogatari.script({
 
         'b Here you go...this healing potion should help with that. Its not the strongest one, but it should work well enough.',
 
-        'He holds out the bottle for me to take, with a friendly expression on his face.',
+        'He holds out the bottle for you to take, with a friendly expression on his face.',
 
         {
             'Choice': {
@@ -810,28 +810,28 @@ monogatari.script({
         'b Exactly. Lets just take it easy for a bit, then continue tomorrow.',
         'b I can make us a meal and you two can set up the tents and rest. That work for everyone?',
 
-        'Rioth and I both nod, as we start setting up the camp.',
+        'Rioth and you both nod, as you start setting up the camp.',
 
         'show scene camp with fadeIn',
 
-        'Rioth gathers up some wood from the surrounding area, carefully selecting dried branches and logs before starting to make a pile for us to use as firewood.',
-        'Bizarr starts heating up a pot of soup, adding various ingredients from his pack to make a hearty meal for us to eat.',
-        'I set up the bedding for us to rest for the night, setting up our bedrolls and covering them with blankets for warmth.',
-        'The night is quiet, but not completely silent. We can hear the occasional rustle of leaves in the wind, and the distant cry of some nocturnal creatures.',
-        'After eating the warm, hearty soup that Bizarr had made for us, we each make our way to our separate tents and settle down for the night.',
+        'Rioth gathers up some wood from the surrounding area, carefully selecting dried branches and logs before starting to make a pile for you to use as firewood.',
+        'Bizarr starts heating up a pot of soup, adding various ingredients from his pack to make a hearty meal for you to eat.',
+        'You set up the bedding for your rest for the night, setting up bedrolls and covering them with blankets for warmth.',
+        'The night is quiet, but not completely silent. You can hear the occasional rustle of leaves in the wind, and the distant cry of some nocturnal creatures.',
+        'After eating the warm, hearty soup that Bizarr had made for the group, we each make our way to our separate tents and settle down for the night.',
         'Rioth disappears into her tent quickly, as if eager to get some rest.',
         'Bizarr looks around for a moment before entering his own tent, a slight yawn escaping his mouth as he does.',
-        'I stand in front of my tent for a moment, taking a glance around the campsite before entering and getting into my bedroll.',
+        'You stand in front of your tent for a moment, taking a glance around the campsite before entering and getting into the bedroll.',
 
         'show scene dark with fadeIn',
 
-        'I lay there in my bedroll, slowly drifting off to sleep, when suddenly I am awoken by a strange noise.',
-        'Confused and disoriented, I realize that theres a cloth covering my head, making it impossible to see.',
-        'Panic starts to set in as my mind races to make sense of whats happening.I struggle weakly, trying to free myself.',
-        'But my left arm is still damaged and useless, while my right arm is kept pinned down.',
-        'My mind is racing, trying to figure out whats happening, when I feel the sharp pain of a blade piercing through my body.',
-        'Everything goes black as I lie there, slowly losing last bits of consciousness as the pain subsides.',
-        'The last thing Im aware of is a sound of voice fading away as I slip into darkness.',
+        'You lay there in the bedroll, slowly drifting off to sleep, when suddenly, you are awoken by a strange noise.',
+        'Confused and disoriented, you realize that theres a cloth covering your head, making it impossible to see.',
+        'Panic starts to set in as your mind races to make sense of whats happening. You struggle weakly, trying to free yourself.',
+        'But your left arm is still damaged and useless, while the right arm is kept pinned down.',
+        'Your mind is racing, trying to figure out whats happening, when you feel the sharp pain of a blade piercing through your body.',
+        'Everything goes black as you lie there, slowly losing last bits of consciousness as the pain subsides.',
+        'The last thing you are aware of is a sound of voice fading away as you slip into darkness.',
 
         'centered <span class="custom-dialog">Ending 3 - Should have taken that potion...</span>',
 
@@ -842,7 +842,7 @@ monogatari.script({
 
         'centered <span class="custom-dialog">You have accepted the potion.</span>',
 
-        'I nod slightly, accepting the vial of healing potion from Bizarr.',
+        'You nod slightly, accepting the vial of healing potion from Bizarr.',
 
         'y Thank you. Sure you wont need it later ? ',
         'b No and its no problem. Its the least I could do after what happened back there.',
@@ -854,13 +854,13 @@ monogatari.script({
         'b Exactly. Lets just take it easy for a bit, then continue tomorrow.',
         'b I can make us a meal and you two can set up the tents and rest. That work for everyone?',
 
-        'Rioth and I both nod, as we start setting up the camp.',
+        'Rioth and you both nod, as we start setting up the camp.',
 
         'show scene camp with fadeIn',
 
         'We all set up our camp for the night.',
-        'Rioth starts gathering some firewood, Bizarr is doing soup by the looks of it and I am simply organizing and setting up bedding.',
-        'Theres a moment of quiet as we settle into the campsite, and I decide to break the silence by talking to Rioth.',
+        'Rioth starts gathering some firewood, Bizarr is doing soup by the looks of it and you are simply organizing and setting up bedding.',
+        'Theres a moment of quiet as we settle into the campsite, and you decide to break the silence by talking to Rioth.',
 
         'show character r normal at left',
 
