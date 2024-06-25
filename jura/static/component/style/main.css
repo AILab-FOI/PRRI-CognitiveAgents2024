@@ -169,10 +169,10 @@ text-box [data-content=dialog] {
 }
 
 #agent {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    display: none; /* Skriveno po defaultu*/
+    width: 1000px;
+    height: 1000px;
+    /*background-color: red;*/
+    /*display: none; *//* Skriveno po defaultu*/
 }
 
     #agent video {

@@ -100,7 +100,7 @@ monogatari.characters({
         name: 'You',
         color: '#000000',
         sprites: {
-            normal: '<div style="width: 50px; height: 50px; background-color: blue; border-radius: 50%;" ></div>'
+            normal: ''
         }
     },
     'r': {
@@ -121,21 +121,21 @@ monogatari.characters({
         name: 'Zoro',
         color: '#6D6A4D',
         sprites: {
-            normal: '<div style="width: 50px; height: 50px; background-color: blue; border-radius: 50%;" ></div>'
+            normal: ''
         }
     },
     'br': {
         name: 'Brol',
         color: '#6D6A4D',
         sprites: {
-            normal: '<div style="width: 50px; height: 50px; background-color: red; border-radius: 50%;" ></div>'
+            normal: ''
         }
     },
     'rk': {
         name: 'Rilke',
         color: '#6D6A4D',
         sprites: {
-            normal: '<div style="width: 50px; height: 50px; background-color: yellow; border-radius: 50%;" ></div>'
+            normal: ''
         }
     },
     '?': {
@@ -171,6 +171,8 @@ monogatari.script({
         'centered <span class="custom-dialog">Chapter 0 - Just an average day</span>',
 
         'show scene room with fadeIn',
+
+        'centered <cognitive-agent></cognitive-agent>',
 
         'The morning sun peaks through the curtains as you open your eyes. Birds chirp outside in the early morning light, and a subtle breeze flows through the room.',
         'The sounds of the guild members downstairs fill the air, exchanging banter in a casual manner and setting the mood for the day to come.',
@@ -337,7 +339,7 @@ monogatari.script({
 
         'r Holy shit!',
         'r Arent you {{player.name}}?',
-        'r I thought i heard you dont even visit this hall anymore!',
+        'r I thought I heard you dont even visit this hall anymore!',
         'r What brings you here?',
 
         // OVDJE IDE AI

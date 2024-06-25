@@ -26,15 +26,11 @@
 const { $_ready, $_ } = Monogatari;
 
 // 1. Outside the $_ready function:
-function test()
-{
-    alert( "It's alive!!!" );
-}
 
 class CognitiveAgent extends Monogatari.Component {
     render () {
 	
-	return `<button id="gumb">TEST</button>`;   
+	return `<div class="video-container"><video class="video" id="agent" preload="true"><source src="./media/bizzar.webm" type="video/webm"></video></div>`;   
     }
 }
 
@@ -48,7 +44,7 @@ $_ready (() => {
     monogatari.init ('#monogatari').then (() => {
 	// 3. Inside the init function:
 
-	document.getElementById("gumb").addEventListener("click", test);
+	//document.getElementById("gumb").addEventListener("click", test);
 
     });
 });

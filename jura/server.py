@@ -13,6 +13,7 @@ CORS(app)
 @app.route( '/' )
 def home():
     return send_from_directory(app.static_folder, "index.html")
+
 @app.route("/<path:path>")
 def serv_file(path):
     return send_from_directory(app.static_folder, path)

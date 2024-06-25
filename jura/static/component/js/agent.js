@@ -19,7 +19,15 @@ $(window).on( 'load', function(){
 
 	const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
+    monogatari.on ('didInit', () => {
+      var CA = document.getElementById( 'co-ag' );
 
+      console.log( CA );
+
+    });
+
+    
+    
 
 
 	var init = function()
@@ -54,6 +62,7 @@ $(window).on( 'load', function(){
 	}
 	init();
 
+    /* // Not needed for visual novel
 	button.onclick = () => {
 	    if (document.documentElement.requestFullscreen) {
 		document.documentElement.requestFullscreen();
@@ -75,12 +84,13 @@ $(window).on( 'load', function(){
 	    {
 		document.getElementById('record').style.display = 'block';
 	    }
-	};
+	};*/
     }
 
+    /* // Not needed for visual novel
     record.onclick = () => {
 	window.recognition.start();
-    }
+    }*/
 
     $( '#agent' )[0].ontimeupdate = function(){
 	var agent = $( '#agent' )[0];
